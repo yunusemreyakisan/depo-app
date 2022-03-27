@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editText_color"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.25"
+            android:background="@drawable/rounded_corner">
+            <!-- Header Text  -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    android:id="@+id/txtHosgeldin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+
+                    android:text="Hoşgeldiniz"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txtFirebaseAd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtHosgeldin"
+                    android:layout_marginLeft="30dp"
+                    android:text="Yunus Emre Yakışan"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageDepoWhiteLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/depologowhite" />
+
+        </RelativeLayout>
+
+
+        <!-- Body Container İşlemler -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_margin="20dp"
+            android:layout_weight="0.6">
+
+            <!-- Buton-1 Depo İşlemleri  -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDepoIslemleri"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="10dp"
+                android:text="Depo İşlemleri"
+                android:textAlignment="gravity"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_baseline_warehouse"
+                app:iconGravity="top" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUrunIslemleri"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:text="Ürün İşlemleri"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_baseline_compare_arrows_24"
+                app:iconGravity="top" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStokBilgisi"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btnUrunIslemleri"
+                android:gravity=""
+                android:text="Stok Bilgisi"
+                android:textAlignment="gravity"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_baseline_info_24"
+                app:iconGravity="end" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lütfen yapmak istediğiniz işlemi seçiniz:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <!-- Bottom Nav Bar   -->
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<resources>
+    <string name="hyperlink"><a href="https://www.linkedin.com/in/yunusemreyakisan/">Şifremi unuttum</a></string>
+    <string name="app_name">Depo</string>
+    <string name="title_activity_hesap_yok">HesapYok</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_anasayfa">Anasayfa</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="activity_kayit_ol_lbl_kayit_ol">Kayıt Ol</string>
+    <string name="title_activity_bottom_nav_bar">Bottom_NavBar_Activity</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="copyright">Copyright © 2022 All Rights Reserved.</string>
+    <string name="splash_info">Splash Depo White Logo</string>
+    <string name="logo">Logo</string>
+    <string name="kullanici_Adi">Kullanıcı Adı</string>
+    <string name="hey_giris_yap">Hey, \nGiriş yap.</string>
+    <string name="sifre">Şifre</string>
+    <string name="beni_hatirla">Beni Hatırla</string>
+    <string name="btn_giris_yap">Giriş Yap</string>
+    <string name="btn_google_giris">Google Giriş</string>
+    <string name="btnKaydol">Kaydol</string>
+</resources>

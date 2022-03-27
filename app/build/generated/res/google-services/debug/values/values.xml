@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">41520331102-206cubelalfgdfe5uhnhr2l2d4mr2fs4.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">41520331102</string>
+    <string name="google_api_key" translatable="false">AIzaSyC_mMVvFFAOyxECXMev36j8ql-hg8EJOI8</string>
+    <string name="google_app_id" translatable="false">1:41520331102:android:493ee8ff1ab50e8050f7cf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC_mMVvFFAOyxECXMev36j8ql-hg8EJOI8</string>
+    <string name="google_storage_bucket" translatable="false">depoenvanteryonetimi.appspot.com</string>
+    <string name="project_id" translatable="false">depoenvanteryonetimi</string>
+</resources>
