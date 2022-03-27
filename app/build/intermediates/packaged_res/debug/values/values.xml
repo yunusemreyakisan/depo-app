@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="blueButtonColor">#52a9e3</color>
+    <color name="btnColor">#6e080f</color>
+    <color name="editTextColor">#616161</color>
+    <color name="editText_color">#F4F4F4</color>
+    <color name="orangeButtonColor">#f2913d</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="textColorHint">#616161</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_hosgeldin_marginTop">10dp</dimen>
+    <dimen name="activity_hosgeldin_textSize">17sp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="depo_logo_marginTop">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="genel_activity_margin">40dp</dimen>
+    <dimen name="mainMarginBottom">10dp</dimen>
+    <dimen name="marginBottom">10dp</dimen>
+    <string name="activity_kayit_ol_lbl_kayit_ol">Kayıt Ol</string>
+    <string name="app_name">Depo</string>
+    <string name="beni_hatirla">Beni Hatırla</string>
+    <string name="btnKaydol">Kaydol</string>
+    <string name="btn_giris_yap">Giriş Yap</string>
+    <string name="btn_google_giris">Google Giriş</string>
+    <string name="copyright">Copyright © 2022 All Rights Reserved.</string>
+    <string name="default_web_client_id" translatable="false">41520331102-206cubelalfgdfe5uhnhr2l2d4mr2fs4.apps.googleusercontent.com</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="gcm_defaultSenderId" translatable="false">41520331102</string>
+    <string name="google_api_key" translatable="false">AIzaSyC_mMVvFFAOyxECXMev36j8ql-hg8EJOI8</string>
+    <string name="google_app_id" translatable="false">1:41520331102:android:493ee8ff1ab50e8050f7cf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC_mMVvFFAOyxECXMev36j8ql-hg8EJOI8</string>
+    <string name="google_storage_bucket" translatable="false">depoenvanteryonetimi.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hey_giris_yap">Hey, \nGiriş yap.</string>
+    <string name="hyperlink"><a href="https://www.linkedin.com/in/yunusemreyakisan/">Şifremi unuttum</a></string>
+    <string name="kullanici_Adi">Kullanıcı Adı</string>
+    <string name="logo">Logo</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="project_id" translatable="false">depoenvanteryonetimi</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="sifre">Şifre</string>
+    <string name="splash_info">Splash Depo White Logo</string>
+    <string name="title_activity_anasayfa">Anasayfa</string>
+    <string name="title_activity_bottom_nav_bar">Bottom_NavBar_Activity</string>
+    <string name="title_activity_hesap_yok">HesapYok</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight"/>
+    <style name="Theme.Depo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#6e080f</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FF9800</item>
+        <item name="colorSecondaryVariant">@android:color/holo_orange_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+    <style name="Theme.Depo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Depo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Depo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

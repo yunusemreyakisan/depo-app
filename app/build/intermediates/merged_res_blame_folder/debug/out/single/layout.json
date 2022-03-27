@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home_page.xml",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_home_page.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_depo_ekle.xml",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depo_ekle.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_kayit_ol.xml",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_kayit_ol.xml"
+    }
+]
