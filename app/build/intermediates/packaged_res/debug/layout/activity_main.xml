@@ -85,11 +85,11 @@
                         app:boxStrokeWidthFocused="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/txtGrsKullaniciAdi"
+                            android:id="@+id/txtGrsEmail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="@dimen/mainMarginBottom"
-                            android:hint="@string/kullanici_Adi"
+                            android:hint="@string/email_text"
                             android:inputType="textEmailAddress"
                             android:minHeight="48dp"
                             android:textColorHint="@color/editTextColor" />

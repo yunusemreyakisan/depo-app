@@ -1,9 +1,11 @@
 package mf.bm443.depo;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,10 +19,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     private Button girisYap, kaydol, signWithGoogle;
-    private TextInputEditText kullaniciAdi;
+    private TextInputEditText girisEmail;
     private TextInputEditText sifre;
     private TextInputEditText eMail;
     private TextInputEditText adiSoyadi;
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "GoogleActivity";
     private static final int RC_SIGN_IN = 9001;
     private GoogleSignInClient mGoogleSignInClient;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         sifremiUnuttum = findViewById(R.id.txtSifremiUnuttum);
         girisYap = findViewById(R.id.btnGirisYap);
         kaydol = findViewById(R.id.btnKaydol);
-        kullaniciAdi = findViewById(R.id.txtGrsKullaniciAdi);
+        girisEmail = findViewById(R.id.txtGrsEmail);
         sifre = findViewById(R.id.txtGrsSifre);
         eMail = findViewById(R.id.ePosta);
         signWithGoogle = findViewById(R.id.btnGoogleGiris);
@@ -82,16 +85,77 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void sifremiUnuttum() {
-      //Kullanıcıya Firebase üzerinden Şifremi unuttum emaili gönderilecek.
+        //Kullanıcıya Firebase üzerinden Şifremi unuttum emaili gönderilecek.
+        sifremiUnuttum.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
-
+    //E-Mail ve Şifre ile Giriş İşlemi
     private void btnGirisYapIslevi() {
         //Kaydolunan şifre ve ad soyad şartlanacak.
-
+        mAuth = FirebaseAuth.getInstance();
+        girisYap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kayitliKullaniciGirisi();
+            }
+        });
     }
 
-    //Google Giriş Butonu
+    private void kayitliKullaniciGirisi() {
+        // Firebase üzerinden email ve şifre alınması
+        String email, password;
+        email = girisEmail.getText().toString();
+        password = sifre.getText().toString();
+
+        // Email ve Şifre Giriş Kontrolü (Dolu-Boş)
+        if (TextUtils.isEmpty(email)) {
+            Toast.makeText(getApplicationContext(),
+                    "Please enter email!!",
+                    Toast.LENGTH_LONG)
+                    .show();
+            return;
+        }
+
+        if (TextUtils.isEmpty(password)) {
+            Toast.makeText(getApplicationContext(),
+                    "Please enter password!!",
+                    Toast.LENGTH_LONG)
+                    .show();
+            return;
+        }
+
+        // Kayıtlı Kullanıcı Girişi
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(
+                        new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(
+                                    @NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(getApplicationContext(),
+                                            "Giriş Başarılı!",
+                                            Toast.LENGTH_LONG)
+                                            .show();
+
+                                    // Eğer giriş bilgileri doğruysa:
+                                    // Anasayfaya geç.
+                                    Intent intent = new Intent(MainActivity.this, HomePage.class);
+                                    startActivity(intent);
+                                } else {
+
+                                    // Giriş hatalı ise:
+                                    Toast.makeText(getApplicationContext(),
+                                            "e-Mail veya Şifre Hatalı!",
+                                            Toast.LENGTH_LONG)
+                                            .show();
+
+                                }
+                            }
+                        });
+    }
+
+
+    //Google Giriş İşlemi
     private void btnGoogleGirisIslevi() {
         signWithGoogle.setOnClickListener(view -> sign());
     }

@@ -73,7 +73,7 @@ id sifreWrapper
 id textView
 id txtFirebaseAd
 id txtGirisYap
-id txtGrsKullaniciAdi
+id txtGrsEmail
 id txtGrsSifre
 id txtHosgeldin
 id txtSifremiUnuttum
@@ -97,6 +97,7 @@ string btn_giris_yap
 string btn_google_giris
 string copyright
 string default_web_client_id
+string email_text
 string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
@@ -108,7 +109,6 @@ string hello_first_fragment
 string hello_second_fragment
 string hey_giris_yap
 string hyperlink
-string kullanici_Adi
 string logo
 string next
 string previous

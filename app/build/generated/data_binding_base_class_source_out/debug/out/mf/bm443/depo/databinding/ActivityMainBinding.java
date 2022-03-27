@@ -49,7 +49,7 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView txtGirisYap;
 
   @NonNull
-  public final TextInputEditText txtGrsKullaniciAdi;
+  public final TextInputEditText txtGrsEmail;
 
   @NonNull
   public final TextInputEditText txtGrsSifre;
@@ -61,7 +61,7 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull MaterialButton btnGirisYap, @NonNull MaterialButton btnGoogleGiris,
       @NonNull MaterialButton btnKaydol, @NonNull ImageView girisLogo,
       @NonNull TextInputLayout girisSifreWrapper, @NonNull TextInputLayout kullaniciAdiWrapper,
-      @NonNull TextView txtGirisYap, @NonNull TextInputEditText txtGrsKullaniciAdi,
+      @NonNull TextView txtGirisYap, @NonNull TextInputEditText txtGrsEmail,
       @NonNull TextInputEditText txtGrsSifre, @NonNull TextView txtSifremiUnuttum) {
     this.rootView = rootView;
     this.beniHatirlaCheckbox = beniHatirlaCheckbox;
@@ -72,7 +72,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.girisSifreWrapper = girisSifreWrapper;
     this.kullaniciAdiWrapper = kullaniciAdiWrapper;
     this.txtGirisYap = txtGirisYap;
-    this.txtGrsKullaniciAdi = txtGrsKullaniciAdi;
+    this.txtGrsEmail = txtGrsEmail;
     this.txtGrsSifre = txtGrsSifre;
     this.txtSifremiUnuttum = txtSifremiUnuttum;
   }
@@ -152,9 +152,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtGrsKullaniciAdi;
-      TextInputEditText txtGrsKullaniciAdi = ViewBindings.findChildViewById(rootView, id);
-      if (txtGrsKullaniciAdi == null) {
+      id = R.id.txtGrsEmail;
+      TextInputEditText txtGrsEmail = ViewBindings.findChildViewById(rootView, id);
+      if (txtGrsEmail == null) {
         break missingId;
       }
 
@@ -172,7 +172,7 @@ public final class ActivityMainBinding implements ViewBinding {
 
       return new ActivityMainBinding((LinearLayout) rootView, beniHatirlaCheckbox, btnGirisYap,
           btnGoogleGiris, btnKaydol, girisLogo, girisSifreWrapper, kullaniciAdiWrapper, txtGirisYap,
-          txtGrsKullaniciAdi, txtGrsSifre, txtSifremiUnuttum);
+          txtGrsEmail, txtGrsSifre, txtSifremiUnuttum);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

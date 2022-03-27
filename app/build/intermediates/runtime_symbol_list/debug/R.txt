@@ -3141,7 +3141,7 @@ int id transition_transform 0x7f0801fa
 int id triangle 0x7f0801fb
 int id txtFirebaseAd 0x7f0801fc
 int id txtGirisYap 0x7f0801fd
-int id txtGrsKullaniciAdi 0x7f0801fe
+int id txtGrsEmail 0x7f08021b
 int id txtGrsSifre 0x7f0801ff
 int id txtHosgeldin 0x7f080200
 int id txtSifremiUnuttum 0x7f080201
@@ -3430,6 +3430,7 @@ int string common_signin_button_text 0x7f0f003a
 int string common_signin_button_text_long 0x7f0f003b
 int string copyright 0x7f0f003c
 int string default_web_client_id 0x7f0f003d
+int string email_text 0x7f0f00b8
 int string error_icon_content_description 0x7f0f003e
 int string exposed_dropdown_menu_content_description 0x7f0f003f
 int string fab_transformation_scrim_behavior 0x7f0f0040
@@ -3448,7 +3449,6 @@ int string hide_bottom_view_on_scroll_behavior 0x7f0f004c
 int string hyperlink 0x7f0f004d
 int string icon_content_description 0x7f0f004e
 int string item_view_role_description 0x7f0f004f
-int string kullanici_Adi 0x7f0f0050
 int string logo 0x7f0f0051
 int string m3_ref_typeface_brand_display_regular 0x7f0f0052
 int string m3_ref_typeface_brand_medium 0x7f0f0053

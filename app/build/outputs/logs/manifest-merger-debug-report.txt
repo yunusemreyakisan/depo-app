@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] D:\Program Files\Clock\caches\transforms-3\1424adf5c43f9ae0ddb7a5dd3ddb920d\transformed\viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.4.1] D:\Program Files\Clock\caches\transforms-3\4d7c8f18b737a4b0c946b3de53f9ec17\transformed\navigation-ui-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.5.0] D:\Program Files\Clock\caches\transforms-3\3b185c71f62a8e5ce74dbacb5af9ac95\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
@@ -87,25 +87,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] D:\Program Files\Clock\ca
 MERGED from [androidx.print:print:1.0.0] D:\Program Files\Clock\caches\transforms-3\1ef7b216f2329211a86f04fa83dca8ed\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] D:\Program Files\Clock\caches\transforms-3\1ed04b1c220abe929d68f0d8f703665c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] D:\Program Files\Clock\caches\transforms-3\b5b9a8ffe71c29ead418b5833555d33b\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Depo\app\src\main\AndroidManifest.xml:5:5-35:19
+ADDED from C:\Depo\app\src\main\AndroidManifest.xml:5:5-37:19
 MERGED from [com.google.android.material:material:1.5.0] D:\Program Files\Clock\caches\transforms-3\3b185c71f62a8e5ce74dbacb5af9ac95\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] D:\Program Files\Clock\caches\transforms-3\3b185c71f62a8e5ce74dbacb5af9ac95\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] D:\Program Files\Clock\caches\transforms-3\c051c6e0d169f7cea8b828b6e2e10046\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -184,28 +184,34 @@ ADDED from C:\Depo\app\src\main\AndroidManifest.xml:15:9-17:38
 		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:17:13-36
 	android:name
 		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:16:13-36
+activity#mf.bm443.depo.HomePage
+ADDED from C:\Depo\app\src\main\AndroidManifest.xml:18:9-20:38
+	android:exported
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:20:13-36
+	android:name
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:19:13-37
 activity#mf.bm443.depo.MainActivity
-ADDED from C:\Depo\app\src\main\AndroidManifest.xml:20:9-22:39
+ADDED from C:\Depo\app\src\main\AndroidManifest.xml:22:9-24:39
 	android:exported
-		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:24:13-36
 	android:name
-		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:23:13-41
 activity#mf.bm443.depo.SplashScreen
-ADDED from C:\Depo\app\src\main\AndroidManifest.xml:24:9-32:20
+ADDED from C:\Depo\app\src\main\AndroidManifest.xml:26:9-34:20
 	android:exported
-		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
-		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:25:13-41
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:27:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Depo\app\src\main\AndroidManifest.xml:27:13-31:29
+ADDED from C:\Depo\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from C:\Depo\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from C:\Depo\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Depo\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from C:\Depo\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from C:\Depo\app\src\main\AndroidManifest.xml:32:27-74
 uses-sdk
 INJECTED from C:\Depo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Depo\app\src\main\AndroidManifest.xml

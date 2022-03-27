@@ -3142,7 +3142,7 @@ id transition_transform
 id triangle
 id txtFirebaseAd
 id txtGirisYap
-id txtGrsKullaniciAdi
+id txtGrsEmail
 id txtGrsSifre
 id txtHosgeldin
 id txtSifremiUnuttum
@@ -3431,6 +3431,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string copyright
 string default_web_client_id
+string email_text
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3449,7 +3450,6 @@ string hide_bottom_view_on_scroll_behavior
 string hyperlink
 string icon_content_description
 string item_view_role_description
-string kullanici_Adi
 string logo
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium

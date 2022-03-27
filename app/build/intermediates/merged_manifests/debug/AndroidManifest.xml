@@ -32,6 +32,9 @@
             android:name="mf.bm443.depo.KayitOl"
             android:exported="true" />
         <activity
+            android:name="mf.bm443.depo.HomePage"
+            android:exported="true" />
+        <activity
             android:name="mf.bm443.depo.MainActivity"
             android:exported="true" />
         <activity
