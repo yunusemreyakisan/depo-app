@@ -151,6 +151,7 @@ attr backgroundSplit
 attr backgroundStacked
 attr backgroundTint
 attr backgroundTintMode
+attr background_color
 attr badgeGravity
 attr badgeRadius
 attr badgeStyle
@@ -1108,6 +1109,7 @@ attr textOutlineThickness
 attr textPanX
 attr textPanY
 attr textStartPadding
+attr text_color
 attr textureBlurFactor
 attr textureEffect
 attr textureHeight
@@ -2743,6 +2745,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id bt_theme_switch
 id btnDepoIslemleri
 id btnGirisYap
 id btnGoogleGiris
@@ -2750,6 +2753,7 @@ id btnKaydol
 id btnKayitOl
 id btnStokBilgisi
 id btnUrunIslemleri
+id btnVeriOkuma
 id button
 id buttonPanel
 id cache_measures
@@ -3114,7 +3118,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3153,6 +3156,7 @@ id up
 id urunKategori
 id urunkategoriWrapper
 id useLogo
+id veriOkuma
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -4053,9 +4057,8 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
-style Theme_Depo
+style Theme_Dark
 style Theme_Depo_AppBarOverlay
-style Theme_Depo_NoActionBar
 style Theme_Depo_PopupOverlay
 style Theme_Design
 style Theme_Design_BottomSheetDialog
@@ -4063,6 +4066,7 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
+style Theme_Light
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog
@@ -4747,6 +4751,7 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
+styleable dark_theme background_color text_color
 styleable include constraintSet
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end

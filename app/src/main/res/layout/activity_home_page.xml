@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/editText_color"
+    android:background="?attr/background_color"
     android:orientation="vertical"
     tools:context=".HomePage">
 
@@ -72,7 +72,6 @@
                 android:id="@+id/btnDepoIslemleri"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_below="@+id/textView"
                 android:layout_marginTop="10dp"
                 android:text="Depo İşlemleri"
                 android:textAlignment="gravity"
@@ -85,7 +84,6 @@
                 android:id="@+id/btnUrunIslemleri"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_below="@+id/textView"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
                 android:text="Ürün İşlemleri"
@@ -108,12 +106,44 @@
 
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/veriOkuma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lütfen yapmak istediğiniz işlemi seçiniz:"
+                android:text=""
+                android:layout_below="@+id/btnVeriOkuma"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVeriOkuma"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btnStokBilgisi"
+                android:gravity=""
+                android:text="Veriyi Oku"
+                android:textAlignment="gravity"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_baseline_info_24"
+                app:iconGravity="end" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_theme_switch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Butona tıkladıktan sonra değişecek tema renkleri"
+                android:textColor="?attr/text_color" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_centerHorizontal="true"
+                android:id="@+id/bt_theme_switch"
+                android:layout_below="@id/btnVeriOkuma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" />
+
 
         </RelativeLayout>
         <!-- Bottom Nav Bar   -->

@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -22,6 +23,9 @@ public final class ActivityHomePageBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final SwitchCompat btThemeSwitch;
+
+  @NonNull
   public final MaterialButton btnDepoIslemleri;
 
   @NonNull
@@ -31,10 +35,10 @@ public final class ActivityHomePageBinding implements ViewBinding {
   public final MaterialButton btnUrunIslemleri;
 
   @NonNull
-  public final ImageView imageDepoWhiteLogo;
+  public final MaterialButton btnVeriOkuma;
 
   @NonNull
-  public final TextView textView;
+  public final ImageView imageDepoWhiteLogo;
 
   @NonNull
   public final TextView txtFirebaseAd;
@@ -42,18 +46,25 @@ public final class ActivityHomePageBinding implements ViewBinding {
   @NonNull
   public final TextView txtHosgeldin;
 
+  @NonNull
+  public final TextView veriOkuma;
+
   private ActivityHomePageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnDepoIslemleri, @NonNull MaterialButton btnStokBilgisi,
-      @NonNull MaterialButton btnUrunIslemleri, @NonNull ImageView imageDepoWhiteLogo,
-      @NonNull TextView textView, @NonNull TextView txtFirebaseAd, @NonNull TextView txtHosgeldin) {
+      @NonNull SwitchCompat btThemeSwitch, @NonNull MaterialButton btnDepoIslemleri,
+      @NonNull MaterialButton btnStokBilgisi, @NonNull MaterialButton btnUrunIslemleri,
+      @NonNull MaterialButton btnVeriOkuma, @NonNull ImageView imageDepoWhiteLogo,
+      @NonNull TextView txtFirebaseAd, @NonNull TextView txtHosgeldin,
+      @NonNull TextView veriOkuma) {
     this.rootView = rootView;
+    this.btThemeSwitch = btThemeSwitch;
     this.btnDepoIslemleri = btnDepoIslemleri;
     this.btnStokBilgisi = btnStokBilgisi;
     this.btnUrunIslemleri = btnUrunIslemleri;
+    this.btnVeriOkuma = btnVeriOkuma;
     this.imageDepoWhiteLogo = imageDepoWhiteLogo;
-    this.textView = textView;
     this.txtFirebaseAd = txtFirebaseAd;
     this.txtHosgeldin = txtHosgeldin;
+    this.veriOkuma = veriOkuma;
   }
 
   @Override
@@ -83,6 +94,12 @@ public final class ActivityHomePageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bt_theme_switch;
+      SwitchCompat btThemeSwitch = ViewBindings.findChildViewById(rootView, id);
+      if (btThemeSwitch == null) {
+        break missingId;
+      }
+
       id = R.id.btnDepoIslemleri;
       MaterialButton btnDepoIslemleri = ViewBindings.findChildViewById(rootView, id);
       if (btnDepoIslemleri == null) {
@@ -101,15 +118,15 @@ public final class ActivityHomePageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageDepoWhiteLogo;
-      ImageView imageDepoWhiteLogo = ViewBindings.findChildViewById(rootView, id);
-      if (imageDepoWhiteLogo == null) {
+      id = R.id.btnVeriOkuma;
+      MaterialButton btnVeriOkuma = ViewBindings.findChildViewById(rootView, id);
+      if (btnVeriOkuma == null) {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
+      id = R.id.imageDepoWhiteLogo;
+      ImageView imageDepoWhiteLogo = ViewBindings.findChildViewById(rootView, id);
+      if (imageDepoWhiteLogo == null) {
         break missingId;
       }
 
@@ -125,9 +142,15 @@ public final class ActivityHomePageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomePageBinding((ConstraintLayout) rootView, btnDepoIslemleri,
-          btnStokBilgisi, btnUrunIslemleri, imageDepoWhiteLogo, textView, txtFirebaseAd,
-          txtHosgeldin);
+      id = R.id.veriOkuma;
+      TextView veriOkuma = ViewBindings.findChildViewById(rootView, id);
+      if (veriOkuma == null) {
+        break missingId;
+      }
+
+      return new ActivityHomePageBinding((ConstraintLayout) rootView, btThemeSwitch,
+          btnDepoIslemleri, btnStokBilgisi, btnUrunIslemleri, btnVeriOkuma, imageDepoWhiteLogo,
+          txtFirebaseAd, txtHosgeldin, veriOkuma);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

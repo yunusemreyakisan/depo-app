@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+attr? background_color
+attr? text_color
 color black
 color blueButtonColor
 color btnColor
@@ -44,6 +46,7 @@ id CopyrightText
 id adSoyad
 id adSoyadWrapper
 id beniHatirlaCheckbox
+id bt_theme_switch
 id btnDepoIslemleri
 id btnGirisYap
 id btnGoogleGiris
@@ -51,6 +54,7 @@ id btnKaydol
 id btnKayitOl
 id btnStokBilgisi
 id btnUrunIslemleri
+id btnVeriOkuma
 id button
 id depoAd
 id depoAdWrapper
@@ -70,7 +74,6 @@ id sifre
 id sifreAgain
 id sifreAgainWrapper
 id sifreWrapper
-id textView
 id txtFirebaseAd
 id txtGirisYap
 id txtGrsEmail
@@ -79,6 +82,7 @@ id txtHosgeldin
 id txtSifremiUnuttum
 id urunKategori
 id urunkategoriWrapper
+id veriOkuma
 layout activity_depo_ekle
 layout activity_home_page
 layout activity_kayit_ol
@@ -123,7 +127,8 @@ string title_dashboard
 string title_home
 string title_notifications
 style AppTheme
-style Theme.Depo
+style Theme.Dark
 style Theme.Depo.AppBarOverlay
-style Theme.Depo.NoActionBar
 style Theme.Depo.PopupOverlay
+style Theme.Light
+styleable dark_theme background_color text_color

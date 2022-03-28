@@ -34,6 +34,7 @@ public class KayitOl extends AppCompatActivity {
     }
 
     private void btnKayitOlIslevi() {
+        mAuth = FirebaseAuth.getInstance();
         KayitOl.setOnClickListener(view -> {
             String name = AdiSoyadi.getText().toString();
             String email = eMail.getText().toString();
