@@ -1,7 +1,7 @@
 package mf.bm443.depo;
 
 import android.os.Bundle;
-import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.TextView;
@@ -20,14 +20,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.List;
+
 public class HomePage extends AppCompatActivity {
 
-    private TextView veri;
-    private Button btnVeriOku;
     private TextView name, email;
     SwitchCompat switchCompat;
     private DatabaseReference mReferance;
-
+    ArrayAdapter<String> adapter;
+    List<String> itemlist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +47,7 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         initComponents();
-       // veriOkuma();
+        veriOkuma();
         switchThemes();
     }
 
@@ -71,38 +72,29 @@ public class HomePage extends AppCompatActivity {
         });
     }
 
-/*
+    //Burası ÖNEMLİ! Beyaz ekran verip başlangıca atıyor.
     private void veriOkuma() {
-        btnVeriOku.setOnClickListener(new View.OnClickListener() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        mReferance = FirebaseDatabase.getInstance().getReference("Users").child("Name");
+        mReferance.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                mReferance = FirebaseDatabase.getInstance().getReference("Users").child(user.getUid());
-                mReferance.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        String value = snapshot.getValue(String.class);
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String value = snapshot.getValue().toString();
+                name.setText(value);
+            }
 
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-                        Toast.makeText(HomePage.this, "Veritabanı hatası!", Toast.LENGTH_SHORT).show();
-                    }
-                });
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(HomePage.this, "Veritabanı hatası!", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
-
- */
 
 
     private void initComponents() {
-        veri = findViewById(R.id.veriOkuma);
-        btnVeriOku = findViewById(R.id.btnVeriOkuma);
         switchCompat = findViewById(R.id.bt_theme_switch);
         name = findViewById(R.id.txtFirebaseAd);
+
     }
 }
 

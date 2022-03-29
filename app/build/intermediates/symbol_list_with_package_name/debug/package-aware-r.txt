@@ -2753,7 +2753,6 @@ id btnKaydol
 id btnKayitOl
 id btnStokBilgisi
 id btnUrunIslemleri
-id btnVeriOkuma
 id button
 id buttonPanel
 id cache_measures
@@ -3156,7 +3155,6 @@ id up
 id urunKategori
 id urunkategoriWrapper
 id useLogo
-id veriOkuma
 id vertical_only
 id view_offset_helper
 id view_transition

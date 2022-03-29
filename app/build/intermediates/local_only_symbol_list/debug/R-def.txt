@@ -54,7 +54,6 @@ id btnKaydol
 id btnKayitOl
 id btnStokBilgisi
 id btnUrunIslemleri
-id btnVeriOkuma
 id button
 id depoAd
 id depoAdWrapper
@@ -82,7 +81,6 @@ id txtHosgeldin
 id txtSifremiUnuttum
 id urunKategori
 id urunkategoriWrapper
-id veriOkuma
 layout activity_depo_ekle
 layout activity_home_page
 layout activity_kayit_ol

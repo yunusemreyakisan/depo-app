@@ -2752,7 +2752,6 @@ int id btnKaydol 0x7f080073
 int id btnKayitOl 0x7f080074
 int id btnStokBilgisi 0x7f080075
 int id btnUrunIslemleri 0x7f080076
-int id btnVeriOkuma 0x7f080077
 int id button 0x7f080078
 int id buttonPanel 0x7f080079
 int id cache_measures 0x7f08007a
@@ -3155,7 +3154,6 @@ int id up 0x7f080206
 int id urunKategori 0x7f080207
 int id urunkategoriWrapper 0x7f080208
 int id useLogo 0x7f080209
-int id veriOkuma 0x7f08020a
 int id vertical_only 0x7f08020b
 int id view_offset_helper 0x7f08020c
 int id view_transition 0x7f08020d

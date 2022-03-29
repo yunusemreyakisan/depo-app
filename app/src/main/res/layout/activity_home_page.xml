@@ -16,7 +16,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="0px"
+            android:layout_height="302dp"
             android:layout_weight="0.25"
             android:background="@drawable/rounded_corner">
             <!-- Header Text  -->
@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txtHosgeldin"
                     android:layout_marginLeft="30dp"
-                    android:text="Yunus Emre Yakışan"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="28sp"
                     android:textStyle="bold" />
@@ -105,27 +105,6 @@
                 app:iconGravity="end" />
 
 
-            <TextView
-                android:id="@+id/veriOkuma"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_below="@+id/btnVeriOkuma"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnVeriOkuma"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_below="@+id/btnStokBilgisi"
-                android:gravity=""
-                android:text="Veriyi Oku"
-                android:textAlignment="gravity"
-                app:cornerRadius="10dp"
-                app:icon="@drawable/ic_baseline_info_24"
-                app:iconGravity="end" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -139,7 +118,7 @@
             <androidx.appcompat.widget.SwitchCompat
                 android:layout_centerHorizontal="true"
                 android:id="@+id/bt_theme_switch"
-                android:layout_below="@id/btnVeriOkuma"
+                android:layout_below="@id/btnStokBilgisi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp" />
