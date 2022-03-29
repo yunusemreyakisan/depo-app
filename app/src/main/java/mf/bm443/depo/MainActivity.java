@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     // Giriş hatalı ise:
                                     Toast.makeText(getApplicationContext(),
-                                            "e-Mail veya Şifre Hatalı!",
+                                            "E-Mail veya Şifre Hatalı!",
                                             Toast.LENGTH_LONG)
                                             .show();
 

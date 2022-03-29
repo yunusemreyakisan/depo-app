@@ -3,7 +3,6 @@ package mf.bm443.depo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -15,6 +14,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class KayitOl extends AppCompatActivity {
     private Button KayitOl;
@@ -23,6 +26,7 @@ public class KayitOl extends AppCompatActivity {
     private TextInputEditText sifre;
     private TextInputEditText eMail;
     private TextInputEditText sifreYeniden;
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,23 +47,35 @@ public class KayitOl extends AppCompatActivity {
                 Toast.makeText(KayitOl.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
             } else if (password.length() < 6) {
                 Toast.makeText(KayitOl.this, "Şifre 6 karakterden daha uzun olmalı.", Toast.LENGTH_SHORT).show();
-            }else {
+            } else {
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    Intent intent = new Intent(KayitOl.this, MainActivity.class);
-                                    startActivity(intent);
-                                    Toast.makeText(KayitOl.this, "Hesap başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
-                                } else {
-                                    Toast.makeText(KayitOl.this, "Hesap oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-            }
 
-        });
+                                    //Veritabanına Canlı Kayıt Etme
+                                    String user_id = mAuth.getCurrentUser().getUid();
+                                    mDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id);
+                                    HashMap<String, String> userMap = new HashMap<>();
+                                    userMap.put("E-Mail", email);
+                                    userMap.put("Password", password);
+                                    userMap.put("Name", name);
+                                    mDatabase.setValue(userMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            if (task.isSuccessful()) {
+                                                Intent intent = new Intent(KayitOl.this, MainActivity.class);
+                                                startActivity(intent);
+                                                Toast.makeText(KayitOl.this, "Hesap başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
+                                            } else {
+                                                Toast.makeText(KayitOl.this, "Hesap oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    });
+                                }}
+                        });
+            }});
     }
 
 

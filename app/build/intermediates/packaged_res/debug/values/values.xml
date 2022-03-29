@@ -56,7 +56,9 @@
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight"/>
-    <style name="Theme.Depo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Depo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Depo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#6e080f</item>
         <item name="colorPrimaryVariant">@color/black</item>
@@ -68,12 +70,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-
+        <item name="background_color">#FFFFFF</item>
+        <item name="text_color">#000000</item>
     </style>
-    <style name="Theme.Depo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="Theme.Depo.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style name="Theme.Depo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <declare-styleable name="dark_theme">
+        <attr format="color" name="background_color"/>
+        <attr format="color" name="text_color"/>
+    </declare-styleable>
 </resources>
