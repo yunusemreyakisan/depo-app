@@ -1,7 +1,8 @@
 package mf.bm443.depo;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.TextView;
@@ -20,15 +21,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.List;
-
 public class HomePage extends AppCompatActivity {
 
     private TextView name, email;
     SwitchCompat switchCompat;
     private DatabaseReference mReferance;
-    ArrayAdapter<String> adapter;
-    List<String> itemlist;
+    private Button btnDepoIslemleri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +45,21 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         initComponents();
-        veriOkuma();
+       // veriOkuma();
         switchThemes();
+        depoIslemleri();
     }
+
+    private void depoIslemleri() {
+        btnDepoIslemleri.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(HomePage.this, Depolarim.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 
     private void switchThemes() {
         switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -73,7 +83,7 @@ public class HomePage extends AppCompatActivity {
     }
 
     //Burası ÖNEMLİ! Beyaz ekran verip başlangıca atıyor.
-    private void veriOkuma() {
+   /* private void veriOkuma() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         mReferance = FirebaseDatabase.getInstance().getReference("Users").child("Name");
         mReferance.addValueEventListener(new ValueEventListener() {
@@ -90,11 +100,13 @@ public class HomePage extends AppCompatActivity {
         });
     }
 
+    */
+
 
     private void initComponents() {
         switchCompat = findViewById(R.id.bt_theme_switch);
         name = findViewById(R.id.txtFirebaseAd);
-
+        btnDepoIslemleri = findViewById(R.id.btnDepoIslemleri);
     }
 }
 

@@ -16,7 +16,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="302dp"
+            android:layout_height="101dp"
             android:layout_weight="0.25"
             android:background="@drawable/rounded_corner">
             <!-- Header Text  -->

@@ -24,7 +24,7 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnDepolarimaEkle;
 
   @NonNull
   public final TextInputEditText depoAd;
@@ -56,14 +56,14 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
   @NonNull
   public final TextInputLayout urunkategoriWrapper;
 
-  private ActivityDepoEkleBinding(@NonNull LinearLayout rootView, @NonNull Button button,
+  private ActivityDepoEkleBinding(@NonNull LinearLayout rootView, @NonNull Button btnDepolarimaEkle,
       @NonNull TextInputEditText depoAd, @NonNull TextInputLayout depoAdWrapper,
       @NonNull TextInputEditText depoAdres, @NonNull TextInputLayout depoAdresWrapper,
       @NonNull TextInputEditText depoBuyukluk, @NonNull TextInputLayout depoBuyuklukWrapper,
       @NonNull ImageView imageView, @NonNull TextView txtGirisYap,
       @NonNull TextInputEditText urunKategori, @NonNull TextInputLayout urunkategoriWrapper) {
     this.rootView = rootView;
-    this.button = button;
+    this.btnDepolarimaEkle = btnDepolarimaEkle;
     this.depoAd = depoAd;
     this.depoAdWrapper = depoAdWrapper;
     this.depoAdres = depoAdres;
@@ -103,9 +103,9 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnDepolarimaEkle;
+      Button btnDepolarimaEkle = ViewBindings.findChildViewById(rootView, id);
+      if (btnDepolarimaEkle == null) {
         break missingId;
       }
 
@@ -169,9 +169,9 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDepoEkleBinding((LinearLayout) rootView, button, depoAd, depoAdWrapper,
-          depoAdres, depoAdresWrapper, depoBuyukluk, depoBuyuklukWrapper, imageView, txtGirisYap,
-          urunKategori, urunkategoriWrapper);
+      return new ActivityDepoEkleBinding((LinearLayout) rootView, btnDepolarimaEkle, depoAd,
+          depoAdWrapper, depoAdres, depoAdresWrapper, depoBuyukluk, depoBuyuklukWrapper, imageView,
+          txtGirisYap, urunKategori, urunkategoriWrapper);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

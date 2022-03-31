@@ -13,6 +13,9 @@
             android:name=".DepoEkle"
             android:exported="true" />
         <activity
+            android:name=".Depolarim"
+            android:exported="true" />
+        <activity
             android:name=".KayitOl"
             android:exported="true"/>
         <activity

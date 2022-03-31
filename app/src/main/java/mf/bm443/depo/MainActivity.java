@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,21 +12,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.GoogleAuthProvider;
 
 public class MainActivity extends AppCompatActivity {
+
 
     FirebaseAuth mAuth;
     private Button girisYap, kaydol, signWithGoogle;
@@ -47,20 +40,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Google Giriş Bağlantısı
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
+       /* GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                //.requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
+                .requestId()
                 .build();
 
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        mAuth = FirebaseAuth.getInstance();
+        mGoogleSignInClient = GoogleSignIn.getClient(MainActivity.this, gso);
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+
+        */
 
 
         initComponents();
         btnKaydolIslevi();
         sifremiUnuttum();
         btnGirisYapIslevi();
-        btnGoogleGirisIslevi();
+        //btnGoogleGirisIslevi();
     }
 
     private void btnKaydolIslevi() {
@@ -156,7 +153,57 @@ public class MainActivity extends AppCompatActivity {
 
 
     //Google Giriş İşlemi
-    private void btnGoogleGirisIslevi() {
+  /*  private void btnGoogleGirisIslevi() {
+        signWithGoogle.setOnClickListener(view -> sign());
+    }
+
+    private void sign() {
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == RC_SIGN_IN && resultCode == RESULT_OK) {
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            task.addOnSuccessListener(new OnSuccessListener<GoogleSignInAccount>() {
+                @Override
+                public void onSuccess(GoogleSignInAccount googleSignInAccount) {
+                    Log.d(TAG, "signInWithGoogle:success");
+                    Toast.makeText(MainActivity.this, "Giriş Başarılı", Toast.LENGTH_SHORT).show();
+                    GoogleSignInAccount result = task.getResult();
+                    String email = result.getEmail();
+                    Account account = result.getAccount();
+                    updateUI(account);
+
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Log.w(TAG, "signInWithGoogle:failure", task.getException());
+                    updateUI(null);
+                }
+            });
+        }
+    }
+
+    public void updateUI(Account account){
+        if(account != null){
+            Toast.makeText(this,"Başarıyla bağlandı.",Toast.LENGTH_LONG).show();
+            startActivity(new Intent(this,HomePage.class));
+
+        }else {
+            Toast.makeText(this,"Google ile bağlanılamadı.",Toast.LENGTH_LONG).show();
+        }
+
+    }
+
+   */
+
+
+//My Codes
+   /* private void btnGoogleGirisIslevi() {
         signWithGoogle.setOnClickListener(view -> sign());
     }
 
@@ -201,6 +248,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
+
+    */
 
 
 }
