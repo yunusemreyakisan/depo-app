@@ -2746,13 +2746,14 @@ int id browser_actions_menu_items 0x7f08006d
 int id browser_actions_menu_view 0x7f08006e
 int id bt_theme_switch 0x7f08006f
 int id btnDepoIslemleri 0x7f080070
+int id btnDepolarimaEkle 0x7f08021e
 int id btnGirisYap 0x7f080071
 int id btnGoogleGiris 0x7f080072
 int id btnKaydol 0x7f080073
 int id btnKayitOl 0x7f080074
 int id btnStokBilgisi 0x7f080075
 int id btnUrunIslemleri 0x7f080076
-int id button 0x7f080078
+int id btnYeniDepoEkle 0x7f08021d
 int id buttonPanel 0x7f080079
 int id cache_measures 0x7f08007a
 int id callMeasure 0x7f08007b
@@ -3260,6 +3261,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_depo_ekle 0x7f0b001c
+int layout activity_depolarim 0x7f0b0083
 int layout activity_home_page 0x7f0b001d
 int layout activity_kayit_ol 0x7f0b001e
 int layout activity_main 0x7f0b001f

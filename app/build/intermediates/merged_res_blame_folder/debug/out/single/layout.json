@@ -8,6 +8,10 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_depolarim.xml",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depolarim.xml"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_main.xml"
     },

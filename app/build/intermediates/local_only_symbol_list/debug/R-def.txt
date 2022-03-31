@@ -48,13 +48,14 @@ id adSoyadWrapper
 id beniHatirlaCheckbox
 id bt_theme_switch
 id btnDepoIslemleri
+id btnDepolarimaEkle
 id btnGirisYap
 id btnGoogleGiris
 id btnKaydol
 id btnKayitOl
 id btnStokBilgisi
 id btnUrunIslemleri
-id button
+id btnYeniDepoEkle
 id depoAd
 id depoAdWrapper
 id depoAdres
@@ -82,6 +83,7 @@ id txtSifremiUnuttum
 id urunKategori
 id urunkategoriWrapper
 layout activity_depo_ekle
+layout activity_depolarim
 layout activity_home_page
 layout activity_kayit_ol
 layout activity_main

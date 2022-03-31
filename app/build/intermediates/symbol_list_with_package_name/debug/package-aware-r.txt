@@ -2747,13 +2747,14 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id bt_theme_switch
 id btnDepoIslemleri
+id btnDepolarimaEkle
 id btnGirisYap
 id btnGoogleGiris
 id btnKaydol
 id btnKayitOl
 id btnStokBilgisi
 id btnUrunIslemleri
-id button
+id btnYeniDepoEkle
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3261,6 +3262,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_depo_ekle
+layout activity_depolarim
 layout activity_home_page
 layout activity_kayit_ol
 layout activity_main

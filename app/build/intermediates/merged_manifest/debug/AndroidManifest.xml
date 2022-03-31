@@ -29,6 +29,9 @@
             android:name="mf.bm443.depo.DepoEkle"
             android:exported="true" />
         <activity
+            android:name="mf.bm443.depo.Depolarim"
+            android:exported="true" />
+        <activity
             android:name="mf.bm443.depo.KayitOl"
             android:exported="true" />
         <activity
@@ -123,11 +126,6 @@
             android:exported="false"
             android:initOrder="100" />
 
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
             android:enabled="true"
@@ -143,6 +141,11 @@
             android:enabled="true"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data
             android:name="com.google.android.gms.version"
