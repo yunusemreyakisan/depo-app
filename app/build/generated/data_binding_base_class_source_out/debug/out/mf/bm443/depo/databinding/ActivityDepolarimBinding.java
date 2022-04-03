@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -25,15 +26,20 @@ public final class ActivityDepolarimBinding implements ViewBinding {
   public final Button btnYeniDepoEkle;
 
   @NonNull
+  public final RecyclerView depoListesi;
+
+  @NonNull
   public final ImageView imageView;
 
   @NonNull
   public final TextView txtGirisYap;
 
   private ActivityDepolarimBinding(@NonNull LinearLayout rootView, @NonNull Button btnYeniDepoEkle,
-      @NonNull ImageView imageView, @NonNull TextView txtGirisYap) {
+      @NonNull RecyclerView depoListesi, @NonNull ImageView imageView,
+      @NonNull TextView txtGirisYap) {
     this.rootView = rootView;
     this.btnYeniDepoEkle = btnYeniDepoEkle;
+    this.depoListesi = depoListesi;
     this.imageView = imageView;
     this.txtGirisYap = txtGirisYap;
   }
@@ -71,6 +77,12 @@ public final class ActivityDepolarimBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.depoListesi;
+      RecyclerView depoListesi = ViewBindings.findChildViewById(rootView, id);
+      if (depoListesi == null) {
+        break missingId;
+      }
+
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
@@ -83,8 +95,8 @@ public final class ActivityDepolarimBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDepolarimBinding((LinearLayout) rootView, btnYeniDepoEkle, imageView,
-          txtGirisYap);
+      return new ActivityDepolarimBinding((LinearLayout) rootView, btnYeniDepoEkle, depoListesi,
+          imageView, txtGirisYap);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

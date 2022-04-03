@@ -17,7 +17,6 @@
     <string name="activity_kayit_ol_lbl_kayit_ol">Kayıt Ol</string>
     <string name="title_activity_bottom_nav_bar">Bottom_NavBar_Activity</string>
 <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="copyright">Copyright © 2022 All Rights Reserved.</string>
     <string name="splash_info">Splash Depo White Logo</string>
     <string name="logo">Logo</string>
@@ -28,4 +27,8 @@
     <string name="btn_giris_yap">Giriş Yap</string>
     <string name="btn_google_giris">Google Giriş</string>
     <string name="btnKaydol">Kaydol</string>
+    <string name="txtHosgeldniz">Hoşgeldiniz</string>
+    <string name="cdTodo">TODO</string>
+    <string name="txtDepoIslemleri">Depo İşlemleri</string>
+    <string name="txtUrunIslemleri">Ürün İşlemleri</string>
 </resources>

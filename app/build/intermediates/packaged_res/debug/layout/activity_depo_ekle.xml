@@ -56,8 +56,8 @@
                     android:id="@+id/depoAd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/mainMarginBottom"
-                    android:backgroundTint="@color/editText_color"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:backgroundTint="@color/editTextColor"
                     android:hint="DEPO ADI" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,8 +77,8 @@
                     android:id="@+id/depoAdres"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/mainMarginBottom"
-                    android:backgroundTint="@color/editText_color"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:backgroundTint="@color/editTextColor"
                     android:hint="DEPO ADRES"
                     android:inputType="textLongMessage" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -98,8 +98,8 @@
                     android:id="@+id/depoBuyukluk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/mainMarginBottom"
-                    android:backgroundTint="@color/editText_color"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:backgroundTint="#dfdfde"
                     android:hint="DEPO BÜYÜKLÜĞÜ (KG)"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -121,10 +121,10 @@
                     android:id="@+id/urunKategori"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/mainMarginBottom"
-                    android:backgroundTint="@color/editText_color"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:backgroundTint="@color/editTextColor"
                     android:hint="DEPO ÜRÜN KATEGORİSİ"
-                    android:inputType="textPassword" />
+                    android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <RelativeLayout

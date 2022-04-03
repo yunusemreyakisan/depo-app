@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-appcheck-interop:16.0.0-beta05@aar">
+    <CLASSES>
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/02d816f68e65c0e704b86081c9f912b7/transformed/firebase-appcheck-interop-16.0.0-beta05/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/02d816f68e65c0e704b86081c9f912b7/transformed/firebase-appcheck-interop-16.0.0-beta05/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/02d816f68e65c0e704b86081c9f912b7/transformed/firebase-appcheck-interop-16.0.0-beta05/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.firebase/firebase-appcheck-interop/16.0.0-beta05/73588cc5b84529582bbbd56cbfa7bc35fb71f424/firebase-appcheck-interop-16.0.0-beta05-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.firebase/firebase-appcheck-interop/16.0.0-beta05/f299a8db9efdb5d8c124b7698e440f804f443537/firebase-appcheck-interop-16.0.0-beta05-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

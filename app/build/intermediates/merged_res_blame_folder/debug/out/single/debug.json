@@ -4,10 +4,6 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_info_24.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_baseline_info_24.xml"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
@@ -24,8 +20,8 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logo.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_logo.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_compare_arrows_24.xml.flat",
@@ -44,14 +40,6 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_home_page.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_content_paste_24.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_baseline_content_paste_24.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_btndepobackground.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\btndepobackground.png"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_depolarim.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depolarim.xml"
     },
@@ -64,24 +52,12 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_depo.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_depo.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_corner.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\rounded_corner.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_depo_foreground.png.flat",
@@ -116,10 +92,6 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_google.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_google.xml"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_kayit_ol.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_kayit_ol.xml"
     },
@@ -136,12 +108,12 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_depo_foreground.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_depo_foreground.png"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_item.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\item.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_depo_foreground.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_depo_foreground.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",

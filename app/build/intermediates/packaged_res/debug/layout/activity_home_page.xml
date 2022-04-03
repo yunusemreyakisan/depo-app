@@ -17,8 +17,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="101dp"
-            android:layout_weight="0.25"
-            android:background="@drawable/rounded_corner">
+            android:layout_weight="0.25">
             <!-- Header Text  -->
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -31,8 +30,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
 
-                    android:text="Hoşgeldiniz"
-                    android:textColor="@color/white"
+                    android:text="@string/txtHosgeldniz"
+                    android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="normal" />
 
@@ -41,8 +40,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txtHosgeldin"
-                    android:layout_marginLeft="30dp"
-                    android:text=""
+                    android:layout_marginStart="30dp"
+                    android:text="TextView"
                     android:textColor="@color/white"
                     android:textSize="28sp"
                     android:textStyle="bold" />
@@ -52,10 +51,10 @@
                 android:id="@+id/imageDepoWhiteLogo"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="35dp"
-                android:contentDescription="TODO"
-                app:srcCompat="@drawable/depologowhite" />
+                android:contentDescription="@string/cdTodo"
+                app:srcCompat="@drawable/logo" />
 
         </RelativeLayout>
 
@@ -73,7 +72,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="10dp"
-                android:text="Depo İşlemleri"
+                android:text="@string/txtDepoIslemleri"
                 android:textAlignment="gravity"
                 android:textSize="20sp"
                 app:cornerRadius="10dp"
@@ -86,7 +85,7 @@
                 android:layout_height="150dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:text="Ürün İşlemleri"
+                android:text="@string/txtUrunIslemleri"
                 android:textSize="20sp"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/ic_baseline_compare_arrows_24"
@@ -101,7 +100,6 @@
                 android:text="Stok Bilgisi"
                 android:textAlignment="gravity"
                 app:cornerRadius="10dp"
-                app:icon="@drawable/ic_baseline_info_24"
                 app:iconGravity="end" />
 
 

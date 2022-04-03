@@ -3,8 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="blueButtonColor">#52a9e3</color>
     <color name="btnColor">#6e080f</color>
-    <color name="editTextColor">#616161</color>
-    <color name="editText_color">#F4F4F4</color>
+    <color name="editTextColor">#dfdfde</color>
     <color name="orangeButtonColor">#f2913d</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -20,7 +19,6 @@
     <dimen name="depo_logo_marginTop">30dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="genel_activity_margin">40dp</dimen>
-    <dimen name="mainMarginBottom">10dp</dimen>
     <dimen name="marginBottom">10dp</dimen>
     <string name="activity_kayit_ol_lbl_kayit_ol">Kayıt Ol</string>
     <string name="app_name">Depo</string>
@@ -28,6 +26,7 @@
     <string name="btnKaydol">Kaydol</string>
     <string name="btn_giris_yap">Giriş Yap</string>
     <string name="btn_google_giris">Google Giriş</string>
+    <string name="cdTodo">TODO</string>
     <string name="copyright">Copyright © 2022 All Rights Reserved.</string>
     <string name="default_web_client_id" translatable="false">41520331102-206cubelalfgdfe5uhnhr2l2d4mr2fs4.apps.googleusercontent.com</string>
     <string name="email_text">E-Mail</string>
@@ -37,7 +36,6 @@
     <string name="google_app_id" translatable="false">1:41520331102:android:493ee8ff1ab50e8050f7cf</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC_mMVvFFAOyxECXMev36j8ql-hg8EJOI8</string>
     <string name="google_storage_bucket" translatable="false">depoenvanteryonetimi.appspot.com</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="hey_giris_yap">Hey, \nGiriş yap.</string>
@@ -55,7 +53,15 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
+    <string name="txtDepoIslemleri">Depo İşlemleri</string>
+    <string name="txtHosgeldniz">Hoşgeldiniz</string>
+    <string name="txtUrunIslemleri">Ürün İşlemleri</string>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight"/>
+    <style name="AppTheme.Launcher" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
     <style name="Theme.Depo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.Depo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Theme.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">

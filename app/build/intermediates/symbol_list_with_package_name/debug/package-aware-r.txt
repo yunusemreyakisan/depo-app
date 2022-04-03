@@ -887,6 +887,7 @@ attr popupMenuBackground
 attr popupMenuStyle
 attr popupTheme
 attr popupWindowStyle
+attr postSplashScreenTheme
 attr prefixText
 attr prefixTextAppearance
 attr prefixTextColor
@@ -966,6 +967,7 @@ attr spanCount
 attr spinBars
 attr spinnerDropDownItemStyle
 attr spinnerStyle
+attr splashScreenIconSize
 attr splitLayoutDirection
 attr splitMinSmallestWidth
 attr splitMinWidth
@@ -1210,6 +1212,10 @@ attr windowFixedWidthMinor
 attr windowMinWidthMajor
 attr windowMinWidthMinor
 attr windowNoTitle
+attr windowSplashScreenAnimatedIcon
+attr windowSplashScreenAnimationDuration
+attr windowSplashScreenBackground
+attr windowSplashScreenIconBackgroundColor
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
@@ -1338,7 +1344,6 @@ color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
 color editTextColor
-color editText_color
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -2172,7 +2177,6 @@ dimen m3_sys_typescale_title_small_letter_spacing
 dimen m3_sys_typescale_title_small_text_size
 dimen m3_timepicker_display_stroke_width
 dimen m3_timepicker_window_elevation
-dimen mainMarginBottom
 dimen marginBottom
 dimen material_bottom_sheet_max_width
 dimen material_clock_display_padding
@@ -2422,6 +2426,13 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen sliding_pane_detail_pane_width
+dimen splashscreen_icon_mask_size_no_background
+dimen splashscreen_icon_mask_size_with_background
+dimen splashscreen_icon_mask_stroke_no_background
+dimen splashscreen_icon_mask_stroke_with_background
+dimen splashscreen_icon_size
+dimen splashscreen_icon_size_no_background
+dimen splashscreen_icon_size_with_background
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
@@ -2536,7 +2547,6 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable btndepobackground
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2556,6 +2566,8 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable compat_splash_screen
+drawable compat_splash_screen_no_icon_background
 drawable depoarkaplan
 drawable depologowhite
 drawable design_fab_background
@@ -2568,16 +2580,12 @@ drawable googleg_standard_color_18
 drawable ic_baseline_add_24
 drawable ic_baseline_auto_delete_24
 drawable ic_baseline_compare_arrows_24
-drawable ic_baseline_content_paste_24
-drawable ic_baseline_info_24
 drawable ic_baseline_warehouse
 drawable ic_clock_black_24dp
-drawable ic_dashboard_black_24dp
-drawable ic_google
-drawable ic_home_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logo
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -2585,8 +2593,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_notifications_black_24dp
 drawable ic_splash_screen_dark
+drawable icon_background
 drawable logo
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -2629,7 +2637,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable rounded_corner
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2638,7 +2645,6 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id CopyrightText
 id FUNCTION
 id META
 id NO_DEBUG
@@ -2749,7 +2755,6 @@ id bt_theme_switch
 id btnDepoIslemleri
 id btnDepolarimaEkle
 id btnGirisYap
-id btnGoogleGiris
 id btnKaydol
 id btnKayitOl
 id btnStokBilgisi
@@ -2807,11 +2812,13 @@ id deltaRelative
 id dependency_ordering
 id depoAd
 id depoAdWrapper
+id depoAdi
 id depoAdres
 id depoAdresWrapper
 id depoBuyukluk
 id depoBuyuklukWrapper
-id depoLogoSplash
+id depoKategorisi
+id depoListesi
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3071,6 +3078,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id splashscreen_icon_view
 id spline
 id split_action_bar
 id spread
@@ -3181,6 +3189,7 @@ integer bottom_sheet_slide_duration
 integer cancel_button_image_alpha
 integer config_navAnimTime
 integer config_tooltipAnimTime
+integer default_icon_animation_duration
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
 integer google_play_services_version
@@ -3266,7 +3275,6 @@ layout activity_depolarim
 layout activity_home_page
 layout activity_kayit_ol
 layout activity_main
-layout activity_splash_screen
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3285,6 +3293,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3349,6 +3358,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout splash_screen_view
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -3410,6 +3420,7 @@ string bottomsheet_action_expand_halfway
 string btnKaydol
 string btn_giris_yap
 string btn_google_giris
+string cdTodo
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3446,7 +3457,6 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-string hello_blank_fragment
 string hello_first_fragment
 string hello_second_fragment
 string hey_giris_yap
@@ -3557,6 +3567,9 @@ string title_activity_hesap_yok
 string title_dashboard
 string title_home
 string title_notifications
+string txtDepoIslemleri
+string txtHosgeldniz
+string txtUrunIslemleri
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -3566,6 +3579,7 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
 style AppTheme
+style AppTheme_Launcher
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -3673,6 +3687,9 @@ style Base_Theme_MaterialComponents_Light_Dialog_Bridge
 style Base_Theme_MaterialComponents_Light_Dialog_FixedSize
 style Base_Theme_MaterialComponents_Light_Dialog_MinWidth
 style Base_Theme_MaterialComponents_Light_DialogWhenLarge
+style Base_Theme_SplashScreen
+style Base_Theme_SplashScreen_DayNight
+style Base_Theme_SplashScreen_Light
 style Base_ThemeOverlay_AppCompat
 style Base_ThemeOverlay_AppCompat_ActionBar
 style Base_ThemeOverlay_AppCompat_Dark
@@ -3831,6 +3848,10 @@ style Base_Widget_MaterialComponents_Snackbar
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
+style Base_v21_Theme_SplashScreen
+style Base_v21_Theme_SplashScreen_Light
+style Base_v27_Theme_SplashScreen
+style Base_v27_Theme_SplashScreen_Light
 style CardView
 style CardView_Dark
 style CardView_Light
@@ -4140,6 +4161,9 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_SplashScreen
+style Theme_SplashScreen_Common
+style Theme_SplashScreen_IconBackground
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

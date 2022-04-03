@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-analytics:20.1.2@aar">
+    <CLASSES>
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/fbe86e1097a4ed3d024acb6bb005f703/transformed/firebase-analytics-20.1.2/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/fbe86e1097a4ed3d024acb6bb005f703/transformed/firebase-analytics-20.1.2/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/fbe86e1097a4ed3d024acb6bb005f703/transformed/firebase-analytics-20.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.firebase/firebase-analytics/20.1.2/ace98f39b262c59be4be4d52b871d1ba5dfff723/firebase-analytics-20.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

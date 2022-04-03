@@ -16,10 +16,11 @@
         <item name="text_color">#000000</item>
     </style>
 
-   <!-- <style name="Theme.Light.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style> -->
+    <style name="AppTheme.Launcher" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
 
     <style name="Theme.Depo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

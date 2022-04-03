@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-measurement-api:20.1.2@aar">
+    <CLASSES>
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/964bc023a7d9b0df636a6f055a5c664c/transformed/play-services-measurement-api-20.1.2/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/964bc023a7d9b0df636a6f055a5c664c/transformed/play-services-measurement-api-20.1.2/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/964bc023a7d9b0df636a6f055a5c664c/transformed/play-services-measurement-api-20.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-api/20.1.2/b646ec23068483acdeb8467ab8e0b43dbdf6937c/play-services-measurement-api-20.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
