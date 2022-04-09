@@ -4,9 +4,9 @@
       <root url="jar://D:/Program Files/Clock/caches/transforms-3/695d999fc16fbb08b493f13d4049f924/transformed/fragment-1.4.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/695d999fc16fbb08b493f13d4049f924/transformed/fragment-1.4.1/AndroidManifest.xml" />
       <root url="jar://D:/Program Files/Clock/caches/transforms-3/695d999fc16fbb08b493f13d4049f924/transformed/fragment-1.4.1/jars/classes.jar!/" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/695d999fc16fbb08b493f13d4049f924/transformed/fragment-1.4.1/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/695d999fc16fbb08b493f13d4049f924/transformed/fragment-1.4.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

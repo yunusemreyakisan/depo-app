@@ -23,24 +23,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\4d7c8f18b737a4b0c946b3de53f9ec17\\transformed\\navigation-ui-2.4.1\\res\\values-pt-rBR\\values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,167",
-                        "endColumns": "111,119",
-                        "endOffsets": "162,282"
-                    },
-                    "to": {
-                        "startLines": "104,105",
-                        "startColumns": "4,4",
-                        "startOffsets": "9621,9733",
-                        "endColumns": "111,119",
-                        "endOffsets": "9728,9848"
-                    }
-                },
-                {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\13817dd7ba3be49b3c4499da839bb44c\\transformed\\play-services-base-18.0.1\\res\\values-pt-rBR\\values.xml",
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\cfcefcdeb2e04c1961c8ec4e582b07e5\\transformed\\jetified-play-services-base-18.0.1\\res\\values-pt-rBR\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -54,6 +37,23 @@
                         "startOffsets": "3402,3507,3655,3782,3890,4057,4187,4309,4559,4729,4837,5001,5131,5288,5445,5514,5580",
                         "endColumns": "104,147,126,107,166,129,121,104,169,107,163,129,156,156,68,65,83",
                         "endOffsets": "3502,3650,3777,3885,4052,4182,4304,4409,4724,4832,4996,5126,5283,5440,5509,5575,5659"
+                    }
+                },
+                {
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\25e96eef9fdb9773c187041558004d56\\transformed\\navigation-ui-2.4.2\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,167",
+                        "endColumns": "111,119",
+                        "endOffsets": "162,282"
+                    },
+                    "to": {
+                        "startLines": "104,105",
+                        "startColumns": "4,4",
+                        "startOffsets": "9621,9733",
+                        "endColumns": "111,119",
+                        "endOffsets": "9728,9848"
                     }
                 },
                 {
@@ -74,23 +74,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\0535a9878a0bb96f02aebd3a395af8f1\\transformed\\play-services-basement-18.0.0\\res\\values-pt-rBR\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "199",
-                        "endColumns": "140",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4414",
-                        "endColumns": "144",
-                        "endOffsets": "4554"
-                    }
-                },
-                {
                     "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\fb9aa2ab3966fe894c67bd9003ea76a4\\transformed\\core-1.7.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2",
@@ -105,6 +88,23 @@
                         "startOffsets": "10016",
                         "endColumns": "100",
                         "endOffsets": "10112"
+                    }
+                },
+                {
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\c778950196e222eebee26041fd6ff081\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-pt-rBR\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "199",
+                        "endColumns": "140",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4414",
+                        "endColumns": "144",
+                        "endOffsets": "4554"
                     }
                 }
             ]

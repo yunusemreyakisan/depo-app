@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/depoarkaplan"
     android:orientation="vertical"
+    android:background="@drawable/arkaplan"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -92,7 +92,7 @@
                             android:hint="@string/email_text"
                             android:inputType="textEmailAddress"
                             android:minHeight="48dp"
-                            android:textColorHint="@color/editTextColor" />
+                            android:textColorHint="#616161" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout

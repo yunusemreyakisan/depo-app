@@ -4,20 +4,37 @@
             "outputFile": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
             "map": [
                 {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\0535a9878a0bb96f02aebd3a395af8f1\\transformed\\play-services-basement-18.0.0\\res\\values-hy\\values.xml",
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\cfcefcdeb2e04c1961c8ec4e582b07e5\\transformed\\jetified-play-services-base-18.0.1\\res\\values-hy\\values.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "146",
-                        "endOffsets": "341"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,295,456,586,690,840,972,1095,1204,1367,1471,1635,1767,1925,2087,2148,2211",
+                        "endColumns": "101,160,129,103,149,131,122,108,162,103,163,131,157,161,60,62,77",
+                        "endOffsets": "294,455,585,689,839,971,1094,1203,1366,1470,1634,1766,1924,2086,2147,2210,2288"
                     },
                     "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4408",
-                        "endColumns": "150",
-                        "endOffsets": "4554"
+                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3365,3471,3636,3770,3878,4032,4168,4295,4559,4726,4834,5002,5138,5300,5466,5531,5598",
+                        "endColumns": "105,164,133,107,153,135,126,112,166,107,167,135,161,165,64,66,81",
+                        "endOffsets": "3466,3631,3765,3873,4027,4163,4290,4403,4721,4829,4997,5133,5295,5461,5526,5593,5675"
+                    }
+                },
+                {
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\25e96eef9fdb9773c187041558004d56\\transformed\\navigation-ui-2.4.2\\res\\values-hy\\values-hy.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "104,105",
+                        "startColumns": "4,4",
+                        "startOffsets": "9594,9700",
+                        "endColumns": "105,116",
+                        "endOffsets": "9695,9812"
                     }
                 },
                 {
@@ -38,20 +55,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\13817dd7ba3be49b3c4499da839bb44c\\transformed\\play-services-base-18.0.1\\res\\values-hy\\values.xml",
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\c778950196e222eebee26041fd6ff081\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-hy\\values.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,295,456,586,690,840,972,1095,1204,1367,1471,1635,1767,1925,2087,2148,2211",
-                        "endColumns": "101,160,129,103,149,131,122,108,162,103,163,131,157,161,60,62,77",
-                        "endOffsets": "294,455,585,689,839,971,1094,1203,1366,1470,1634,1766,1924,2086,2147,2210,2288"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "146",
+                        "endOffsets": "341"
                     },
                     "to": {
-                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3365,3471,3636,3770,3878,4032,4168,4295,4559,4726,4834,5002,5138,5300,5466,5531,5598",
-                        "endColumns": "105,164,133,107,153,135,126,112,166,107,167,135,161,165,64,66,81",
-                        "endOffsets": "3466,3631,3765,3873,4027,4163,4290,4403,4721,4829,4997,5133,5295,5461,5526,5593,5675"
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4408",
+                        "endColumns": "150",
+                        "endOffsets": "4554"
                     }
                 },
                 {
@@ -71,23 +88,6 @@
                         "endLines": "5,33,34,35,36,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,106",
                         "endColumns": "12,79,94,129,80,63,96,84,61,86,63,60,66,60,53,121,56,59,53,80,134,83,84,105,74,74,94,66,65,73,79,85,70,75,75,76,87,79,95,95,73,77,99,50,68,86,90,61,63,62,104,100,99,104,84",
                         "endOffsets": "265,3054,3149,3279,3360,5739,5836,5921,5983,6070,6134,6195,6262,6323,6377,6499,6556,6616,6670,6751,6886,6970,7055,7161,7236,7311,7406,7473,7539,7613,7693,7779,7850,7926,8002,8079,8167,8247,8343,8439,8513,8591,8691,8742,8811,8898,8989,9051,9115,9178,9283,9384,9484,9589,9897"
-                    }
-                },
-                {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\4d7c8f18b737a4b0c946b3de53f9ec17\\transformed\\navigation-ui-2.4.1\\res\\values-hy\\values-hy.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "104,105",
-                        "startColumns": "4,4",
-                        "startOffsets": "9594,9700",
-                        "endColumns": "105,116",
-                        "endOffsets": "9695,9812"
                     }
                 },
                 {

@@ -114,6 +114,5 @@ public class KayitOl extends AppCompatActivity {
         AdiSoyadi = findViewById(R.id.adSoyad);
         sifre = findViewById(R.id.sifre);
         eMail = findViewById(R.id.ePosta);
-        sifreYeniden = findViewById(R.id.sifreAgain);
     }
 }

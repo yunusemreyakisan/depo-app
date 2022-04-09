@@ -4,7 +4,24 @@
             "outputFile": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-am\\values-am.xml",
             "map": [
                 {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\0535a9878a0bb96f02aebd3a395af8f1\\transformed\\play-services-basement-18.0.0\\res\\values-am\\values.xml",
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\cfcefcdeb2e04c1961c8ec4e582b07e5\\transformed\\jetified-play-services-base-18.0.1\\res\\values-am\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,291,426,544,642,765,884,988,1086,1210,1309,1450,1569,1700,1823,1879,1932",
+                        "endColumns": "97,134,117,97,122,118,103,97,123,98,140,118,130,122,55,52,66",
+                        "endOffsets": "290,425,543,641,764,883,987,1085,1209,1308,1449,1568,1699,1822,1878,1931,1998"
+                    },
+                    "to": {
+                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3227,3329,3468,3590,3692,3819,3942,4050,4284,4412,4515,4660,4783,4918,5045,5105,5162",
+                        "endColumns": "101,138,121,101,126,122,107,101,127,102,144,122,134,126,59,56,70",
+                        "endOffsets": "3324,3463,3585,3687,3814,3937,4045,4147,4407,4510,4655,4778,4913,5040,5100,5157,5228"
+                    }
+                },
+                {
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\c778950196e222eebee26041fd6ff081\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-am\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -18,6 +35,23 @@
                         "startOffsets": "4152",
                         "endColumns": "131",
                         "endOffsets": "4279"
+                    }
+                },
+                {
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\25e96eef9fdb9773c187041558004d56\\transformed\\navigation-ui-2.4.2\\res\\values-am\\values-am.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,159",
+                        "endColumns": "103,109",
+                        "endOffsets": "154,264"
+                    },
+                    "to": {
+                        "startLines": "104,105",
+                        "startColumns": "4,4",
+                        "startOffsets": "8828,8932",
+                        "endColumns": "103,109",
+                        "endOffsets": "8927,9037"
                     }
                 },
                 {
@@ -54,40 +88,6 @@
                         "endLines": "5,33,34,35,36,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,106",
                         "endColumns": "12,74,88,101,76,63,84,61,57,84,61,57,65,61,54,95,56,58,55,66,104,79,80,98,72,70,81,66,65,65,72,80,67,72,70,66,84,66,86,87,73,67,84,50,63,79,81,61,63,62,94,88,84,90,75",
                         "endOffsets": "261,2954,3043,3145,3222,5292,5377,5439,5497,5582,5644,5702,5768,5830,5885,5981,6038,6097,6153,6220,6325,6405,6486,6585,6658,6729,6811,6878,6944,7010,7083,7164,7232,7305,7376,7443,7528,7595,7682,7770,7844,7912,7997,8048,8112,8192,8274,8336,8400,8463,8558,8647,8732,8823,9113"
-                    }
-                },
-                {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\13817dd7ba3be49b3c4499da839bb44c\\transformed\\play-services-base-18.0.1\\res\\values-am\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,291,426,544,642,765,884,988,1086,1210,1309,1450,1569,1700,1823,1879,1932",
-                        "endColumns": "97,134,117,97,122,118,103,97,123,98,140,118,130,122,55,52,66",
-                        "endOffsets": "290,425,543,641,764,883,987,1085,1209,1308,1449,1568,1699,1822,1878,1931,1998"
-                    },
-                    "to": {
-                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3227,3329,3468,3590,3692,3819,3942,4050,4284,4412,4515,4660,4783,4918,5045,5105,5162",
-                        "endColumns": "101,138,121,101,126,122,107,101,127,102,144,122,134,126,59,56,70",
-                        "endOffsets": "3324,3463,3585,3687,3814,3937,4045,4147,4407,4510,4655,4778,4913,5040,5100,5157,5228"
-                    }
-                },
-                {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\4d7c8f18b737a4b0c946b3de53f9ec17\\transformed\\navigation-ui-2.4.1\\res\\values-am\\values-am.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,159",
-                        "endColumns": "103,109",
-                        "endOffsets": "154,264"
-                    },
-                    "to": {
-                        "startLines": "104,105",
-                        "startColumns": "4,4",
-                        "startOffsets": "8828,8932",
-                        "endColumns": "103,109",
-                        "endOffsets": "8927,9037"
                     }
                 },
                 {

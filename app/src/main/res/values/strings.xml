@@ -14,7 +14,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="activity_kayit_ol_lbl_kayit_ol">Kayıt Ol</string>
+    <string name="lbl_kayit_ol">Kayıt Ol</string>
     <string name="title_activity_bottom_nav_bar">Bottom_NavBar_Activity</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="copyright">Copyright © 2022 All Rights Reserved.</string>
@@ -31,4 +31,12 @@
     <string name="cdTodo">TODO</string>
     <string name="txtDepoIslemleri">Depo İşlemleri</string>
     <string name="txtUrunIslemleri">Ürün İşlemleri</string>
+    <string name="subtitle1">We are here to help you with an Android Source code</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="ad_soyad_hint">Ad-Soyad</string>
+    <string name="e_posta_hint">E-Posta</string>
+    <string name="CD_logo">Logo</string>
+    <string name="sifre_hint">Şifre</string>
+    <string name="kayit_ol_hint">KAYIT OL</string>
+    <string name="CD_logo_image">Logo Image</string>
 </resources>

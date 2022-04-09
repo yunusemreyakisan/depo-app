@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Light">
+
         <activity
             android:name=".DepoEkle"
             android:exported="true" />
@@ -17,19 +18,21 @@
             android:exported="true" />
         <activity
             android:name=".KayitOl"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".HomePage"
-            android:exported="true"/>
+            android:exported="true" />
 
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:theme="@style/Theme.Light"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

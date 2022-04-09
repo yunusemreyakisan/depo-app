@@ -18,13 +18,5 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_kayit_ol.xml",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_kayit_ol.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\depolar_listesi.xml",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\depolar_listesi.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item.xml",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\item.xml"
     }
 ]

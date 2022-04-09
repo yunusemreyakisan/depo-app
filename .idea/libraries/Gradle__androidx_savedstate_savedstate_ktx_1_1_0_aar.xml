@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.savedstate:savedstate-ktx:1.1.0@aar">
     <CLASSES>
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/9f0cc786c5ce4565f6ae54305b9852bd/transformed/savedstate-ktx-1.1.0/res" />
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/be36f3e3e59bec7191c6bc4835e203b0/transformed/savedstate-ktx-1.1.0/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/be36f3e3e59bec7191c6bc4835e203b0/transformed/savedstate-ktx-1.1.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/be36f3e3e59bec7191c6bc4835e203b0/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/58448167a64eae5245ec58247797def6/transformed/jetified-savedstate-ktx-1.1.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/58448167a64eae5245ec58247797def6/transformed/jetified-savedstate-ktx-1.1.0/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/58448167a64eae5245ec58247797def6/transformed/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

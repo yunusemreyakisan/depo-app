@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.databinding:viewbinding:7.1.2@aar">
     <CLASSES>
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/7dfcbb294bfdb21dcdc87e7dccf56b63/transformed/viewbinding-7.1.2/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/1424adf5c43f9ae0ddb7a5dd3ddb920d/transformed/viewbinding-7.1.2/AndroidManifest.xml" />
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/1424adf5c43f9ae0ddb7a5dd3ddb920d/transformed/viewbinding-7.1.2/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/1424adf5c43f9ae0ddb7a5dd3ddb920d/transformed/viewbinding-7.1.2/res" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/70e1783461a90d0e63aefef61a910023/transformed/jetified-viewbinding-7.1.2/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/70e1783461a90d0e63aefef61a910023/transformed/jetified-viewbinding-7.1.2/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/70e1783461a90d0e63aefef61a910023/transformed/jetified-viewbinding-7.1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

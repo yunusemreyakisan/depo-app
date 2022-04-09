@@ -151,7 +151,6 @@ attr backgroundSplit
 attr backgroundStacked
 attr backgroundTint
 attr backgroundTintMode
-attr background_color
 attr badgeGravity
 attr badgeRadius
 attr badgeStyle
@@ -1111,7 +1110,6 @@ attr textOutlineThickness
 attr textPanX
 attr textPanY
 attr textStartPadding
-attr text_color
 attr textureBlurFactor
 attr textureEffect
 attr textureHeight
@@ -1271,6 +1269,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blackTxt
 color blueButtonColor
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -1290,6 +1289,9 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -1346,8 +1348,10 @@ color dim_foreground_material_light
 color editTextColor
 color error_color_material_dark
 color error_color_material_light
+color fav
 color foreground_material_dark
 color foreground_material_light
+color grayTxt
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -1816,6 +1820,7 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color myfav
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
@@ -2537,6 +2542,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arkaplan
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -2582,6 +2588,7 @@ drawable ic_baseline_auto_delete_24
 drawable ic_baseline_compare_arrows_24
 drawable ic_baseline_warehouse
 drawable ic_clock_black_24dp
+drawable ic_kayitolresmi
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2812,12 +2819,10 @@ id deltaRelative
 id dependency_ordering
 id depoAd
 id depoAdWrapper
-id depoAdi
 id depoAdres
 id depoAdresWrapper
 id depoBuyukluk
 id depoBuyuklukWrapper
-id depoKategorisi
 id depoListesi
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -2908,6 +2913,7 @@ id item4
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id kayitOlLogo
 id kullaniciAdiWrapper
 id labeled
 id layout
@@ -3062,8 +3068,6 @@ id showCustom
 id showHome
 id showTitle
 id sifre
-id sifreAgain
-id sifreAgainWrapper
 id sifreWrapper
 id sin
 id skipCollapsed
@@ -3156,6 +3160,7 @@ id txtGirisYap
 id txtGrsEmail
 id txtGrsSifre
 id txtHosgeldin
+id txtKayitOl
 id txtSifremiUnuttum
 id unchecked
 id uniform
@@ -3293,7 +3298,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3383,6 +3387,8 @@ mipmap ic_depo_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string CD_logo
+string CD_logo_image
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3410,7 +3416,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string activity_kayit_ol_lbl_kayit_ol
+string ad_soyad_hint
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3446,6 +3452,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string copyright
 string default_web_client_id
+string e_posta_hint
 string email_text
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3453,6 +3460,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string first_fragment_label
 string gcm_defaultSenderId
+string get_started
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
@@ -3464,6 +3472,8 @@ string hide_bottom_view_on_scroll_behavior
 string hyperlink
 string icon_content_description
 string item_view_role_description
+string kayit_ol_hint
+string lbl_kayit_ol
 string logo
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium
@@ -3559,8 +3569,10 @@ string project_id
 string search_menu_title
 string second_fragment_label
 string sifre
+string sifre_hint
 string splash_info
 string status_bar_notification_info_overflow
+string subtitle1
 string title_activity_anasayfa
 string title_activity_bottom_nav_bar
 string title_activity_hesap_yok
@@ -3579,7 +3591,6 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
 style AppTheme
-style AppTheme_Launcher
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -4775,7 +4786,6 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
-styleable dark_theme background_color text_color
 styleable include constraintSet
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end

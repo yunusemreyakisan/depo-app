@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/background_color"
     android:orientation="vertical"
+    android:background="@drawable/arkaplan"
     tools:context=".HomePage">
 
     <LinearLayout
@@ -103,22 +103,12 @@
                 app:iconGravity="end" />
 
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/bt_theme_switch"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:text="Butona tıkladıktan sonra değişecek tema renkleri"
-                android:textColor="?attr/text_color" />
-
             <androidx.appcompat.widget.SwitchCompat
-                android:layout_centerHorizontal="true"
                 android:id="@+id/bt_theme_switch"
-                android:layout_below="@id/btnStokBilgisi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/btnStokBilgisi"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp" />
 
 

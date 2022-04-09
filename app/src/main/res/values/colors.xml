@@ -12,4 +12,11 @@
     <color name="blueButtonColor">#52a9e3</color>
     <color name="textColorHint">#616161</color>
     <color name="editTextColor">#dfdfde</color>
+    <color name="blackTxt">#0d0e15</color>
+    <color name="grayTxt">#8c8c8c</color>
+    <color name="fav">#fe2042</color>
+    <color name="myfav">#007aff</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>

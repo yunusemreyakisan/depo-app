@@ -39,41 +39,32 @@ public final class ActivityKayitOlBinding implements ViewBinding {
   public final TextInputLayout ePostaWrapper;
 
   @NonNull
-  public final ImageView imageView;
+  public final ImageView kayitOlLogo;
 
   @NonNull
   public final TextInputEditText sifre;
 
   @NonNull
-  public final TextInputEditText sifreAgain;
-
-  @NonNull
-  public final TextInputLayout sifreAgainWrapper;
-
-  @NonNull
   public final TextInputLayout sifreWrapper;
 
   @NonNull
-  public final TextView txtGirisYap;
+  public final TextView txtKayitOl;
 
   private ActivityKayitOlBinding(@NonNull LinearLayout rootView, @NonNull TextInputEditText adSoyad,
       @NonNull TextInputLayout adSoyadWrapper, @NonNull MaterialButton btnKayitOl,
       @NonNull TextInputEditText ePosta, @NonNull TextInputLayout ePostaWrapper,
-      @NonNull ImageView imageView, @NonNull TextInputEditText sifre,
-      @NonNull TextInputEditText sifreAgain, @NonNull TextInputLayout sifreAgainWrapper,
-      @NonNull TextInputLayout sifreWrapper, @NonNull TextView txtGirisYap) {
+      @NonNull ImageView kayitOlLogo, @NonNull TextInputEditText sifre,
+      @NonNull TextInputLayout sifreWrapper, @NonNull TextView txtKayitOl) {
     this.rootView = rootView;
     this.adSoyad = adSoyad;
     this.adSoyadWrapper = adSoyadWrapper;
     this.btnKayitOl = btnKayitOl;
     this.ePosta = ePosta;
     this.ePostaWrapper = ePostaWrapper;
-    this.imageView = imageView;
+    this.kayitOlLogo = kayitOlLogo;
     this.sifre = sifre;
-    this.sifreAgain = sifreAgain;
-    this.sifreAgainWrapper = sifreAgainWrapper;
     this.sifreWrapper = sifreWrapper;
-    this.txtGirisYap = txtGirisYap;
+    this.txtKayitOl = txtKayitOl;
   }
 
   @Override
@@ -133,9 +124,9 @@ public final class ActivityKayitOlBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
+      id = R.id.kayitOlLogo;
+      ImageView kayitOlLogo = ViewBindings.findChildViewById(rootView, id);
+      if (kayitOlLogo == null) {
         break missingId;
       }
 
@@ -145,33 +136,20 @@ public final class ActivityKayitOlBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.sifreAgain;
-      TextInputEditText sifreAgain = ViewBindings.findChildViewById(rootView, id);
-      if (sifreAgain == null) {
-        break missingId;
-      }
-
-      id = R.id.sifreAgainWrapper;
-      TextInputLayout sifreAgainWrapper = ViewBindings.findChildViewById(rootView, id);
-      if (sifreAgainWrapper == null) {
-        break missingId;
-      }
-
       id = R.id.sifreWrapper;
       TextInputLayout sifreWrapper = ViewBindings.findChildViewById(rootView, id);
       if (sifreWrapper == null) {
         break missingId;
       }
 
-      id = R.id.txtGirisYap;
-      TextView txtGirisYap = ViewBindings.findChildViewById(rootView, id);
-      if (txtGirisYap == null) {
+      id = R.id.txtKayitOl;
+      TextView txtKayitOl = ViewBindings.findChildViewById(rootView, id);
+      if (txtKayitOl == null) {
         break missingId;
       }
 
       return new ActivityKayitOlBinding((LinearLayout) rootView, adSoyad, adSoyadWrapper,
-          btnKayitOl, ePosta, ePostaWrapper, imageView, sifre, sifreAgain, sifreAgainWrapper,
-          sifreWrapper, txtGirisYap);
+          btnKayitOl, ePosta, ePostaWrapper, kayitOlLogo, sifre, sifreWrapper, txtKayitOl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

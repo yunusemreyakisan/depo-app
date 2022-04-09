@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-runtime-ktx:2.3.1@aar">
     <CLASSES>
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/e6cc7041941d999c0a36ac2e878a2e90/transformed/lifecycle-runtime-ktx-2.3.1/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/b058b7853f77ae5328295838bc01dab4/transformed/lifecycle-runtime-ktx-2.3.1/res" />
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/b058b7853f77ae5328295838bc01dab4/transformed/lifecycle-runtime-ktx-2.3.1/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/b058b7853f77ae5328295838bc01dab4/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/2505077712134ab2e42149046e2de86e/transformed/jetified-lifecycle-runtime-ktx-2.3.1/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/2505077712134ab2e42149046e2de86e/transformed/jetified-lifecycle-runtime-ktx-2.3.1/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/2505077712134ab2e42149046e2de86e/transformed/jetified-lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

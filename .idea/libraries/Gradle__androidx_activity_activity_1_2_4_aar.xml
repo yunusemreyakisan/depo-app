@@ -1,13 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity:1.2.4@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/3c13af0048e5c2bf2dc05fb8fecf18e7/transformed/activity-1.2.4/annotations.zip!/" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/9509690f26d65c9a232be3cbd1e7efa8/transformed/jetified-activity-1.2.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/b1dd8ac22a711b46e3bccf0575715877/transformed/activity-1.2.4/res" />
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/3c13af0048e5c2bf2dc05fb8fecf18e7/transformed/activity-1.2.4/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/3c13af0048e5c2bf2dc05fb8fecf18e7/transformed/activity-1.2.4/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/3c13af0048e5c2bf2dc05fb8fecf18e7/transformed/activity-1.2.4/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/9509690f26d65c9a232be3cbd1e7efa8/transformed/jetified-activity-1.2.4/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/9509690f26d65c9a232be3cbd1e7efa8/transformed/jetified-activity-1.2.4/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/9509690f26d65c9a232be3cbd1e7efa8/transformed/jetified-activity-1.2.4/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

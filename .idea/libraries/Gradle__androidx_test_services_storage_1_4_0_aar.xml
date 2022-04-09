@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.test.services:storage:1.4.0@aar">
     <CLASSES>
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/4dfd8f63677068b8380d78999389ced7/transformed/storage-1.4.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/ab6a658c41c2e57a925f919c881f876a/transformed/storage-1.4.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/ab6a658c41c2e57a925f919c881f876a/transformed/storage-1.4.0/AndroidManifest.xml" />
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/ab6a658c41c2e57a925f919c881f876a/transformed/storage-1.4.0/jars/classes.jar!/" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/4971dae19c2e710d4ddcd1ecad9f9481/transformed/jetified-storage-1.4.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/4971dae19c2e710d4ddcd1ecad9f9481/transformed/jetified-storage-1.4.0/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/4971dae19c2e710d4ddcd1ecad9f9481/transformed/jetified-storage-1.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.customview:customview:1.1.0@aar">
     <CLASSES>
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/78a8bad557395e961dcafcf79f000333/transformed/customview-1.1.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/d00be2566ad0e44c05827f0822a789bc/transformed/customview-1.1.0/AndroidManifest.xml" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/d00be2566ad0e44c05827f0822a789bc/transformed/customview-1.1.0/res" />
       <root url="jar://D:/Program Files/Clock/caches/transforms-3/d00be2566ad0e44c05827f0822a789bc/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/d00be2566ad0e44c05827f0822a789bc/transformed/customview-1.1.0/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/d00be2566ad0e44c05827f0822a789bc/transformed/customview-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
