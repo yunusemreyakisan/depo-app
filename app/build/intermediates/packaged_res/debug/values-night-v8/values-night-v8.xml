@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="blackTxt">#0d0e15</color>
+    <color name="blueButtonColor">#52a9e3</color>
+    <color name="btnColor">#6e080f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="editTextColor">#dfdfde</color>
+    <color name="fav">#fe2042</color>
+    <color name="grayTxt">#8c8c8c</color>
+    <color name="myfav">#007aff</color>
+    <color name="orangeButtonColor">#f2913d</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="textColorHint">#616161</color>
+    <color name="white">#FFFFFFFF</color>
     <style name="Theme.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
+        <item name="colorOnPrimary">@color/white</item>
+        
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        <item name="colorOnSecondary">@color/white</item>
+        
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        
     </style>
 </resources>

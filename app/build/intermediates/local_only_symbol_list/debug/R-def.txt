@@ -29,7 +29,6 @@ dimen genel_activity_margin
 dimen marginBottom
 drawable arkaplan
 drawable depoarkaplan
-drawable depologowhite
 drawable ic_baseline_add_24
 drawable ic_baseline_auto_delete_24
 drawable ic_baseline_compare_arrows_24
@@ -39,11 +38,13 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_logo
 drawable ic_splash_screen_dark
-drawable logo
+drawable logodark
+drawable logowhite
+drawable welcome
+drawable worker
 id adSoyad
 id adSoyadWrapper
 id beniHatirlaCheckbox
-id bt_theme_switch
 id btnDepoIslemleri
 id btnDepolarimaEkle
 id btnGirisYap
@@ -75,7 +76,6 @@ id txtGrsEmail
 id txtGrsSifre
 id txtHosgeldin
 id txtKayitOl
-id txtSifremiUnuttum
 id urunKategori
 id urunkategoriWrapper
 layout activity_depo_ekle

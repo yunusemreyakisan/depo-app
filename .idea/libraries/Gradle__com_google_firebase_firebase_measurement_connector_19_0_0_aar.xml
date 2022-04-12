@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-measurement-connector:19.0.0@aar">
     <CLASSES>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/5e6d578e681771a46a9b2d189df2c921/transformed/jetified-firebase-measurement-connector-19.0.0/jars/classes.jar!/" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/5e6d578e681771a46a9b2d189df2c921/transformed/jetified-firebase-measurement-connector-19.0.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/5e6d578e681771a46a9b2d189df2c921/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/6f42219aaf419afb2c8e5e6190aaf7ea/transformed/jetified-firebase-measurement-connector-19.0.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/6f42219aaf419afb2c8e5e6190aaf7ea/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/6f42219aaf419afb2c8e5e6190aaf7ea/transformed/jetified-firebase-measurement-connector-19.0.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.firebase/firebase-measurement-connector/19.0.0/c0d58b8efa926b2c607984c54fb3d274490badd1/firebase-measurement-connector-19.0.0-javadoc.jar!/" />

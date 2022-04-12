@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/0d3d11624f037d959a0c4d48683ed272/transformed/recyclerview-1.1.0/annotations.zip!/" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/68b23b5b80731f908bf3cf0e054d2cb9/transformed/recyclerview-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/0d3d11624f037d959a0c4d48683ed272/transformed/recyclerview-1.1.0/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/0d3d11624f037d959a0c4d48683ed272/transformed/recyclerview-1.1.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/0d3d11624f037d959a0c4d48683ed272/transformed/recyclerview-1.1.0/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/68b23b5b80731f908bf3cf0e054d2cb9/transformed/recyclerview-1.1.0/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/68b23b5b80731f908bf3cf0e054d2cb9/transformed/recyclerview-1.1.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/68b23b5b80731f908bf3cf0e054d2cb9/transformed/recyclerview-1.1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

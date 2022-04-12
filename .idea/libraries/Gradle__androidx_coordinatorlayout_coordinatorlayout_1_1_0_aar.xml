@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/42029063bd972747d904043fa1f8e7d2/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/1eb6bed8760c98cbe33aa098ffcb0bfb/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/42029063bd972747d904043fa1f8e7d2/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/42029063bd972747d904043fa1f8e7d2/transformed/coordinatorlayout-1.1.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/42029063bd972747d904043fa1f8e7d2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/1eb6bed8760c98cbe33aa098ffcb0bfb/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/1eb6bed8760c98cbe33aa098ffcb0bfb/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/1eb6bed8760c98cbe33aa098ffcb0bfb/transformed/coordinatorlayout-1.1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

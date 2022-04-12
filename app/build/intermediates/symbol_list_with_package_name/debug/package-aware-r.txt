@@ -2575,7 +2575,6 @@ drawable common_google_signin_btn_text_light_normal_background
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
 drawable depoarkaplan
-drawable depologowhite
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2602,7 +2601,8 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_splash_screen_dark
 drawable icon_background
-drawable logo
+drawable logodark
+drawable logowhite
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2648,6 +2648,8 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable welcome
+drawable worker
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2758,7 +2760,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id bt_theme_switch
 id btnDepoIslemleri
 id btnDepolarimaEkle
 id btnGirisYap
@@ -3161,7 +3162,6 @@ id txtGrsEmail
 id txtGrsSifre
 id txtHosgeldin
 id txtKayitOl
-id txtSifremiUnuttum
 id unchecked
 id uniform
 id unlabeled

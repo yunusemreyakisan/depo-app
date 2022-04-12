@@ -4,7 +4,7 @@
             "outputFile": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\4cbcb2a139875109bde94b7e730430f9\\transformed\\appcompat-1.4.1\\res\\values-v24\\values-v24.xml",
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\67c0381ea558987e872d7ddaceb3e747\\transformed\\appcompat-1.4.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\07bfcfebd715235093cd513fbb80db5f\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\c1d3063349770a61dc704757945175fe\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -31,7 +31,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\3b185c71f62a8e5ce74dbacb5af9ac95\\transformed\\material-1.5.0\\res\\values-v24\\values-v24.xml",
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\674abb4d82ba1aa2c7f4d6d7ae3e1609\\transformed\\material-1.5.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

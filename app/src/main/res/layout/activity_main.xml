@@ -4,171 +4,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/arkaplan"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/genel_activity_margin">
+        android:layout_margin="@dimen/genel_activity_margin"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="40dp">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="0px"
+            android:layout_weight="0.45">
 
-            <RelativeLayout
+
+            <ImageView
+                android:id="@+id/girisLogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/logodark" />
+
+            <TextView
+                android:id="@+id/txtGirisYap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/girisLogo"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/hey_giris_yap"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- TextInputLayouts -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.6">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/kullaniciAdiWrapper"
                 android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="0.40">
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
 
-                <LinearLayout
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtGrsEmail"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:hint="@string/email_text"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:textColorHint="#616161" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/depo_logo_marginTop">
-
-                        <ImageView
-                            android:id="@+id/girisLogo"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:contentDescription="@null"
-                            app:srcCompat="@drawable/logo" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp">
-
-                        <TextView
-                            android:id="@+id/txtGirisYap"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/hey_giris_yap"
-                            android:textColor="@color/black"
-                            android:textSize="40sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <!-- BODY -->
-            <RelativeLayout
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/girisSifreWrapper"
                 android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="0.6">
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kullaniciAdiWrapper"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconMode="password_toggle">
 
-                <LinearLayout
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtGrsSifre"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sifre"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textColorHint="#616161" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Checkbox -->
+            <CheckBox
+                android:id="@+id/beniHatirlaCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_below="@+id/girisSifreWrapper"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:text="@string/beni_hatirla" />
+        </RelativeLayout>
 
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/kullaniciAdiWrapper"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:boxCornerRadiusBottomEnd="10dp"
-                        app:boxCornerRadiusBottomStart="10dp"
-                        app:boxCornerRadiusTopEnd="10dp"
-                        app:boxCornerRadiusTopStart="10dp"
-                        app:boxStrokeWidth="0dp"
-                        app:boxStrokeWidthFocused="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/txtGrsEmail"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/marginBottom"
-                            android:hint="@string/email_text"
-                            android:inputType="textEmailAddress"
-                            android:minHeight="48dp"
-                            android:textColorHint="#616161" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/girisSifreWrapper"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:boxCornerRadiusBottomEnd="10dp"
-                        app:boxCornerRadiusBottomStart="10dp"
-                        app:boxCornerRadiusTopEnd="10dp"
-                        app:boxCornerRadiusTopStart="10dp"
-                        app:boxStrokeWidth="0dp"
-                        app:boxStrokeWidthFocused="0dp"
-                        app:endIconMode="password_toggle">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/txtGrsSifre"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/sifre"
-                            android:inputType="textPassword"
-                            android:minHeight="48dp"
-                            android:textColorHint="#616161" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <CheckBox
-                            android:id="@+id/beniHatirlaCheckbox"
-                            android:layout_width="wrap_content"
-                            android:layout_height="48dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginBottom="@dimen/marginBottom"
-                            android:text="@string/beni_hatirla" />
-
-                        <TextView
-                            android:id="@+id/txtSifremiUnuttum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:text="@string/hyperlink"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-
-                    </RelativeLayout>
+        <!-- Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGirisYap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/btn_giris_yap" />
 
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnGirisYap"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="50dp"
-                        android:text="@string/btn_giris_yap" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnKaydol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/btnKaydol"
+            android:textColor="@color/black" />
 
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnKaydol"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="@string/btnKaydol"
-                        android:textColor="@color/black" />
-
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

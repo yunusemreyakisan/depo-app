@@ -51,15 +51,12 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextInputEditText txtGrsSifre;
 
-  @NonNull
-  public final TextView txtSifremiUnuttum;
-
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull CheckBox beniHatirlaCheckbox, @NonNull MaterialButton btnGirisYap,
       @NonNull MaterialButton btnKaydol, @NonNull ImageView girisLogo,
       @NonNull TextInputLayout girisSifreWrapper, @NonNull TextInputLayout kullaniciAdiWrapper,
       @NonNull TextView txtGirisYap, @NonNull TextInputEditText txtGrsEmail,
-      @NonNull TextInputEditText txtGrsSifre, @NonNull TextView txtSifremiUnuttum) {
+      @NonNull TextInputEditText txtGrsSifre) {
     this.rootView = rootView;
     this.beniHatirlaCheckbox = beniHatirlaCheckbox;
     this.btnGirisYap = btnGirisYap;
@@ -70,7 +67,6 @@ public final class ActivityMainBinding implements ViewBinding {
     this.txtGirisYap = txtGirisYap;
     this.txtGrsEmail = txtGrsEmail;
     this.txtGrsSifre = txtGrsSifre;
-    this.txtSifremiUnuttum = txtSifremiUnuttum;
   }
 
   @Override
@@ -154,15 +150,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtSifremiUnuttum;
-      TextView txtSifremiUnuttum = ViewBindings.findChildViewById(rootView, id);
-      if (txtSifremiUnuttum == null) {
-        break missingId;
-      }
-
       return new ActivityMainBinding((ConstraintLayout) rootView, beniHatirlaCheckbox, btnGirisYap,
           btnKaydol, girisLogo, girisSifreWrapper, kullaniciAdiWrapper, txtGirisYap, txtGrsEmail,
-          txtGrsSifre, txtSifremiUnuttum);
+          txtGrsSifre);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

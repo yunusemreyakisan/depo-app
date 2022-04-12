@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.transition:transition:1.4.1@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/a02449b9fe4eedb0e6b01f41a0289233/transformed/transition-1.4.1/annotations.zip!/" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/f3d5df60253ed2e5d1b3376828a0300a/transformed/transition-1.4.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/a02449b9fe4eedb0e6b01f41a0289233/transformed/transition-1.4.1/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/a02449b9fe4eedb0e6b01f41a0289233/transformed/transition-1.4.1/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/a02449b9fe4eedb0e6b01f41a0289233/transformed/transition-1.4.1/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/f3d5df60253ed2e5d1b3376828a0300a/transformed/transition-1.4.1/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/f3d5df60253ed2e5d1b3376828a0300a/transformed/transition-1.4.1/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/f3d5df60253ed2e5d1b3376828a0300a/transformed/transition-1.4.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

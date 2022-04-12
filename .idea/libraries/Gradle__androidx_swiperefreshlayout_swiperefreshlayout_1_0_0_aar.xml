@@ -1,12 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/c90d3ee66ee840dbcd77f729a55c22a4/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/c90d3ee66ee840dbcd77f729a55c22a4/transformed/swiperefreshlayout-1.0.0/jars/classes.jar!/" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/c90d3ee66ee840dbcd77f729a55c22a4/transformed/swiperefreshlayout-1.0.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/c90d3ee66ee840dbcd77f729a55c22a4/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

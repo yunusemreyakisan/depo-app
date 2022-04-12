@@ -16,6 +16,8 @@
 
 
     </style>
+
     <style name="Theme.Depo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.Depo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

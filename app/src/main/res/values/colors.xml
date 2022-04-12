@@ -16,7 +16,7 @@
     <color name="grayTxt">#8c8c8c</color>
     <color name="fav">#fe2042</color>
     <color name="myfav">#007aff</color>
-    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#ffffff</color>
     <color name="colorAccent">#FF4081</color>
 </resources>

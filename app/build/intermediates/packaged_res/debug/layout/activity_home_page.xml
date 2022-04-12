@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/arkaplan"
     tools:context=".HomePage">
 
     <LinearLayout
@@ -16,8 +15,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="101dp"
-            android:layout_weight="0.25">
+            android:layout_height="0px"
+            android:layout_margin="@dimen/genel_activity_margin"
+            android:layout_weight="0.4">
             <!-- Header Text  -->
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -28,8 +28,6 @@
                     android:id="@+id/txtHosgeldin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-
                     android:text="@string/txtHosgeldniz"
                     android:textColor="@color/black"
                     android:textSize="25sp"
@@ -40,7 +38,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txtHosgeldin"
-                    android:layout_marginStart="30dp"
                     android:text="TextView"
                     android:textColor="@color/white"
                     android:textSize="28sp"
@@ -49,12 +46,11 @@
 
             <ImageView
                 android:id="@+id/imageDepoWhiteLogo"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="35dp"
                 android:contentDescription="@string/cdTodo"
-                app:srcCompat="@drawable/logo" />
+                app:srcCompat="@drawable/logodark" />
 
         </RelativeLayout>
 
@@ -63,7 +59,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/genel_activity_margin"
             android:layout_weight="0.6">
 
             <!-- Buton-1 Depo İşlemleri  -->
@@ -102,14 +98,6 @@
                 app:cornerRadius="10dp"
                 app:iconGravity="end" />
 
-
-            <androidx.appcompat.widget.SwitchCompat
-                android:id="@+id/bt_theme_switch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btnStokBilgisi"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp" />
 
 
         </RelativeLayout>

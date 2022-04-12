@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-ads-identifier:18.0.0@aar">
     <CLASSES>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/bcad424118cfc0e53e8aaeda85435bab/transformed/jetified-play-services-ads-identifier-18.0.0/jars/classes.jar!/" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/bcad424118cfc0e53e8aaeda85435bab/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/bcad424118cfc0e53e8aaeda85435bab/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/98b893356ded9518cc2eed64bc1e1cfd/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/98b893356ded9518cc2eed64bc1e1cfd/transformed/jetified-play-services-ads-identifier-18.0.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/98b893356ded9518cc2eed64bc1e1cfd/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.android.gms/play-services-ads-identifier/18.0.0/71d2e97dbe034b36f64b28491590ec2b2ec324e3/play-services-ads-identifier-18.0.0-javadoc.jar!/" />

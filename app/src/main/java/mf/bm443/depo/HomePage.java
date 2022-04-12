@@ -24,29 +24,16 @@ import com.google.firebase.database.ValueEventListener;
 public class HomePage extends AppCompatActivity {
 
     private TextView name, email;
-    SwitchCompat switchCompat;
     private DatabaseReference mReferance;
     private Button btnDepoIslemleri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //Durum Kontrolü
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
-            //When night mode is equal to yes
-            //Set dark theme
-            setTheme(R.style.Theme_Dark);
-        } else {
-            //When night mode is equal to no
-            //Set light theme
-            setTheme(R.style.Theme_Light);
-        }
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
         initComponents();
        // veriOkuma();
-        switchThemes();
         depoIslemleri();
     }
 
@@ -61,26 +48,7 @@ public class HomePage extends AppCompatActivity {
     }
 
 
-    private void switchThemes() {
-        switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //Check condition
 
-                if (isChecked) {
-                    //When switch button is checked
-                    //Set night mode
-
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                } else {
-                    //When switch button is unchecked
-                    //Set light mode
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
-                }
-            }
-        });
-    }
 
     //Burası ÖNEMLİ! Beyaz ekran verip başlangıca atıyor.
    /* private void veriOkuma() {
@@ -104,7 +72,6 @@ public class HomePage extends AppCompatActivity {
 
 
     private void initComponents() {
-        switchCompat = findViewById(R.id.bt_theme_switch);
         name = findViewById(R.id.txtFirebaseAd);
         btnDepoIslemleri = findViewById(R.id.btnDepoIslemleri);
     }

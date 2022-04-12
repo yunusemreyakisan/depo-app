@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private Button girisYap, kaydol;
     private TextInputEditText girisEmail;
     private TextInputEditText sifre;
-    private TextView sifremiUnuttum;
 
 
     @Override
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
         initComponents();
         btnKaydolIslevi();
-        sifremiUnuttum();
         btnGirisYapIslevi();
         // verileriGetir(mAuth.getUid());
 
@@ -62,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initComponents() {
-        sifremiUnuttum = findViewById(R.id.txtSifremiUnuttum);
         girisYap = findViewById(R.id.btnGirisYap);
         kaydol = findViewById(R.id.btnKaydol);
         girisEmail = findViewById(R.id.txtGrsEmail);
@@ -70,10 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void sifremiUnuttum() {
-        //Kullanıcıya Firebase üzerinden Şifremi unuttum emaili gönderilecek.
-        sifremiUnuttum.setMovementMethod(LinkMovementMethod.getInstance());
-    }
+
 /*
     //Firestore Veri Çekme
     private void verileriGetir(String uid) {

@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement:20.1.2@aar">
     <CLASSES>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/01ef47541f7e6ce82eb41a41e47d6599/transformed/jetified-play-services-measurement-20.1.2/jars/classes.jar!/" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/01ef47541f7e6ce82eb41a41e47d6599/transformed/jetified-play-services-measurement-20.1.2/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/01ef47541f7e6ce82eb41a41e47d6599/transformed/jetified-play-services-measurement-20.1.2/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/91c483e23d44896250e3ecfb2a4334a3/transformed/jetified-play-services-measurement-20.1.2/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/91c483e23d44896250e3ecfb2a4334a3/transformed/jetified-play-services-measurement-20.1.2/res" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/91c483e23d44896250e3ecfb2a4334a3/transformed/jetified-play-services-measurement-20.1.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement/20.1.2/fc27e130a1126ee53b628be0d6e92d6ea38185c/play-services-measurement-20.1.2-javadoc.jar!/" />

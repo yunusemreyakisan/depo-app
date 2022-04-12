@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.savedstate:savedstate-ktx:1.1.0@aar">
     <CLASSES>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/58448167a64eae5245ec58247797def6/transformed/jetified-savedstate-ktx-1.1.0/jars/classes.jar!/" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/58448167a64eae5245ec58247797def6/transformed/jetified-savedstate-ktx-1.1.0/res" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/58448167a64eae5245ec58247797def6/transformed/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/ba71e9837b603c226f78d7d4d5626c42/transformed/jetified-savedstate-ktx-1.1.0/res" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/ba71e9837b603c226f78d7d4d5626c42/transformed/jetified-savedstate-ktx-1.1.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/ba71e9837b603c226f78d7d4d5626c42/transformed/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
