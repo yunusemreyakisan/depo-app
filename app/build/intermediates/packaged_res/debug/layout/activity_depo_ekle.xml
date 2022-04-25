@@ -35,8 +35,8 @@
                 android:layout_below="@id/imageView"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="80dp"
-                android:text="Deponu özelleştir."
-                android:textColor="@color/black"
+                android:text="Deponu\nözelleştir."
+                android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/marginBottom"
-                    android:backgroundTint="@color/editTextColor"
+                    android:textColorHint="@color/editTextColor"
                     android:hint="DEPO ADI" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,7 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/marginBottom"
-                    android:backgroundTint="@color/editTextColor"
+                    android:textColorHint="@color/editTextColor"
                     android:hint="DEPO ADRES"
                     android:inputType="textLongMessage" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/marginBottom"
-                    android:backgroundTint="#dfdfde"
+                    android:textColorHint="@color/editTextColor"
                     android:hint="DEPO BÜYÜKLÜĞÜ (KG)"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -122,7 +122,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/marginBottom"
-                    android:backgroundTint="@color/editTextColor"
+                    android:textColorHint="@color/editTextColor"
                     android:hint="DEPO ÜRÜN KATEGORİSİ"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -137,7 +137,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="@color/btnColor"
-                    android:text="DEPOLARIMA Ekle" />
+                    android:text="@string/textdepolarima_ekle" />
             </RelativeLayout>
 
 

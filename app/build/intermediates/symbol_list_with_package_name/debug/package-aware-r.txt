@@ -2760,12 +2760,16 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnCikis
+id btnDepoA
 id btnDepoIslemleri
 id btnDepolarimaEkle
 id btnGirisYap
 id btnKaydol
 id btnKayitOl
+id btnSonIslemler
 id btnStokBilgisi
+id btnStokIslemleri
 id btnUrunIslemleri
 id btnYeniDepoEkle
 id buttonPanel
@@ -2824,7 +2828,7 @@ id depoAdres
 id depoAdresWrapper
 id depoBuyukluk
 id depoBuyuklukWrapper
-id depoListesi
+id depoLogoDepolarim
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2899,7 +2903,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageDepoWhiteLogo
+id imageDepoDarkLogo
 id imageView
 id immediateStop
 id included
@@ -2952,6 +2956,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id media_actions
+id menuCikis
 id message
 id middle
 id mini
@@ -3379,6 +3384,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu ana_menu
 menu example_menu
 menu example_menu2
 mipmap ic_depo
@@ -3573,6 +3579,7 @@ string sifre_hint
 string splash_info
 string status_bar_notification_info_overflow
 string subtitle1
+string textdepolarima_ekle
 string title_activity_anasayfa
 string title_activity_bottom_nav_bar
 string title_activity_hesap_yok

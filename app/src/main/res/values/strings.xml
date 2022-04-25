@@ -39,4 +39,5 @@
     <string name="sifre_hint">Şifre</string>
     <string name="kayit_ol_hint">KAYIT OL</string>
     <string name="CD_logo_image">Logo Image</string>
+    <string name="textdepolarima_ekle">DEPOLARIMA Ekle</string>
 </resources>

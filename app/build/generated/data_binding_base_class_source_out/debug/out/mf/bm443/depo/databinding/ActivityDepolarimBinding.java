@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -23,24 +22,24 @@ public final class ActivityDepolarimBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button btnDepoA;
+
+  @NonNull
   public final Button btnYeniDepoEkle;
 
   @NonNull
-  public final RecyclerView depoListesi;
-
-  @NonNull
-  public final ImageView imageView;
+  public final ImageView depoLogoDepolarim;
 
   @NonNull
   public final TextView txtGirisYap;
 
-  private ActivityDepolarimBinding(@NonNull LinearLayout rootView, @NonNull Button btnYeniDepoEkle,
-      @NonNull RecyclerView depoListesi, @NonNull ImageView imageView,
+  private ActivityDepolarimBinding(@NonNull LinearLayout rootView, @NonNull Button btnDepoA,
+      @NonNull Button btnYeniDepoEkle, @NonNull ImageView depoLogoDepolarim,
       @NonNull TextView txtGirisYap) {
     this.rootView = rootView;
+    this.btnDepoA = btnDepoA;
     this.btnYeniDepoEkle = btnYeniDepoEkle;
-    this.depoListesi = depoListesi;
-    this.imageView = imageView;
+    this.depoLogoDepolarim = depoLogoDepolarim;
     this.txtGirisYap = txtGirisYap;
   }
 
@@ -71,21 +70,21 @@ public final class ActivityDepolarimBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnDepoA;
+      Button btnDepoA = ViewBindings.findChildViewById(rootView, id);
+      if (btnDepoA == null) {
+        break missingId;
+      }
+
       id = R.id.btnYeniDepoEkle;
       Button btnYeniDepoEkle = ViewBindings.findChildViewById(rootView, id);
       if (btnYeniDepoEkle == null) {
         break missingId;
       }
 
-      id = R.id.depoListesi;
-      RecyclerView depoListesi = ViewBindings.findChildViewById(rootView, id);
-      if (depoListesi == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
+      id = R.id.depoLogoDepolarim;
+      ImageView depoLogoDepolarim = ViewBindings.findChildViewById(rootView, id);
+      if (depoLogoDepolarim == null) {
         break missingId;
       }
 
@@ -95,8 +94,8 @@ public final class ActivityDepolarimBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDepolarimBinding((LinearLayout) rootView, btnYeniDepoEkle, depoListesi,
-          imageView, txtGirisYap);
+      return new ActivityDepolarimBinding((LinearLayout) rootView, btnDepoA, btnYeniDepoEkle,
+          depoLogoDepolarim, txtGirisYap);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

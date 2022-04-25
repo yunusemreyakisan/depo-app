@@ -25,17 +25,17 @@
             android:layout_below="@+id/kayitOlLogo"
             android:layout_marginTop="10dp"
             android:text="@string/lbl_kayit_ol"
-            android:textColor="@color/black"
             android:textSize="35sp"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/kayitOlLogo"
             android:layout_width="60dp"
-            android:layout_marginTop="30dp"
             android:layout_height="60dp"
-            app:srcCompat="@drawable/logodark"
-            android:contentDescription="@string/CD_logo_image" />
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/CD_logo_image"
+            app:srcCompat="@drawable/logodark" />
 
     </RelativeLayout>
 
@@ -50,14 +50,12 @@
         android:layout_weight="0.5">
 
 
-
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/adSoyadWrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop = "20dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"

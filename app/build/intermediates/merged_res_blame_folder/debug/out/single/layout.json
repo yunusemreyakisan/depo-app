@@ -14,9 +14,5 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_depo_ekle.xml",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depo_ekle.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_kayit_ol.xml",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_kayit_ol.xml"
     }
 ]

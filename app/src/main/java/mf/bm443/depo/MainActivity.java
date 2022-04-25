@@ -1,25 +1,31 @@
 package mf.bm443.depo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.text.method.LinkMovementMethod;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
+    private FirebaseUser mUser;
+    private CheckBox remember;
     private Button girisYap, kaydol;
     private TextInputEditText girisEmail;
     private TextInputEditText sifre;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,25 +35,45 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-/*
-        //Google Giriş Bağlantısı
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(clientId)
-                .requestEmail()
-                .requestId()
-                .build();
-
-        mGoogleSignInClient = GoogleSignIn.getClient(MainActivity.this, gso);
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-
- */
 
         initComponents();
         btnKaydolIslevi();
+        beniHatirlaMethodu();
         btnGirisYapIslevi();
         // verileriGetir(mAuth.getUid());
 
+    }
+
+
+    //Shared Preferences (Beni Hatırla)
+    private void beniHatirlaMethodu() {
+        SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+        String checkbox = preferences.getString("Remember", "");
+
+        if (checkbox.equals("true")) {
+            Intent intent = new Intent(MainActivity.this, HomePage.class);
+            startActivity(intent);
+        }
+
+
+        remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (compoundButton.isChecked()) {
+                    SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("Remember", "true");
+                    editor.apply();
+                    Toast.makeText(getApplicationContext(), "Beni hatırla açık!", Toast.LENGTH_SHORT).show();
+                } else if (!compoundButton.isChecked()) {
+                    SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("Remember", "false");
+                    editor.apply();
+                    Toast.makeText(getApplicationContext(), "Beni hatırla kapalı!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
 
@@ -64,34 +90,9 @@ public class MainActivity extends AppCompatActivity {
         kaydol = findViewById(R.id.btnKaydol);
         girisEmail = findViewById(R.id.txtGrsEmail);
         sifre = findViewById(R.id.txtGrsSifre);
+        remember = findViewById(R.id.beniHatirlaCheckbox);
     }
 
-
-
-/*
-    //Firestore Veri Çekme
-    private void verileriGetir(String uid) {
-        mFirestore = FirebaseFirestore.getInstance();
-        mDocReference = mFirestore.collection("Kullanıcılar").document(uid);
-        mDocReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot document = task.getResult();
-                    if (document.exists()) {
-                        Log.d(TAG, "DocumentSnapshot data: " + document.getData().get("Name"));
-                    } else {
-                        Log.d(TAG, "No such document");
-                    }
-                } else {
-                    Log.d(TAG, "get failed with ", task.getException());
-                }
-            }
-        });
-
-    }
-
- */
 
     //E-Mail ve Şifre ile Giriş İşlemi
     private void btnGirisYapIslevi() {
@@ -135,8 +136,10 @@ public class MainActivity extends AppCompatActivity {
 
                                 // Eğer giriş bilgileri doğruysa:
                                 // Anasayfaya geç.
-                                Intent intent = new Intent(MainActivity.this, HomePage.class);
+                                Intent intent = new Intent(getApplicationContext(), HomePage.class);
                                 startActivity(intent);
+
+
                             } else {
 
                                 // Giriş hatalı ise:

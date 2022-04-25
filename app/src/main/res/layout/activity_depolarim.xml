@@ -21,7 +21,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/depoLogoDepolarim"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="@dimen/depo_logo_marginTop"
@@ -32,19 +32,30 @@
                 android:id="@+id/txtGirisYap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/imageView"
+                android:layout_below="@id/depoLogoDepolarim"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="80dp"
                 android:text="Depolarım"
-                android:textColor="@color/black"
+                android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
-
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/btnDepoA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:backgroundTint="@color/btnColor"
+                    android:text="" />
+
+
+
 
                 <Button
                     android:id="@+id/btnYeniDepoEkle"
@@ -54,10 +65,7 @@
                     android:backgroundTint="@color/btnColor"
                     android:text="YENİ DEPO EKLE" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/depoListesi"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+
             </RelativeLayout>
 
 

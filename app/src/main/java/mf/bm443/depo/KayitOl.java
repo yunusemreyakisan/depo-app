@@ -29,7 +29,6 @@ public class KayitOl extends AppCompatActivity {
     private TextInputEditText AdiSoyadi;
     private TextInputEditText sifre;
     private TextInputEditText eMail;
-    private TextInputEditText sifreYeniden;
     private DatabaseReference mDatabase;
     private FirebaseFirestore mFirestore;
     private HashMap<String, Object> mData;

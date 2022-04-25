@@ -2,16 +2,24 @@ package mf.bm443.depo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Depolarim extends AppCompatActivity {
-    private Button btnYeniDepoEkle;
+    private Button btnYeniDepoEkle, btnDepoA;
     private RecyclerView depoListesi;
     private FirebaseFirestore firebaseFirestore;
 
@@ -23,24 +31,52 @@ public class Depolarim extends AppCompatActivity {
 
         //Methods
         initComponents();
+        ornekDepo();
         yeniDepoEkle();
+
+    }
+
+    //Örnek Depo Kullanımı
+    private void ornekDepo() {
+        FirebaseUser mUser = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        assert mUser != null;
+        DocumentReference docRef = db.collection("Kullanıcılar").document(mUser.getUid()).collection("Depolarım").document("DepoA");
+        docRef.get().
+
+                addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    private static final String TAG = "123";
+
+                    @Override
+                    public void onComplete (@NonNull Task< DocumentSnapshot > task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            if (document.exists()) {
+                                String depoadi = document.getString("Depo-Adi");
+                                btnDepoA.setText(depoadi);
+                            } else {
+                                Log.d(TAG, "Böyle bir döküman yok!");
+                            }
+                        } else {
+                            Log.d(TAG, "Hata:  ", task.getException());
+                        }
+                    }
+                });
+
 
     }
 
 
     private void yeniDepoEkle() {
-        btnYeniDepoEkle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Depolarim.this, DepoEkle.class);
-                startActivity(intent);
-            }
+        btnYeniDepoEkle.setOnClickListener(view -> {
+            Intent intent = new Intent(Depolarim.this, DepoEkle.class);
+            startActivity(intent);
         });
     }
 
 
     private void initComponents() {
-        depoListesi = findViewById(R.id.depoListesi);
+        btnDepoA = findViewById(R.id.btnDepoA);
         btnYeniDepoEkle = findViewById(R.id.btnYeniDepoEkle);
     }
 
