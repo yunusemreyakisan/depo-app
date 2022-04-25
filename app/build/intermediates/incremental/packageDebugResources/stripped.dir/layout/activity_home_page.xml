@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_marginStart="@dimen/genel_activity_margin"
+            android:layout_marginTop="@dimen/genel_activity_margin"
+            android:layout_marginEnd="@dimen/genel_activity_margin"
+            android:layout_weight="0.4">
+            <!-- Header Text  -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    android:id="@+id/txtHosgeldin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Hoşgeldin "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txtFirebaseAd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtHosgeldin"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageDepoDarkLogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="35dp"
+                android:contentDescription="@string/cdTodo"
+                app:srcCompat="@drawable/logodark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCikis"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                app:icon="@android:drawable/ic_popup_sync"
+                app:iconGravity="top"
+                app:iconSize="40dp" />
+
+        </RelativeLayout>
+
+
+        <!-- Body Container İşlemler -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_marginStart="@dimen/genel_activity_margin"
+            android:layout_marginEnd="@dimen/genel_activity_margin"
+            android:layout_marginBottom="@dimen/genel_activity_margin"
+            android:layout_weight="0.8">
+
+            <!-- Buton-1 Depo İşlemleri  -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDepoIslemleri"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/txtDepoIslemleri"
+                android:textAlignment="gravity"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_baseline_warehouse"
+                app:iconGravity="top"
+                app:iconSize="50dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUrunIslemleri"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/btnDepoIslemleri"
+                android:text="@string/txtUrunIslemleri"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_baseline_compare_arrows_24"
+                app:iconGravity="top"
+                app:iconSize="50dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStokIslemleri"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnDepoIslemleri"
+                android:layout_marginStart="10dp"
+                android:text="Stok İşlemleri"
+                android:textAlignment="gravity"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconGravity="top"
+                app:iconSize="50dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSonIslemler"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnUrunIslemleri"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/btnStokIslemleri"
+                android:text="Son İşlemler"
+                android:textAlignment="gravity"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@android:drawable/ic_popup_sync"
+                app:iconGravity="top"
+                app:iconSize="50dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStokBilgisi"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btnStokIslemleri"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity=""
+                android:text="Stok Bilgisi"
+                android:textAlignment="gravity"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:icon="@android:drawable/ic_dialog_info"
+                app:iconGravity="end" />
+
+
+        </RelativeLayout>
+        <!-- Bottom Nav Bar   -->
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
