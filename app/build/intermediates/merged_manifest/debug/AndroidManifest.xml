@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Light" >
         <activity
+            android:name="mf.bm443.depo.UrunIslemleri"
+            android:exported="true" />
+        <activity
             android:name="mf.bm443.depo.DepoEkle"
             android:exported="true" />
         <activity

@@ -20,6 +20,10 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_urun_islemleri.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_urun_islemleri.xml"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_welcome.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\welcome.png"
     },

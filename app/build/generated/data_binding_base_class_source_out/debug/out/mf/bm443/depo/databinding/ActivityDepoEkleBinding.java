@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -30,50 +28,28 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
   public final TextInputEditText depoAd;
 
   @NonNull
-  public final TextInputLayout depoAdWrapper;
-
-  @NonNull
   public final TextInputEditText depoAdres;
-
-  @NonNull
-  public final TextInputLayout depoAdresWrapper;
 
   @NonNull
   public final TextInputEditText depoBuyuklugu;
 
   @NonNull
-  public final TextInputLayout depoBuyuklukWrapper;
-
-  @NonNull
   public final TextInputEditText depoEkleUrunKategori;
-
-  @NonNull
-  public final ImageView imageView;
 
   @NonNull
   public final TextView txtGirisYap;
 
-  @NonNull
-  public final TextInputLayout urunkategoriWrapper;
-
   private ActivityDepoEkleBinding(@NonNull LinearLayout rootView, @NonNull Button btnDepolarimaEkle,
-      @NonNull TextInputEditText depoAd, @NonNull TextInputLayout depoAdWrapper,
-      @NonNull TextInputEditText depoAdres, @NonNull TextInputLayout depoAdresWrapper,
-      @NonNull TextInputEditText depoBuyuklugu, @NonNull TextInputLayout depoBuyuklukWrapper,
-      @NonNull TextInputEditText depoEkleUrunKategori, @NonNull ImageView imageView,
-      @NonNull TextView txtGirisYap, @NonNull TextInputLayout urunkategoriWrapper) {
+      @NonNull TextInputEditText depoAd, @NonNull TextInputEditText depoAdres,
+      @NonNull TextInputEditText depoBuyuklugu, @NonNull TextInputEditText depoEkleUrunKategori,
+      @NonNull TextView txtGirisYap) {
     this.rootView = rootView;
     this.btnDepolarimaEkle = btnDepolarimaEkle;
     this.depoAd = depoAd;
-    this.depoAdWrapper = depoAdWrapper;
     this.depoAdres = depoAdres;
-    this.depoAdresWrapper = depoAdresWrapper;
     this.depoBuyuklugu = depoBuyuklugu;
-    this.depoBuyuklukWrapper = depoBuyuklukWrapper;
     this.depoEkleUrunKategori = depoEkleUrunKategori;
-    this.imageView = imageView;
     this.txtGirisYap = txtGirisYap;
-    this.urunkategoriWrapper = urunkategoriWrapper;
   }
 
   @Override
@@ -115,21 +91,9 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.depoAdWrapper;
-      TextInputLayout depoAdWrapper = ViewBindings.findChildViewById(rootView, id);
-      if (depoAdWrapper == null) {
-        break missingId;
-      }
-
       id = R.id.depoAdres;
       TextInputEditText depoAdres = ViewBindings.findChildViewById(rootView, id);
       if (depoAdres == null) {
-        break missingId;
-      }
-
-      id = R.id.depoAdresWrapper;
-      TextInputLayout depoAdresWrapper = ViewBindings.findChildViewById(rootView, id);
-      if (depoAdresWrapper == null) {
         break missingId;
       }
 
@@ -139,21 +103,9 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.depoBuyuklukWrapper;
-      TextInputLayout depoBuyuklukWrapper = ViewBindings.findChildViewById(rootView, id);
-      if (depoBuyuklukWrapper == null) {
-        break missingId;
-      }
-
       id = R.id.depoEkleUrunKategori;
       TextInputEditText depoEkleUrunKategori = ViewBindings.findChildViewById(rootView, id);
       if (depoEkleUrunKategori == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
         break missingId;
       }
 
@@ -163,15 +115,8 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.urunkategoriWrapper;
-      TextInputLayout urunkategoriWrapper = ViewBindings.findChildViewById(rootView, id);
-      if (urunkategoriWrapper == null) {
-        break missingId;
-      }
-
       return new ActivityDepoEkleBinding((LinearLayout) rootView, btnDepolarimaEkle, depoAd,
-          depoAdWrapper, depoAdres, depoAdresWrapper, depoBuyuklugu, depoBuyuklukWrapper,
-          depoEkleUrunKategori, imageView, txtGirisYap, urunkategoriWrapper);
+          depoAdres, depoBuyuklugu, depoEkleUrunKategori, txtGirisYap);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

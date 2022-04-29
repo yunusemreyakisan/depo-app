@@ -2770,6 +2770,7 @@ id btnSonIslemler
 id btnStokBilgisi
 id btnStokIslemleri
 id btnUrunIslemleri
+id btnUrunuEkle
 id btnYeniDepoEkle
 id buttonPanel
 id cache_measures
@@ -2823,11 +2824,8 @@ id default_activity_button
 id deltaRelative
 id dependency_ordering
 id depoAd
-id depoAdWrapper
 id depoAdres
-id depoAdresWrapper
 id depoBuyuklugu
-id depoBuyuklukWrapper
 id depoEkleUrunKategori
 id depoLogoDepolarim
 id depolarimRecyclerView
@@ -2907,7 +2905,6 @@ id ignore
 id ignoreRequest
 id image
 id imageDepoDarkLogo
-id imageView
 id immediateStop
 id included
 id info
@@ -3180,7 +3177,13 @@ id unchecked
 id uniform
 id unlabeled
 id up
-id urunkategoriWrapper
+id urunAdi
+id urunAdiWrapper
+id urunDeposu
+id urunKategori
+id urunKategoriWrapper
+id urunMiktar
+id urunMiktarWrapper
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3294,6 +3297,7 @@ layout activity_depolarim
 layout activity_home_page
 layout activity_kayit_ol
 layout activity_main
+layout activity_urun_islemleri
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3599,6 +3603,7 @@ string txtDepoIslemleri
 string txtHosgeldniz
 string txtUrunIslemleri
 string txt_depolarima_ekle
+string txt_urunu_ekle
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
