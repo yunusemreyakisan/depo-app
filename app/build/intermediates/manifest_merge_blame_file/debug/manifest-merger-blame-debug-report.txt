@@ -5,7 +5,7 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="29"
+8        android:minSdkVersion="26"
 8-->C:\Depo\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
 9-->C:\Depo\app\src\main\AndroidManifest.xml
@@ -13,11 +13,11 @@
 11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 12    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:13:5-79
-13-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:13:22-76
+13-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:13:5-79
+13-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:13:22-76
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:14:5-67
-14-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:14:22-64
+14-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:14:5-67
+14-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:14:22-64
 15    <uses-permission android:name="android.permission.WAKE_LOCK" />
 15-->[com.google.android.gms:play-services-measurement-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\45e1cd1b2682f71dcb7553f0d95932c7\transformed\jetified-play-services-measurement-api-20.1.2\AndroidManifest.xml:24:5-68
 15-->[com.google.android.gms:play-services-measurement-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\45e1cd1b2682f71dcb7553f0d95932c7\transformed\jetified-play-services-measurement-api-20.1.2\AndroidManifest.xml:24:22-65
@@ -90,19 +90,19 @@
 50        </activity>
 51
 52        <service
-52-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:17:9-23:19
+52-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:17:9-23:19
 53            android:name="com.google.firebase.components.ComponentDiscoveryService"
-53-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:18:13-84
+53-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:18:13-84
 54            android:directBootAware="true"
 54-->[com.google.firebase:firebase-common:20.1.0] D:\Program Files\Clock\caches\transforms-3\4d269560e039704a1f36c41df74d6df4\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
 55            android:exported="false" >
-55-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:19:13-37
+55-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:19:13-37
 56            <meta-data
-56-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:20:13-22:85
+56-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:20:13-22:85
 57                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-57-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:21:17-111
+57-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:21:17-111
 58                android:value="com.google.firebase.components.ComponentRegistrar" />
-58-->[com.google.firebase:firebase-firestore:24.1.0] D:\Program Files\Clock\caches\transforms-3\462e64e09ceec236e99dab80ac38f624\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:22:17-82
+58-->[com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:22:17-82
 59            <meta-data
 59-->[com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
 60                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -297,25 +297,51 @@
 162                android:value="androidx.startup" />
 162-->[androidx.emoji2:emoji2:1.0.0] D:\Program Files\Clock\caches\transforms-3\91231d5ea19e79e1183ac9875223993a\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 163            <meta-data
-163-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Program Files\Clock\caches\transforms-3\977149f332bd5d75e82e893bdc178279\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-164                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-164-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Program Files\Clock\caches\transforms-3\977149f332bd5d75e82e893bdc178279\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+163-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:31:13-33:52
+164                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+164-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:32:17-85
 165                android:value="androidx.startup" />
-165-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Program Files\Clock\caches\transforms-3\977149f332bd5d75e82e893bdc178279\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-166        </provider>
-167
-168        <uses-library
-168-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-169            android:name="androidx.window.extensions"
-169-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-170            android:required="false" />
-170-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+165-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:33:17-49
+166            <meta-data
+166-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Program Files\Clock\caches\transforms-3\977149f332bd5d75e82e893bdc178279\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+167                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+167-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Program Files\Clock\caches\transforms-3\977149f332bd5d75e82e893bdc178279\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+168                android:value="androidx.startup" />
+168-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Program Files\Clock\caches\transforms-3\977149f332bd5d75e82e893bdc178279\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+169        </provider>
+170
 171        <uses-library
-171-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-172            android:name="androidx.window.sidecar"
-172-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+171-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+172            android:name="androidx.window.extensions"
+172-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
 173            android:required="false" />
-173-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-174    </application>
-175
-176</manifest>
+173-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+174        <uses-library
+174-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+175            android:name="androidx.window.sidecar"
+175-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+176            android:required="false" />
+176-->[androidx.window:window:1.0.0] D:\Program Files\Clock\caches\transforms-3\3ef78bb168bcefede20430d1e8b03ab4\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+177
+178        <receiver
+178-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:36:9-45:20
+179            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+179-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:37:13-76
+180            android:directBootAware="false"
+180-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:38:13-44
+181            android:enabled="true"
+181-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:39:13-35
+182            android:exported="true"
+182-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:40:13-36
+183            android:permission="android.permission.DUMP" >
+183-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:41:13-57
+184            <intent-filter>
+184-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:42:13-44:29
+185                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+185-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:43:17-91
+185-->[androidx.profileinstaller:profileinstaller:1.0.0] D:\Program Files\Clock\caches\transforms-3\1767c0f8452d00c0266f5e49e08d9e41\transformed\jetified-profileinstaller-1.0.0\AndroidManifest.xml:43:25-88
+186            </intent-filter>
+187        </receiver>
+188    </application>
+189
+190</manifest>

@@ -9,29 +9,32 @@
     tools:context=".HomePage">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_marginStart="@dimen/genel_activity_margin"
-            android:layout_marginTop="@dimen/genel_activity_margin"
-            android:layout_marginEnd="@dimen/genel_activity_margin"
-            android:layout_weight="0.4">
+            android:layout_weight="0.5">
             <!-- Header Text  -->
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp">
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="60dp">
 
                 <TextView
                     android:id="@+id/txtHosgeldin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/imageDepoDarkLogo"
                     android:text="Hoşgeldin "
                     android:textColor="@color/colorPrimary"
                     android:textSize="25sp"
@@ -42,30 +45,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txtHosgeldin"
-                    android:layout_marginStart="10dp"
                     android:text=""
                     android:textColor="@color/colorPrimary"
                     android:textSize="30sp"
                     android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imageDepoDarkLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/cdTodo"
+                    app:srcCompat="@drawable/logodark" />
             </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/imageDepoDarkLogo"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="35dp"
-                android:contentDescription="@string/cdTodo"
-                app:srcCompat="@drawable/logodark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCikis"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="60dp"
                 android:background="@android:color/transparent"
+                android:contentDescription="@string/CD_logo"
+                android:gravity="center"
                 app:icon="@android:drawable/ic_popup_sync"
                 app:iconGravity="top"
                 app:iconSize="40dp" />
@@ -77,10 +81,13 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_marginStart="@dimen/genel_activity_margin"
-            android:layout_marginEnd="@dimen/genel_activity_margin"
-            android:layout_marginBottom="@dimen/genel_activity_margin"
-            android:layout_weight="0.8">
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center">
 
             <!-- Buton-1 Depo İşlemleri  -->
             <com.google.android.material.button.MaterialButton
@@ -88,7 +95,6 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
                 android:text="@string/txtDepoIslemleri"
                 android:textAlignment="gravity"
                 android:textSize="20sp"
@@ -101,22 +107,23 @@
                 android:id="@+id/btnUrunIslemleri"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_toEndOf="@+id/btnDepoIslemleri"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
                 android:text="@string/txtUrunIslemleri"
                 android:textSize="20sp"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/ic_baseline_compare_arrows_24"
                 app:iconGravity="top"
-                app:iconSize="50dp" />
+                app:iconSize="50dp"
+                app:layout_constraintStart_toEndOf="@+id/btnDepoIslemleri" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnStokIslemleri"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_below="@+id/btnDepoIslemleri"
-                android:layout_marginStart="10dp"
+                android:layout_below="@+id/btnUrunIslemleri"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
                 android:text="Stok İşlemleri"
                 android:textAlignment="gravity"
                 android:textSize="20sp"
@@ -129,9 +136,10 @@
                 android:id="@+id/btnSonIslemler"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_below="@+id/btnUrunIslemleri"
+                android:layout_below="@+id/btnDepoIslemleri"
+                android:layout_alignParentStart="true"
                 android:layout_marginStart="10dp"
-                android:layout_toEndOf="@+id/btnStokIslemleri"
+                android:layout_marginTop="0dp"
                 android:text="Son İşlemler"
                 android:textAlignment="gravity"
                 android:textSize="20sp"
@@ -144,22 +152,17 @@
                 android:id="@+id/btnStokBilgisi"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_below="@+id/btnStokIslemleri"
+                android:layout_below="@id/btnSonIslemler"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:gravity=""
+                android:gravity="center_vertical"
                 android:text="Stok Bilgisi"
                 android:textAlignment="gravity"
                 android:textSize="20sp"
                 app:cornerRadius="10dp"
                 app:icon="@android:drawable/ic_dialog_info"
                 app:iconGravity="end" />
-
-
         </RelativeLayout>
-        <!-- Bottom Nav Bar   -->
-
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

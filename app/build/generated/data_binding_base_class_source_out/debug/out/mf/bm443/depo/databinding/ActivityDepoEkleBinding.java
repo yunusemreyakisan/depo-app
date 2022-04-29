@@ -39,10 +39,13 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
   public final TextInputLayout depoAdresWrapper;
 
   @NonNull
-  public final TextInputEditText depoBuyukluk;
+  public final TextInputEditText depoBuyuklugu;
 
   @NonNull
   public final TextInputLayout depoBuyuklukWrapper;
+
+  @NonNull
+  public final TextInputEditText depoEkleUrunKategori;
 
   @NonNull
   public final ImageView imageView;
@@ -51,28 +54,25 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
   public final TextView txtGirisYap;
 
   @NonNull
-  public final TextInputEditText urunKategori;
-
-  @NonNull
   public final TextInputLayout urunkategoriWrapper;
 
   private ActivityDepoEkleBinding(@NonNull LinearLayout rootView, @NonNull Button btnDepolarimaEkle,
       @NonNull TextInputEditText depoAd, @NonNull TextInputLayout depoAdWrapper,
       @NonNull TextInputEditText depoAdres, @NonNull TextInputLayout depoAdresWrapper,
-      @NonNull TextInputEditText depoBuyukluk, @NonNull TextInputLayout depoBuyuklukWrapper,
-      @NonNull ImageView imageView, @NonNull TextView txtGirisYap,
-      @NonNull TextInputEditText urunKategori, @NonNull TextInputLayout urunkategoriWrapper) {
+      @NonNull TextInputEditText depoBuyuklugu, @NonNull TextInputLayout depoBuyuklukWrapper,
+      @NonNull TextInputEditText depoEkleUrunKategori, @NonNull ImageView imageView,
+      @NonNull TextView txtGirisYap, @NonNull TextInputLayout urunkategoriWrapper) {
     this.rootView = rootView;
     this.btnDepolarimaEkle = btnDepolarimaEkle;
     this.depoAd = depoAd;
     this.depoAdWrapper = depoAdWrapper;
     this.depoAdres = depoAdres;
     this.depoAdresWrapper = depoAdresWrapper;
-    this.depoBuyukluk = depoBuyukluk;
+    this.depoBuyuklugu = depoBuyuklugu;
     this.depoBuyuklukWrapper = depoBuyuklukWrapper;
+    this.depoEkleUrunKategori = depoEkleUrunKategori;
     this.imageView = imageView;
     this.txtGirisYap = txtGirisYap;
-    this.urunKategori = urunKategori;
     this.urunkategoriWrapper = urunkategoriWrapper;
   }
 
@@ -133,15 +133,21 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.depoBuyukluk;
-      TextInputEditText depoBuyukluk = ViewBindings.findChildViewById(rootView, id);
-      if (depoBuyukluk == null) {
+      id = R.id.depoBuyuklugu;
+      TextInputEditText depoBuyuklugu = ViewBindings.findChildViewById(rootView, id);
+      if (depoBuyuklugu == null) {
         break missingId;
       }
 
       id = R.id.depoBuyuklukWrapper;
       TextInputLayout depoBuyuklukWrapper = ViewBindings.findChildViewById(rootView, id);
       if (depoBuyuklukWrapper == null) {
+        break missingId;
+      }
+
+      id = R.id.depoEkleUrunKategori;
+      TextInputEditText depoEkleUrunKategori = ViewBindings.findChildViewById(rootView, id);
+      if (depoEkleUrunKategori == null) {
         break missingId;
       }
 
@@ -157,12 +163,6 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.urunKategori;
-      TextInputEditText urunKategori = ViewBindings.findChildViewById(rootView, id);
-      if (urunKategori == null) {
-        break missingId;
-      }
-
       id = R.id.urunkategoriWrapper;
       TextInputLayout urunkategoriWrapper = ViewBindings.findChildViewById(rootView, id);
       if (urunkategoriWrapper == null) {
@@ -170,8 +170,8 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
       }
 
       return new ActivityDepoEkleBinding((LinearLayout) rootView, btnDepolarimaEkle, depoAd,
-          depoAdWrapper, depoAdres, depoAdresWrapper, depoBuyukluk, depoBuyuklukWrapper, imageView,
-          txtGirisYap, urunKategori, urunkategoriWrapper);
+          depoAdWrapper, depoAdres, depoAdresWrapper, depoBuyuklugu, depoBuyuklukWrapper,
+          depoEkleUrunKategori, imageView, txtGirisYap, urunkategoriWrapper);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

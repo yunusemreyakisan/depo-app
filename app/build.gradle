@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.mf.bm443.depo"
-        minSdk 29
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -31,6 +31,8 @@ android {
 }
 
 dependencies {
+    implementation "androidx.constraintlayout:constraintlayout:2.1.3"
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.0"
     implementation "io.grpc:grpc-okhttp:1.32.2"
     implementation 'androidx.core:core-splashscreen:1.0.0-beta02'
     implementation 'androidx.core:core-splashscreen:1.0.0-beta02'
@@ -49,7 +51,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:21.0.3'
     implementation 'com.google.android.gms:play-services-auth:20.1.0'
     implementation 'com.google.firebase:firebase-database:20.0.4'
-    implementation 'com.google.firebase:firebase-firestore:24.1.0'
+    implementation 'com.google.firebase:firebase-firestore:24.1.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

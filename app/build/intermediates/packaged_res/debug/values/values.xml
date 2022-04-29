@@ -42,15 +42,11 @@
     <string name="email_text">E-Mail</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="gcm_defaultSenderId" translatable="false">41520331102</string>
-    <string name="get_started">GET STARTED</string>
     <string name="google_api_key" translatable="false">AIzaSyC_mMVvFFAOyxECXMev36j8ql-hg8EJOI8</string>
     <string name="google_app_id" translatable="false">1:41520331102:android:493ee8ff1ab50e8050f7cf</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC_mMVvFFAOyxECXMev36j8ql-hg8EJOI8</string>
     <string name="google_storage_bucket" translatable="false">depoenvanteryonetimi.appspot.com</string>
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="hey_giris_yap">Hey, \nGiriş yap.</string>
-    <string name="hyperlink"><a href="https://www.linkedin.com/in/yunusemreyakisan/">Şifremi unuttum</a></string>
     <string name="kayit_ol_hint">KAYIT OL</string>
     <string name="lbl_kayit_ol">Kayıt Ol</string>
     <string name="logo">Logo</string>
@@ -60,18 +56,11 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="sifre">Şifre</string>
     <string name="sifre_hint">Şifre</string>
-    <string name="splash_info">Splash Depo White Logo</string>
-    <string name="subtitle1">We are here to help you with an Android Source code</string>
-    <string name="textdepolarima_ekle">DEPOLARIMA Ekle</string>
-    <string name="title_activity_anasayfa">Anasayfa</string>
     <string name="title_activity_bottom_nav_bar">Bottom_NavBar_Activity</string>
-    <string name="title_activity_hesap_yok">HesapYok</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_home">Home</string>
-    <string name="title_notifications">Notifications</string>
     <string name="txtDepoIslemleri">Depo İşlemleri</string>
     <string name="txtHosgeldniz">Hoşgeldiniz</string>
     <string name="txtUrunIslemleri">Ürün İşlemleri</string>
+    <string name="txt_depolarima_ekle">DEPOLARIMA Ekle</string>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -93,9 +82,5 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-
-
-
-
     </style>
 </resources>

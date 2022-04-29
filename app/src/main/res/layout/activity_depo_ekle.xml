@@ -42,7 +42,6 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/depoAdWrapper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxCornerRadiusBottomEnd="10dp"
@@ -57,13 +56,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/marginBottom"
-                    android:textColorHint="@color/editTextColor"
-                    android:hint="DEPO ADI" />
+                    android:hint="DEPO ADI"
+                    android:textColorHint="@color/editTextColor" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/depoAdresWrapper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxCornerRadiusBottomEnd="10dp"
@@ -78,13 +76,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/marginBottom"
-                    android:textColorHint="@color/editTextColor"
                     android:hint="DEPO ADRES"
-                    android:inputType="textLongMessage" />
+                    android:inputType="textLongMessage"
+                    android:textColorHint="@color/editTextColor" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/depoBuyuklukWrapper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxCornerRadiusBottomEnd="10dp"
@@ -95,17 +92,16 @@
                 app:boxStrokeWidthFocused="0dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/depoBuyukluk"
+                    android:id="@+id/depoBuyuklugu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/marginBottom"
-                    android:textColorHint="@color/editTextColor"
                     android:hint="DEPO BÜYÜKLÜĞÜ (KG)"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textColorHint="@color/editTextColor" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/urunkategoriWrapper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxCornerRadiusBottomEnd="10dp"
@@ -114,17 +110,15 @@
                 app:boxCornerRadiusTopStart="10dp"
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp"
-
                 >
-
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/urunKategori"
+                    android:id="@+id/depoEkleUrunKategori"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/marginBottom"
-                    android:textColorHint="@color/editTextColor"
                     android:hint="DEPO ÜRÜN KATEGORİSİ"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:textColorHint="@color/editTextColor" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <RelativeLayout
@@ -137,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="@color/btnColor"
-                    android:text="@string/textdepolarima_ekle" />
+                    android:text="@string/txt_depolarima_ekle" />
             </RelativeLayout>
 
 

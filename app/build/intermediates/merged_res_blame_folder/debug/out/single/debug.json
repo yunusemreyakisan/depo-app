@@ -4,8 +4,20 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_welcome.png.flat",
@@ -28,8 +40,8 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\arkaplan.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logo.xml.flat",
@@ -40,32 +52,44 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_baseline_compare_arrows_24.xml"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_splash_screen_dark.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_splash_screen_dark.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout-v4_activity_kayit_ol.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout-v4\\activity_kayit_ol.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\menu_ana_menu.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\menu\\ana_menu.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_home_page.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_home_page.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_depolarim.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depolarim.xml"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_kayitolresmi.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_kayitolresmi.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_depolarim.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depolarim.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_auto_delete_24.xml.flat",
@@ -76,64 +100,60 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_depo.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_depo.xml"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_depo_foreground.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_depo_foreground.png"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_warehouse.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_baseline_warehouse.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_depo_foreground.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_depo_foreground.png"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_depo_round.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_depo_round.xml"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_depo_ekle.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depo_ekle.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_kayit_ol.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_kayit_ol.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_depo_foreground.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_depo_foreground.png"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_depo_foreground.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_depo_foreground.png"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_item.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\item.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_logodark.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\logodark.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
@@ -142,18 +162,6 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_depo_foreground.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_depo_foreground.png"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_logowhite.png.flat",

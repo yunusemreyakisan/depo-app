@@ -1,24 +1,15 @@
 <resources>
-    <string name="hyperlink"><a href="https://www.linkedin.com/in/yunusemreyakisan/">Şifremi unuttum</a></string>
     <string name="app_name">Depo</string>
-    <string name="title_activity_hesap_yok">HesapYok</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_anasayfa">Anasayfa</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="lbl_kayit_ol">Kayıt Ol</string>
     <string name="title_activity_bottom_nav_bar">Bottom_NavBar_Activity</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="copyright">Copyright © 2022 All Rights Reserved.</string>
-    <string name="splash_info">Splash Depo White Logo</string>
     <string name="logo">Logo</string>
     <string name="email_text">E-Mail</string>
     <string name="hey_giris_yap">Hey, \nGiriş yap.</string>
@@ -31,13 +22,11 @@
     <string name="cdTodo">TODO</string>
     <string name="txtDepoIslemleri">Depo İşlemleri</string>
     <string name="txtUrunIslemleri">Ürün İşlemleri</string>
-    <string name="subtitle1">We are here to help you with an Android Source code</string>
-    <string name="get_started">GET STARTED</string>
     <string name="ad_soyad_hint">Ad-Soyad</string>
     <string name="e_posta_hint">E-Posta</string>
     <string name="CD_logo">Logo</string>
     <string name="sifre_hint">Şifre</string>
     <string name="kayit_ol_hint">KAYIT OL</string>
     <string name="CD_logo_image">Logo Image</string>
-    <string name="textdepolarima_ekle">DEPOLARIMA Ekle</string>
+    <string name="txt_depolarima_ekle">DEPOLARIMA Ekle</string>
 </resources>

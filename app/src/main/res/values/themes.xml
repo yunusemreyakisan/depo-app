@@ -11,11 +11,15 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-
-
-
-
     </style>
+
+    <!-- SplashScreen
+    <style name="AppTheme.Launcher" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/logodark</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+    -->
 
     <style name="Theme.Depo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
-    <color name="black">#FF000000</color>
     <color name="blackTxt">#0d0e15</color>
     <color name="blueButtonColor">#52a9e3</color>
     <color name="btnColor">#6e080f</color>
@@ -10,15 +9,8 @@
     <color name="editTextColor">#dfdfde</color>
     <color name="fav">#fe2042</color>
     <color name="grayTxt">#8c8c8c</color>
-    <color name="myfav">#007aff</color>
     <color name="orangeButtonColor">#f2913d</color>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="textColorHint">#616161</color>
-    <color name="white">#FFFFFFFF</color>
     <string name="textdepolarima_ekle">DEPOLARIMA Ekle</string>
     <style name="Theme.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->

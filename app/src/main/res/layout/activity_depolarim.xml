@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/arkaplan"
+    android:orientation="vertical"
     tools:context=".DepoEkle">
 
     <RelativeLayout
@@ -41,21 +41,10 @@
                 android:textStyle="bold" />
 
 
+
             <RelativeLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-
-
-                <Button
-                    android:id="@+id/btnDepoA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:backgroundTint="@color/btnColor"
-                    android:text="" />
-
-
-
 
                 <Button
                     android:id="@+id/btnYeniDepoEkle"
@@ -65,8 +54,16 @@
                     android:backgroundTint="@color/btnColor"
                     android:text="YENİ DEPO EKLE" />
 
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/depolarimRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_above="@+id/btnYeniDepoEkle"
+                    android:layout_height="match_parent" />
+
 
             </RelativeLayout>
+
+           
 
 
         </LinearLayout>

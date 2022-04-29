@@ -4,50 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/arkaplan"
+    android:orientation="vertical"
     tools:context=".KayitOl">
 
 
     <!-- Kayıt ol yazısı ve Depo logosunun yer aldığı yer.  -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_weight="0.1"
-        android:layout_margin="40dp"
-        >
 
-
-        <TextView
-            android:id="@+id/txtKayitOl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/kayitOlLogo"
-            android:layout_marginTop="10dp"
-            android:text="@string/lbl_kayit_ol"
-            android:textSize="35sp"
-            android:textColor="@color/colorPrimary"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/kayitOlLogo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="30dp"
-            android:contentDescription="@string/CD_logo_image"
-            app:srcCompat="@drawable/logodark" />
-
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/kayitOlLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/CD_logo_image"
+        app:srcCompat="@drawable/logodark" />
 
 
     <!-- Edittextlerin bulunduğu yer. -->
+    <TextView
+        android:id="@+id/txtKayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kayitOlLogo"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/lbl_kayit_ol"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp"
-        android:layout_weight="0.5">
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.2"
+        android:gravity="center_vertical">
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -67,6 +61,7 @@
                 android:id="@+id/adSoyad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:hint="@string/ad_soyad_hint"
                 android:inputType="text"
                 android:minHeight="48dp"
@@ -129,21 +124,15 @@
 
 
     <!-- Kayıt ol butonu-->
-    <RelativeLayout
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnKayitOl"
         android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_margin="40dp"
-        android:layout_weight="0.15">
-
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnKayitOl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:gravity="center"
-            android:text="@string/kayit_ol_hint" />
-    </RelativeLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/kayit_ol_hint" />
 
 
 </LinearLayout>

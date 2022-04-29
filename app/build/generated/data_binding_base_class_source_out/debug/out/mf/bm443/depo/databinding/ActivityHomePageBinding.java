@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -43,6 +44,9 @@ public final class ActivityHomePageBinding implements ViewBinding {
   public final ImageView imageDepoDarkLogo;
 
   @NonNull
+  public final LinearLayout linearLayout;
+
+  @NonNull
   public final TextView txtFirebaseAd;
 
   @NonNull
@@ -52,8 +56,8 @@ public final class ActivityHomePageBinding implements ViewBinding {
       @NonNull MaterialButton btnCikis, @NonNull MaterialButton btnDepoIslemleri,
       @NonNull MaterialButton btnSonIslemler, @NonNull MaterialButton btnStokBilgisi,
       @NonNull MaterialButton btnStokIslemleri, @NonNull MaterialButton btnUrunIslemleri,
-      @NonNull ImageView imageDepoDarkLogo, @NonNull TextView txtFirebaseAd,
-      @NonNull TextView txtHosgeldin) {
+      @NonNull ImageView imageDepoDarkLogo, @NonNull LinearLayout linearLayout,
+      @NonNull TextView txtFirebaseAd, @NonNull TextView txtHosgeldin) {
     this.rootView = rootView;
     this.btnCikis = btnCikis;
     this.btnDepoIslemleri = btnDepoIslemleri;
@@ -62,6 +66,7 @@ public final class ActivityHomePageBinding implements ViewBinding {
     this.btnStokIslemleri = btnStokIslemleri;
     this.btnUrunIslemleri = btnUrunIslemleri;
     this.imageDepoDarkLogo = imageDepoDarkLogo;
+    this.linearLayout = linearLayout;
     this.txtFirebaseAd = txtFirebaseAd;
     this.txtHosgeldin = txtHosgeldin;
   }
@@ -135,6 +140,12 @@ public final class ActivityHomePageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearLayout;
+      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout == null) {
+        break missingId;
+      }
+
       id = R.id.txtFirebaseAd;
       TextView txtFirebaseAd = ViewBindings.findChildViewById(rootView, id);
       if (txtFirebaseAd == null) {
@@ -149,7 +160,7 @@ public final class ActivityHomePageBinding implements ViewBinding {
 
       return new ActivityHomePageBinding((ConstraintLayout) rootView, btnCikis, btnDepoIslemleri,
           btnSonIslemler, btnStokBilgisi, btnStokIslemleri, btnUrunIslemleri, imageDepoDarkLogo,
-          txtFirebaseAd, txtHosgeldin);
+          linearLayout, txtFirebaseAd, txtHosgeldin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

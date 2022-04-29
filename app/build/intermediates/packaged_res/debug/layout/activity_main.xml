@@ -13,36 +13,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/genel_activity_margin"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="40dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="0.45">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-            <ImageView
-                android:id="@+id/girisLogo"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="20dp"
-                android:contentDescription="@null"
-                app:srcCompat="@drawable/logodark" />
+        <ImageView
+            android:id="@+id/girisLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/logodark" />
 
-            <TextView
-                android:id="@+id/txtGirisYap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/girisLogo"
-                android:layout_marginTop="10dp"
-                android:text="@string/hey_giris_yap"
-                android:textColor="@color/colorPrimary"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtGirisYap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/girisLogo"
+            android:layout_marginTop="9dp"
+            android:text="@string/hey_giris_yap"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
-        </RelativeLayout>
 
         <!-- TextInputLayouts -->
         <RelativeLayout
@@ -56,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="50dp"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
@@ -102,7 +100,7 @@
             <CheckBox
                 android:id="@+id/beniHatirlaCheckbox"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/girisSifreWrapper"
                 android:layout_alignParentStart="true"
                 android:text="@string/beni_hatirla"
@@ -121,12 +119,12 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnKaydol"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            style="?attr/materialButtonOutlinedStyle"
             android:layout_gravity="center"
-            android:text="@string/btnKaydol" />
+            android:text="@string/btnKaydol"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

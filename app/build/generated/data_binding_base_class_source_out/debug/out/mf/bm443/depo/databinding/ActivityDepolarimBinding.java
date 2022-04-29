@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -22,24 +23,24 @@ public final class ActivityDepolarimBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnDepoA;
-
-  @NonNull
   public final Button btnYeniDepoEkle;
 
   @NonNull
   public final ImageView depoLogoDepolarim;
 
   @NonNull
+  public final RecyclerView depolarimRecyclerView;
+
+  @NonNull
   public final TextView txtGirisYap;
 
-  private ActivityDepolarimBinding(@NonNull LinearLayout rootView, @NonNull Button btnDepoA,
-      @NonNull Button btnYeniDepoEkle, @NonNull ImageView depoLogoDepolarim,
+  private ActivityDepolarimBinding(@NonNull LinearLayout rootView, @NonNull Button btnYeniDepoEkle,
+      @NonNull ImageView depoLogoDepolarim, @NonNull RecyclerView depolarimRecyclerView,
       @NonNull TextView txtGirisYap) {
     this.rootView = rootView;
-    this.btnDepoA = btnDepoA;
     this.btnYeniDepoEkle = btnYeniDepoEkle;
     this.depoLogoDepolarim = depoLogoDepolarim;
+    this.depolarimRecyclerView = depolarimRecyclerView;
     this.txtGirisYap = txtGirisYap;
   }
 
@@ -70,12 +71,6 @@ public final class ActivityDepolarimBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnDepoA;
-      Button btnDepoA = ViewBindings.findChildViewById(rootView, id);
-      if (btnDepoA == null) {
-        break missingId;
-      }
-
       id = R.id.btnYeniDepoEkle;
       Button btnYeniDepoEkle = ViewBindings.findChildViewById(rootView, id);
       if (btnYeniDepoEkle == null) {
@@ -88,14 +83,20 @@ public final class ActivityDepolarimBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.depolarimRecyclerView;
+      RecyclerView depolarimRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (depolarimRecyclerView == null) {
+        break missingId;
+      }
+
       id = R.id.txtGirisYap;
       TextView txtGirisYap = ViewBindings.findChildViewById(rootView, id);
       if (txtGirisYap == null) {
         break missingId;
       }
 
-      return new ActivityDepolarimBinding((LinearLayout) rootView, btnDepoA, btnYeniDepoEkle,
-          depoLogoDepolarim, txtGirisYap);
+      return new ActivityDepolarimBinding((LinearLayout) rootView, btnYeniDepoEkle,
+          depoLogoDepolarim, depolarimRecyclerView, txtGirisYap);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
