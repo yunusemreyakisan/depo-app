@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="textdepolarima_ekle">DEPOLARIMA Ekle</string>
+    <string name="txt_urunu_ekle">Ürünü ekle</string>
 </resources>

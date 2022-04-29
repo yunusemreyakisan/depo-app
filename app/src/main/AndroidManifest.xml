@@ -11,6 +11,10 @@
         android:theme="@style/Theme.Light">
 
         <activity
+            android:name=".UrunIslemleri"
+            android:exported="true" />
+
+        <activity
             android:name=".DepoEkle"
             android:exported="true" />
         <activity

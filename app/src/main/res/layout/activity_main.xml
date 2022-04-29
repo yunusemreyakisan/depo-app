@@ -46,6 +46,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
+            android:gravity="center_vertical"
             android:layout_weight="0.6">
 
 
