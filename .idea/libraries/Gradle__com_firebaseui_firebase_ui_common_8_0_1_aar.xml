@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.firebaseui:firebase-ui-common:8.0.1@aar">
+    <CLASSES>
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/e088e6f046689e4970daa5160803f434/transformed/jetified-firebase-ui-common-8.0.1/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/e088e6f046689e4970daa5160803f434/transformed/jetified-firebase-ui-common-8.0.1/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/e088e6f046689e4970daa5160803f434/transformed/jetified-firebase-ui-common-8.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-common/8.0.1/c175b93eebc501d763c7fc7d17047c5d6c22b153/firebase-ui-common-8.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-common/8.0.1/af8be7e94c04e48d7c5e9d25c8b154fc19a99ee6/firebase-ui-common-8.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

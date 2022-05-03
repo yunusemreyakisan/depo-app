@@ -91,9 +91,8 @@ public class HomePage extends AppCompatActivity {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         assert mUser != null;
         DocumentReference docRef = db.collection("Kullanıcılar").document(mUser.getUid());
-        docRef.get().
-
-                addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+        docRef.get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                     private static final String TAG = "123";
 
                     @Override
