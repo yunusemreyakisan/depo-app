@@ -7,10 +7,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Objects;
@@ -27,7 +32,6 @@ public class DepoEkle extends AppCompatActivity {
     private FirebaseUser mUser;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,7 @@ public class DepoEkle extends AppCompatActivity {
         mFirestore = FirebaseFirestore.getInstance();
         initComponents();
         depoOzellikleriKaydet();
+
 
     }
 
@@ -46,48 +51,48 @@ public class DepoEkle extends AppCompatActivity {
         depoAdres = findViewById(R.id.depoAdres);
         depoBuyuklugu = findViewById(R.id.depoBuyuklugu);
         depoKategori = findViewById(R.id.depoEkleUrunKategori);
-
     }
 
 
-    //Özellikleri döküman olarak içeriye ekleme
-    private void depoOzellikleriKaydet() {
-        mAuth = FirebaseAuth.getInstance();
-        depolarimaEkle.setOnClickListener(view -> {
-            //Alan Tanımları
-            String depoadi = depoAd.getText().toString();
-            String depoAdresi = depoAdres.getText().toString();
-            String depoBuyukluk = depoBuyuklugu.getText().toString();
-            String depoUrunKategori = depoKategori.getText().toString();
-            if (TextUtils.isEmpty(depoadi) || TextUtils.isEmpty(depoBuyukluk) || TextUtils.isEmpty(depoUrunKategori)) {
-                Toast.makeText(DepoEkle.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
-            } else {
-                //Veritabanına Canlı Kayıt Etme (Realtime Database)
-                String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
-                mUser = mAuth.getCurrentUser();
-                mDatabase = FirebaseDatabase.getInstance().getReference().child("Kullanıcılar").child(user_id).child("Depolarım");
+        //Özellikleri döküman olarak içeriye ekleme
+        private void depoOzellikleriKaydet () {
+            mAuth = FirebaseAuth.getInstance();
+            depolarimaEkle.setOnClickListener(view -> {
+                //Alan Tanımları
+                String depoadi = depoAd.getText().toString();
+                String depoAdresi = depoAdres.getText().toString();
+                String depoBuyukluk = depoBuyuklugu.getText().toString();
+                String depoUrunKategori = depoKategori.getText().toString();
+                if (TextUtils.isEmpty(depoadi) || TextUtils.isEmpty(depoBuyukluk) || TextUtils.isEmpty(depoUrunKategori)) {
+                    Toast.makeText(DepoEkle.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
+                } else {
+                    //Veritabanına Canlı Kayıt Etme (Realtime Database)
+                    String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
+                    mUser = mAuth.getCurrentUser();
+                    mDatabase = FirebaseDatabase.getInstance().getReference().child("Kullanıcılar").child(user_id).child("Depolarım");
 
-               mCData = new HashMap<>();
-                //HashMap<String, String> mData = new HashMap<>();
-                mCData.put("depoAd", depoadi);
-                mCData.put("depoAdresi", depoAdresi);
-                mCData.put("depoBuyuklugu", depoBuyukluk);
-                mCData.put("depoKategorisi", depoUrunKategori);
+                    mCData = new HashMap<>();
+                    //HashMap<String, String> mData = new HashMap<>();
+                    mCData.put("depoAd", depoadi);
+                    mCData.put("depoAdresi", depoAdresi);
+                    mCData.put("depoBuyuklugu", depoBuyukluk);
+                    mCData.put("depoKategorisi", depoUrunKategori);
 
-                mFirestore.collection("Kullanıcılar")
-                        .document(mUser.getUid())
-                        .collection("Depolarım")
-                        .document()
-                        .set(mCData)
-                        .addOnSuccessListener(aVoid -> {
-                            Intent intent = new Intent(DepoEkle.this, Depolarim.class);
-                            startActivity(intent);
-                            Toast.makeText(DepoEkle.this, "Deponuz başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
-                        })
-                        .addOnFailureListener(e -> Toast.makeText(DepoEkle.this, "Deponuz oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show());
-            }
-        });
-    }
+                    mFirestore.collection("Kullanıcılar")
+                            .document(mUser.getUid())
+                            .collection("Depolarım")
+                            .document()
+                            .set(mCData)
+                            .addOnSuccessListener(aVoid -> {
+                                Intent intent = new Intent(DepoEkle.this, Depolarim.class);
+                                startActivity(intent);
+                                Toast.makeText(DepoEkle.this, "Deponuz başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
+                            })
+                            .addOnFailureListener(e -> Toast.makeText(DepoEkle.this, "Deponuz oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show());
+                }
+            });
+        }
 
 }
+
 

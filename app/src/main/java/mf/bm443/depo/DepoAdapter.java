@@ -36,10 +36,10 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoHolder> {
 
         DepolarimModel depolarimmodel = depolarimList.get(position);
 
-        holder.DepoAdi.setText(depolarimmodel.getDepoAdi());
-        holder.DepoAdresi.setText(depolarimmodel.getDepoAdresi());
-        holder.DepoBuyukluk.setText(depolarimmodel.getDepoBuyukluk());
-        holder.DepoKategori.setText(depolarimmodel.getDepoKategori());
+        holder.depoAdi.setText(depolarimmodel.getDepoAdi());
+        holder.depoAdresi.setText(depolarimmodel.getDepoAdresi());
+        holder.depoBuyukluk.setText(depolarimmodel.getDepoBuyukluk());
+        holder.depoKategori.setText(depolarimmodel.getDepoKategori());
     }
 
     @Override
@@ -50,14 +50,14 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoHolder> {
 
     static class DepoHolder extends RecyclerView.ViewHolder {
 
-        TextView DepoAdi, DepoAdresi, DepoKategori, DepoBuyukluk;
+        TextView depoAdi, depoAdresi, depoKategori, depoBuyukluk;
 
         public DepoHolder(@NonNull View itemView) {
             super(itemView);
-            DepoAdresi = itemView.findViewById(R.id.txtDepoAdresi);
-            DepoBuyukluk = itemView.findViewById(R.id.txtDepoBuyukluk);
-            DepoAdi = itemView.findViewById(R.id.txtDepoAdi);
-            DepoKategori = itemView.findViewById(R.id.txtDepoKategorisi);
+            depoAdresi = itemView.findViewById(R.id.txtDepoAdresi);
+            depoBuyukluk = itemView.findViewById(R.id.txtDepoBuyukluk);
+            depoAdi = itemView.findViewById(R.id.txtDepoAdi);
+            depoKategori = itemView.findViewById(R.id.txtDepoKategorisi);
 
         }
 

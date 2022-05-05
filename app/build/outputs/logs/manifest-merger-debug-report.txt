@@ -9,10 +9,11 @@ MERGED from [androidx.navigation:navigation-ui:2.4.2] D:\Program Files\Clock\cac
 MERGED from [com.google.android.material:material:1.5.0] D:\Program Files\Clock\caches\transforms-3\674abb4d82ba1aa2c7f4d6d7ae3e1609\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] D:\Program Files\Clock\caches\transforms-3\6da9f8502273c1ee047d3252d8508a80\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.constraintlayout:constraintlayout-compose:1.0.0] D:\Program Files\Clock\caches\transforms-3\7234fff1122ca0d605013585143c334e\transformed\jetified-constraintlayout-compose-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.firebaseui:firebase-ui-firestore:8.0.1] D:\Program Files\Clock\caches\transforms-3\e91ae1307109e0f2e6a1e043b0d7e7cb\transformed\jetified-firebase-ui-firestore-8.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.core:core-splashscreen:1.0.0-beta02] D:\Program Files\Clock\caches\transforms-3\0e82c2457305dedeb39697e09bcd4c8b\transformed\jetified-core-splashscreen-1.0.0-beta02\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:17:1-73:12
-MERGED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:17:1-40:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] D:\Program Files\Clock\caches\transforms-3\67c0381ea558987e872d7ddaceb3e747\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.4.2] D:\Program Files\Clock\caches\transforms-3\e85c9eca6f222e86588cd44fd92ad01e\transformed\navigation-fragment-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] D:\Program Files\Clock\caches\transforms-3\02d6900818f50f63b905039d492c4ceb\transformed\jetified-lifecycle-livedata-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
@@ -22,6 +23,8 @@ MERGED from [androidx.activity:activity-ktx:1.2.3] D:\Program Files\Clock\caches
 MERGED from [androidx.navigation:navigation-common:2.4.2] D:\Program Files\Clock\caches\transforms-3\416f43dffe44e844ecbb5b3e54143f2c\transformed\navigation-common-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] D:\Program Files\Clock\caches\transforms-3\54ff39f3d363f542fabdba20922ce85e\transformed\jetified-lifecycle-viewmodel-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\Program Files\Clock\caches\transforms-3\27f2cbb4268a0a7a8607f0fa76656ef6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\Program Files\Clock\caches\transforms-3\5e6da97020d09655c3eeed3a79bb8205\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] D:\Program Files\Clock\caches\transforms-3\c06e4e73c94c1b36365aa50189a0573a\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-analytics:20.1.2] D:\Program Files\Clock\caches\transforms-3\f019ca727de2022d346164e003cc967a\transformed\jetified-firebase-analytics-20.1.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta06] D:\Program Files\Clock\caches\transforms-3\1c510047a92544739fc08bf75b879f73\transformed\jetified-firebase-appcheck-interop-16.0.0-beta06\AndroidManifest.xml:15:1-26:12
@@ -62,7 +65,6 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] D:
 MERGED from [com.google.android.gms:play-services-measurement-base:20.1.2] D:\Program Files\Clock\caches\transforms-3\3552ba2d5467d8b7bd0beacd4c93d982\transformed\jetified-play-services-measurement-base-20.1.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] D:\Program Files\Clock\caches\transforms-3\6f42219aaf419afb2c8e5e6190aaf7ea\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] D:\Program Files\Clock\caches\transforms-3\5ef849c08bf7a5d40eacd5b496016852\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\Program Files\Clock\caches\transforms-3\5e6da97020d09655c3eeed3a79bb8205\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.4.1] D:\Program Files\Clock\caches\transforms-3\8f5033a18464e52a4dc6a1a24fb4ea53\transformed\fragment-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] D:\Program Files\Clock\caches\transforms-3\bdf8eb73078d9b10feb2a54aa5301868\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.2.4] D:\Program Files\Clock\caches\transforms-3\4d58b8abb8c6aa5531ea53815a240a8c\transformed\jetified-activity-1.2.4\AndroidManifest.xml:17:1-24:12
@@ -75,7 +77,6 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] D:\Program F
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\Program Files\Clock\caches\transforms-3\c6e726b4fbbe477dbd86c9b75b013abd\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] D:\Program Files\Clock\caches\transforms-3\f4e305ae78aa644e2f2ad41f8eae3fb2\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] D:\Program Files\Clock\caches\transforms-3\e7f781a590cf6638e25117f6246d7c07\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] D:\Program Files\Clock\caches\transforms-3\68b23b5b80731f908bf3cf0e054d2cb9\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] D:\Program Files\Clock\caches\transforms-3\d7796991ad179c84d8fd409578ccbb0c\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] D:\Program Files\Clock\caches\transforms-3\c1d3063349770a61dc704757945175fe\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.autofill:autofill:1.0.0] D:\Program Files\Clock\caches\transforms-3\80631eb7e72dc5a199289d6f98deb380\transformed\jetified-autofill-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -90,6 +91,7 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\Program
 MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] D:\Program Files\Clock\caches\transforms-3\ba71e9837b603c226f78d7d4d5626c42\transformed\jetified-savedstate-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] D:\Program Files\Clock\caches\transforms-3\b6bcada75e7d757f6e37bfcf324669a2\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] D:\Program Files\Clock\caches\transforms-3\8cfe277b6c0dbed7faa9157a001659d3\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.firebaseui:firebase-ui-common:8.0.1] D:\Program Files\Clock\caches\transforms-3\e088e6f046689e4970daa5160803f434\transformed\jetified-firebase-ui-common-8.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] D:\Program Files\Clock\caches\transforms-3\945a62e6d5b25ff293c333592ff67563\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.compose.runtime:runtime-saveable:1.0.0] D:\Program Files\Clock\caches\transforms-3\90b39d6c537584b1ebede7f4f3cd0a22\transformed\jetified-runtime-saveable-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.compose.ui:ui-geometry:1.0.0] D:\Program Files\Clock\caches\transforms-3\9a5e7cd2c9cb0beaf6788622c567dad0\transformed\jetified-ui-geometry-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -101,6 +103,7 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] D:\Program Files\Clock\
 MERGED from [androidx.startup:startup-runtime:1.0.0] D:\Program Files\Clock\caches\transforms-3\6720d62a841d63a822565527d8a58bf2\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] D:\Program Files\Clock\caches\transforms-3\7aaaf9890dde22097f94c56f8d4871f0\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] D:\Program Files\Clock\caches\transforms-3\1ebd889d830d11e5425a5f229cf4ce2b\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] D:\Program Files\Clock\caches\transforms-3\0ab5c063b3b60c9bf1e5c01628e61d33\transformed\jetified-paging-rxjava3-3.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] D:\Program Files\Clock\caches\transforms-3\b6e2a3373e50ed1ed55c650cad618051\transformed\jetified-lifecycle-livedata-core-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] D:\Program Files\Clock\caches\transforms-3\dc1077f2c6f5f1ab2acf9d7888e07241\transformed\lifecycle-livedata-core-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] D:\Program Files\Clock\caches\transforms-3\96216c55ae38fe411856ba4cf5573536\transformed\jetified-lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -139,8 +142,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clo
 MERGED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:26:5-71:19
-MERGED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-analytics:20.1.2] D:\Program Files\Clock\caches\transforms-3\f019ca727de2022d346164e003cc967a\transformed\jetified-firebase-analytics-20.1.2\AndroidManifest.xml:7:5-20
@@ -265,14 +268,16 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] D:\Program Files\
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] D:\Program Files\Clock\caches\transforms-3\6da9f8502273c1ee047d3252d8508a80\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout-compose:1.0.0] D:\Program Files\Clock\caches\transforms-3\7234fff1122ca0d605013585143c334e\transformed\jetified-constraintlayout-compose-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout-compose:1.0.0] D:\Program Files\Clock\caches\transforms-3\7234fff1122ca0d605013585143c334e\transformed\jetified-constraintlayout-compose-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.firebaseui:firebase-ui-firestore:8.0.1] D:\Program Files\Clock\caches\transforms-3\e91ae1307109e0f2e6a1e043b0d7e7cb\transformed\jetified-firebase-ui-firestore-8.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-firestore:8.0.1] D:\Program Files\Clock\caches\transforms-3\e91ae1307109e0f2e6a1e043b0d7e7cb\transformed\jetified-firebase-ui-firestore-8.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.core:core-splashscreen:1.0.0-beta02] D:\Program Files\Clock\caches\transforms-3\0e82c2457305dedeb39697e09bcd4c8b\transformed\jetified-core-splashscreen-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-splashscreen:1.0.0-beta02] D:\Program Files\Clock\caches\transforms-3\0e82c2457305dedeb39697e09bcd4c8b\transformed\jetified-core-splashscreen-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.4.1] D:\Program Files\Clock\caches\transforms-3\67c0381ea558987e872d7ddaceb3e747\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] D:\Program Files\Clock\caches\transforms-3\67c0381ea558987e872d7ddaceb3e747\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.4.2] D:\Program Files\Clock\caches\transforms-3\e85c9eca6f222e86588cd44fd92ad01e\transformed\navigation-fragment-2.4.2\AndroidManifest.xml:20:5-22:41
@@ -291,6 +296,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] D:\Program Files\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] D:\Program Files\Clock\caches\transforms-3\54ff39f3d363f542fabdba20922ce85e\transformed\jetified-lifecycle-viewmodel-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\Program Files\Clock\caches\transforms-3\27f2cbb4268a0a7a8607f0fa76656ef6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\Program Files\Clock\caches\transforms-3\27f2cbb4268a0a7a8607f0fa76656ef6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\Program Files\Clock\caches\transforms-3\5e6da97020d09655c3eeed3a79bb8205\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\Program Files\Clock\caches\transforms-3\5e6da97020d09655c3eeed3a79bb8205\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] D:\Program Files\Clock\caches\transforms-3\c06e4e73c94c1b36365aa50189a0573a\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] D:\Program Files\Clock\caches\transforms-3\c06e4e73c94c1b36365aa50189a0573a\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-analytics:20.1.2] D:\Program Files\Clock\caches\transforms-3\f019ca727de2022d346164e003cc967a\transformed\jetified-firebase-analytics-20.1.2\AndroidManifest.xml:5:5-44
@@ -371,8 +380,6 @@ MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] D:\Progr
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] D:\Program Files\Clock\caches\transforms-3\6f42219aaf419afb2c8e5e6190aaf7ea\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] D:\Program Files\Clock\caches\transforms-3\5ef849c08bf7a5d40eacd5b496016852\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] D:\Program Files\Clock\caches\transforms-3\5ef849c08bf7a5d40eacd5b496016852\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\Program Files\Clock\caches\transforms-3\5e6da97020d09655c3eeed3a79bb8205\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\Program Files\Clock\caches\transforms-3\5e6da97020d09655c3eeed3a79bb8205\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.4.1] D:\Program Files\Clock\caches\transforms-3\8f5033a18464e52a4dc6a1a24fb4ea53\transformed\fragment-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.4.1] D:\Program Files\Clock\caches\transforms-3\8f5033a18464e52a4dc6a1a24fb4ea53\transformed\fragment-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.loader:loader:1.0.0] D:\Program Files\Clock\caches\transforms-3\bdf8eb73078d9b10feb2a54aa5301868\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
@@ -397,8 +404,6 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] D:\Program File
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] D:\Program Files\Clock\caches\transforms-3\f4e305ae78aa644e2f2ad41f8eae3fb2\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] D:\Program Files\Clock\caches\transforms-3\e7f781a590cf6638e25117f6246d7c07\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] D:\Program Files\Clock\caches\transforms-3\e7f781a590cf6638e25117f6246d7c07\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] D:\Program Files\Clock\caches\transforms-3\68b23b5b80731f908bf3cf0e054d2cb9\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] D:\Program Files\Clock\caches\transforms-3\68b23b5b80731f908bf3cf0e054d2cb9\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] D:\Program Files\Clock\caches\transforms-3\d7796991ad179c84d8fd409578ccbb0c\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] D:\Program Files\Clock\caches\transforms-3\d7796991ad179c84d8fd409578ccbb0c\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] D:\Program Files\Clock\caches\transforms-3\c1d3063349770a61dc704757945175fe\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
@@ -427,6 +432,8 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] D:\Program Files\Clock\caches
 MERGED from [androidx.savedstate:savedstate:1.1.0] D:\Program Files\Clock\caches\transforms-3\b6bcada75e7d757f6e37bfcf324669a2\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] D:\Program Files\Clock\caches\transforms-3\8cfe277b6c0dbed7faa9157a001659d3\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] D:\Program Files\Clock\caches\transforms-3\8cfe277b6c0dbed7faa9157a001659d3\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-common:8.0.1] D:\Program Files\Clock\caches\transforms-3\e088e6f046689e4970daa5160803f434\transformed\jetified-firebase-ui-common-8.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-common:8.0.1] D:\Program Files\Clock\caches\transforms-3\e088e6f046689e4970daa5160803f434\transformed\jetified-firebase-ui-common-8.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] D:\Program Files\Clock\caches\transforms-3\945a62e6d5b25ff293c333592ff67563\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] D:\Program Files\Clock\caches\transforms-3\945a62e6d5b25ff293c333592ff67563\transformed\lifecycle-viewmodel-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.compose.runtime:runtime-saveable:1.0.0] D:\Program Files\Clock\caches\transforms-3\90b39d6c537584b1ebede7f4f3cd0a22\transformed\jetified-runtime-saveable-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -449,6 +456,8 @@ MERGED from [androidx.tracing:tracing:1.0.0] D:\Program Files\Clock\caches\trans
 MERGED from [androidx.tracing:tracing:1.0.0] D:\Program Files\Clock\caches\transforms-3\7aaaf9890dde22097f94c56f8d4871f0\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] D:\Program Files\Clock\caches\transforms-3\1ebd889d830d11e5425a5f229cf4ce2b\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] D:\Program Files\Clock\caches\transforms-3\1ebd889d830d11e5425a5f229cf4ce2b\transformed\lifecycle-livedata-2.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] D:\Program Files\Clock\caches\transforms-3\0ab5c063b3b60c9bf1e5c01628e61d33\transformed\jetified-paging-rxjava3-3.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] D:\Program Files\Clock\caches\transforms-3\0ab5c063b3b60c9bf1e5c01628e61d33\transformed\jetified-paging-rxjava3-3.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] D:\Program Files\Clock\caches\transforms-3\b6e2a3373e50ed1ed55c650cad618051\transformed\jetified-lifecycle-livedata-core-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] D:\Program Files\Clock\caches\transforms-3\b6e2a3373e50ed1ed55c650cad618051\transformed\jetified-lifecycle-livedata-core-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] D:\Program Files\Clock\caches\transforms-3\dc1077f2c6f5f1ab2acf9d7888e07241\transformed\lifecycle-livedata-core-2.4.1\AndroidManifest.xml:20:5-22:41
@@ -481,6 +490,26 @@ INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
 		ADDED from C:\Depo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Depo\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from [com.firebaseui:firebase-ui-firestore:8.0.1] D:\Program Files\Clock\caches\transforms-3\e91ae1307109e0f2e6a1e043b0d7e7cb\transformed\jetified-firebase-ui-firestore-8.0.1\AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\45e1cd1b2682f71dcb7553f0d95932c7\transformed\jetified-play-services-measurement-api-20.1.2\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\45e1cd1b2682f71dcb7553f0d95932c7\transformed\jetified-play-services-measurement-api-20.1.2\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] D:\Program Files\Clock\caches\transforms-3\2cf539cea826fa14f9e8aa2807ca608a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] D:\Program Files\Clock\caches\transforms-3\2cf539cea826fa14f9e8aa2807ca608a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.1.2] D:\Program Files\Clock\caches\transforms-3\91c483e23d44896250e3ecfb2a4334a3\transformed\jetified-play-services-measurement-20.1.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.1.2] D:\Program Files\Clock\caches\transforms-3\91c483e23d44896250e3ecfb2a4334a3\transformed\jetified-play-services-measurement-20.1.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.2] D:\Program Files\Clock\caches\transforms-3\b35fb1f9fa3e952055b6c36d248a50e0\transformed\jetified-play-services-measurement-impl-20.1.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.2] D:\Program Files\Clock\caches\transforms-3\b35fb1f9fa3e952055b6c36d248a50e0\transformed\jetified-play-services-measurement-impl-20.1.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\9debe8f738fab7092c1e1c95752c4692\transformed\jetified-play-services-measurement-sdk-api-20.1.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\9debe8f738fab7092c1e1c95752c4692\transformed\jetified-play-services-measurement-sdk-api-20.1.2\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-firestore:8.0.1] D:\Program Files\Clock\caches\transforms-3\e91ae1307109e0f2e6a1e043b0d7e7cb\transformed\jetified-firebase-ui-firestore-8.0.1\AndroidManifest.xml:9:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:24:5-79
@@ -501,24 +530,6 @@ MERGED from [io.grpc:grpc-android:1.44.1] D:\Program Files\Clock\caches\transfor
 MERGED from [io.grpc:grpc-android:1.44.1] D:\Program Files\Clock\caches\transforms-3\13682025bf6fd5560dfab75ad06eaca8\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:13:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:14:5-67
-MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:26:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\45e1cd1b2682f71dcb7553f0d95932c7\transformed\jetified-play-services-measurement-api-20.1.2\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\45e1cd1b2682f71dcb7553f0d95932c7\transformed\jetified-play-services-measurement-api-20.1.2\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.1] D:\Program Files\Clock\caches\transforms-3\2cf539cea826fa14f9e8aa2807ca608a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.1] D:\Program Files\Clock\caches\transforms-3\2cf539cea826fa14f9e8aa2807ca608a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-measurement:20.1.2] D:\Program Files\Clock\caches\transforms-3\91c483e23d44896250e3ecfb2a4334a3\transformed\jetified-play-services-measurement-20.1.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:20.1.2] D:\Program Files\Clock\caches\transforms-3\91c483e23d44896250e3ecfb2a4334a3\transformed\jetified-play-services-measurement-20.1.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.2] D:\Program Files\Clock\caches\transforms-3\b35fb1f9fa3e952055b6c36d248a50e0\transformed\jetified-play-services-measurement-impl-20.1.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.2] D:\Program Files\Clock\caches\transforms-3\b35fb1f9fa3e952055b6c36d248a50e0\transformed\jetified-play-services-measurement-impl-20.1.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\9debe8f738fab7092c1e1c95752c4692\transformed\jetified-play-services-measurement-sdk-api-20.1.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] D:\Program Files\Clock\caches\transforms-3\9debe8f738fab7092c1e1c95752c4692\transformed\jetified-play-services-measurement-sdk-api-20.1.2\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:14:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-firestore:24.1.1] D:\Program Files\Clock\caches\transforms-3\656334a7bc69ee2c9b07203a3747a1d6\transformed\jetified-firebase-firestore-24.1.1\AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:64:9-70:19
@@ -600,25 +611,25 @@ ADDED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\cac
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.0.3] D:\Program Files\Clock\caches\transforms-3\88c9ee65a5bf813624eada11a3dcdb8a\transformed\jetified-firebase-auth-21.0.3\AndroidManifest.xml:68:17-109
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
+ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:25:13-46
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:26:13-37
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:27:13-72
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:24:13-93
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:24:13-93
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:33:9-37:51
+ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:33:9-37:51
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:35:13-36
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:35:13-36
 	android:visibleToInstantApps
-		ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:37:13-48
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:37:13-48
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:36:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:20.1.0] D:\Program Files\Clock\caches\transforms-3\0a8c87b82c423b7c1ffc59086a4d8c53\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] D:\Program Files\Clock\caches\transforms-3\06fe8d41500456b93aab00cb3800e26f\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:34:13-89
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
 ADDED from [com.google.firebase:firebase-database:20.0.4] D:\Program Files\Clock\caches\transforms-3\69948e7f7fc162acc525ecc5565c6ba9\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
 	android:value
