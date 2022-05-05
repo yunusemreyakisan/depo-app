@@ -1,36 +1,36 @@
 package mf.bm443.depo;
 
-import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.annotations.Nullable;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
 public class Depolarim extends AppCompatActivity {
     private Button btnYeniDepoEkle;
+
     private FirebaseFirestore db;
     ArrayList<DepolarimModel> depolarimList;
     DepoAdapter depoadapter;
     FirebaseAuth mAuth;
+    private FirebaseUser mUser;
     ProgressDialog progressDialog;
 
 
@@ -61,33 +61,33 @@ public class Depolarim extends AppCompatActivity {
         progressDialog.setMessage("Depolar yükleniyor...");
         progressDialog.show();
 
-
     }
 
     private void EventChangeListener() {
-       /* mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         FirebaseUser mUser = mAuth.getCurrentUser();
+        CollectionReference collectionReference = db
+                .collection("Kullanıcılar")
+                .document(mUser.getUid())
+                .collection("Depolarım");
 
-        db.collectionGroup("Depolarım").get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                    @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                        for (DocumentChange dc : queryDocumentSnapshots.getDocumentChanges()) {
-                            if (dc.getType() == DocumentChange.Type.ADDED) {
-                                depolarimList.add(dc.getDocument().toObject(DepolarimModel.class));
-                            }
+        collectionReference
+                .get()
+                .addOnSuccessListener(queryDocumentSnapshots -> {
+                    for (DocumentChange dc : queryDocumentSnapshots.getDocumentChanges()) {
+                        if (dc.getType() == DocumentChange.Type.ADDED) {
+                            depolarimList.add(dc.getDocument().toObject(DepolarimModel.class));
+
                         }
-
-
-                        depoadapter.notifyDataSetChanged();
-                        if (progressDialog.isShowing())
-                            progressDialog.dismiss();
-
                     }
+
+                    depoadapter.notifyDataSetChanged();
+                    if (progressDialog.isShowing())
+                        progressDialog.dismiss();
+
                 });
 
-        */
-
+       /*
 
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser mUser = mAuth.getCurrentUser();
@@ -122,9 +122,9 @@ public class Depolarim extends AppCompatActivity {
                     }
                 });
 
+        */
+
     }
-
-
 
 
     private void yeniDepoEkle() {
@@ -136,7 +136,6 @@ public class Depolarim extends AppCompatActivity {
 
 
     private void initComponents() {
-
         btnYeniDepoEkle = findViewById(R.id.btnYeniDepoEkle);
     }
 

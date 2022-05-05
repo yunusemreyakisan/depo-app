@@ -124,6 +124,10 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depo_ekle.xml"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_logout.xml"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_kayit_ol.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_kayit_ol.xml"
     },

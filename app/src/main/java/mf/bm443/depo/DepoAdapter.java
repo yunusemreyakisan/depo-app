@@ -38,8 +38,6 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoHolder> {
 
         holder.depoAdi.setText(depolarimmodel.getDepoAdi());
         holder.depoAdresi.setText(depolarimmodel.getDepoAdresi());
-        holder.depoBuyukluk.setText(depolarimmodel.getDepoBuyukluk());
-        holder.depoKategori.setText(depolarimmodel.getDepoKategori());
     }
 
     @Override
@@ -50,14 +48,13 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoHolder> {
 
     static class DepoHolder extends RecyclerView.ViewHolder {
 
-        TextView depoAdi, depoAdresi, depoKategori, depoBuyukluk;
+        TextView depoAdi, depoAdresi;
 
         public DepoHolder(@NonNull View itemView) {
             super(itemView);
             depoAdresi = itemView.findViewById(R.id.txtDepoAdresi);
-            depoBuyukluk = itemView.findViewById(R.id.txtDepoBuyukluk);
             depoAdi = itemView.findViewById(R.id.txtDepoAdi);
-            depoKategori = itemView.findViewById(R.id.txtDepoKategorisi);
+
 
         }
 

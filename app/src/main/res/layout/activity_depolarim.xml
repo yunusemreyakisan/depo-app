@@ -41,7 +41,6 @@
                 android:textStyle="bold" />
 
 
-
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -57,13 +56,11 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/depolarimRecyclerView"
                     android:layout_width="match_parent"
-                    android:layout_above="@+id/btnYeniDepoEkle"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/btnYeniDepoEkle" />
 
 
             </RelativeLayout>
-
-           
 
 
         </LinearLayout>

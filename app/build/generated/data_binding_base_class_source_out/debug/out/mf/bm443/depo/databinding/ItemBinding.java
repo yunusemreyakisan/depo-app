@@ -28,21 +28,12 @@ public final class ItemBinding implements ViewBinding {
   @NonNull
   public final TextView txtDepoAdresi;
 
-  @NonNull
-  public final TextView txtDepoBuyukluk;
-
-  @NonNull
-  public final TextView txtDepoKategorisi;
-
   private ItemBinding(@NonNull CardView rootView, @NonNull CardView recyclerView,
-      @NonNull TextView txtDepoAdi, @NonNull TextView txtDepoAdresi,
-      @NonNull TextView txtDepoBuyukluk, @NonNull TextView txtDepoKategorisi) {
+      @NonNull TextView txtDepoAdi, @NonNull TextView txtDepoAdresi) {
     this.rootView = rootView;
     this.recyclerView = recyclerView;
     this.txtDepoAdi = txtDepoAdi;
     this.txtDepoAdresi = txtDepoAdresi;
-    this.txtDepoBuyukluk = txtDepoBuyukluk;
-    this.txtDepoKategorisi = txtDepoKategorisi;
   }
 
   @Override
@@ -86,20 +77,7 @@ public final class ItemBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtDepoBuyukluk;
-      TextView txtDepoBuyukluk = ViewBindings.findChildViewById(rootView, id);
-      if (txtDepoBuyukluk == null) {
-        break missingId;
-      }
-
-      id = R.id.txtDepoKategorisi;
-      TextView txtDepoKategorisi = ViewBindings.findChildViewById(rootView, id);
-      if (txtDepoKategorisi == null) {
-        break missingId;
-      }
-
-      return new ItemBinding((CardView) rootView, recyclerView, txtDepoAdi, txtDepoAdresi,
-          txtDepoBuyukluk, txtDepoKategorisi);
+      return new ItemBinding((CardView) rootView, recyclerView, txtDepoAdi, txtDepoAdresi);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

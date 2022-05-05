@@ -2591,6 +2591,7 @@ drawable ic_kayitolresmi
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_foreground
 drawable ic_logo
+drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3165,8 +3166,6 @@ id transition_transform
 id triangle
 id txtDepoAdi
 id txtDepoAdresi
-id txtDepoBuyukluk
-id txtDepoKategorisi
 id txtFirebaseAd
 id txtGirisYap
 id txtGrsEmail

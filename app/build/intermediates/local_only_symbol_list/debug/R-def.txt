@@ -36,6 +36,7 @@ drawable ic_baseline_warehouse
 drawable ic_kayitolresmi
 drawable ic_launcher_foreground
 drawable ic_logo
+drawable ic_logout
 drawable ic_splash_screen_dark
 drawable logodark
 drawable logowhite
@@ -75,8 +76,6 @@ id sifre
 id sifreWrapper
 id txtDepoAdi
 id txtDepoAdresi
-id txtDepoBuyukluk
-id txtDepoKategorisi
 id txtFirebaseAd
 id txtGirisYap
 id txtGrsEmail

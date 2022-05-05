@@ -70,7 +70,7 @@
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/CD_logo"
                 android:gravity="center"
-                app:icon="@android:drawable/ic_popup_sync"
+                app:icon="@drawable/ic_logout"
                 app:iconGravity="top"
                 app:iconSize="40dp" />
 

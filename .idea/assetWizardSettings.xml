@@ -309,8 +309,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_kayitolresmi" />
-                            <entry key="sourceFile" value="D:\kayitolresmi.svg" />
+                            <entry key="outputName" value="ic_logout" />
+                            <entry key="sourceFile" value="D:\logout.svg" />
                           </map>
                         </option>
                       </PersistentState>

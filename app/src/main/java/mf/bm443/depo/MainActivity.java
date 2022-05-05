@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         initComponents();
         btnKaydolIslevi();
