@@ -11,24 +11,28 @@
         android:theme="@style/Theme.Light">
 
         <activity
-            android:name=".UrunIslemleri"
+            android:name=".layouts.urunIslemleri.Urunlerim"
             android:exported="true" />
 
         <activity
-            android:name=".DepoEkle"
-            android:exported="true" />
-        <activity
-            android:name=".Depolarim"
-            android:exported="true" />
-        <activity
-            android:name=".KayitOl"
-            android:exported="true" />
-        <activity
-            android:name=".HomePage"
+            android:name=".layouts.urunIslemleri.UrunEkle"
             android:exported="true" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".layouts.depoIslemleri.DepoEkle"
+            android:exported="true" />
+        <activity
+            android:name=".layouts.depoIslemleri.Depolarim"
+            android:exported="true" />
+        <activity
+            android:name=".layouts.auth.KayitOl"
+            android:exported="true" />
+        <activity
+            android:name=".layouts.HomePage"
+            android:exported="true" />
+
+        <activity
+            android:name=".layouts.auth.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

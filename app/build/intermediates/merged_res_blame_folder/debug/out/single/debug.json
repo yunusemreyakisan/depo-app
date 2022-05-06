@@ -20,22 +20,6 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_urun_islemleri.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_urun_islemleri.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_welcome.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\welcome.png"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_depoarkaplan.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\depoarkaplan.png"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_worker.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\worker.png"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_24.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
     },
@@ -62,6 +46,10 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_urun_item.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\urun_item.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_splash_screen_dark.xml.flat",
@@ -112,20 +100,36 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_back.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_depo_item.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\depo_item.xml"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_urunlerim.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_urunlerim.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_warehouse.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_baseline_warehouse.xml"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_logout.xml"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_depo_ekle.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depo_ekle.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logout.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_logout.xml"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_urun_ekle.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_urun_ekle.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_kayit_ol.xml.flat",
@@ -134,10 +138,6 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_item.xml.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\item.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_logodark.png.flat",

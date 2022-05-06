@@ -32,16 +32,16 @@ public final class ActivityDepolarimBinding implements ViewBinding {
   public final RecyclerView depolarimRecyclerView;
 
   @NonNull
-  public final TextView txtGirisYap;
+  public final TextView txtDepolarim;
 
   private ActivityDepolarimBinding(@NonNull LinearLayout rootView, @NonNull Button btnYeniDepoEkle,
       @NonNull ImageView depoLogoDepolarim, @NonNull RecyclerView depolarimRecyclerView,
-      @NonNull TextView txtGirisYap) {
+      @NonNull TextView txtDepolarim) {
     this.rootView = rootView;
     this.btnYeniDepoEkle = btnYeniDepoEkle;
     this.depoLogoDepolarim = depoLogoDepolarim;
     this.depolarimRecyclerView = depolarimRecyclerView;
-    this.txtGirisYap = txtGirisYap;
+    this.txtDepolarim = txtDepolarim;
   }
 
   @Override
@@ -89,14 +89,14 @@ public final class ActivityDepolarimBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtGirisYap;
-      TextView txtGirisYap = ViewBindings.findChildViewById(rootView, id);
-      if (txtGirisYap == null) {
+      id = R.id.txtDepolarim;
+      TextView txtDepolarim = ViewBindings.findChildViewById(rootView, id);
+      if (txtDepolarim == null) {
         break missingId;
       }
 
       return new ActivityDepolarimBinding((LinearLayout) rootView, btnYeniDepoEkle,
-          depoLogoDepolarim, depolarimRecyclerView, txtGirisYap);
+          depoLogoDepolarim, depolarimRecyclerView, txtDepolarim);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

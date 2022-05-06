@@ -2574,7 +2574,6 @@ drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
-drawable depoarkaplan
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2582,6 +2581,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_back
 drawable ic_baseline_add_24
 drawable ic_baseline_auto_delete_24
 drawable ic_baseline_compare_arrows_24
@@ -2648,8 +2648,6 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
-drawable welcome
-drawable worker
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2761,6 +2759,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnBackUrunlerim
 id btnCikis
 id btnDepoIslemleri
 id btnDepolarimaEkle
@@ -2768,11 +2767,11 @@ id btnGirisYap
 id btnKaydol
 id btnKayitOl
 id btnSonIslemler
-id btnStokBilgisi
 id btnStokIslemleri
 id btnUrunIslemleri
 id btnUrunuEkle
 id btnYeniDepoEkle
+id btnYeniUrunEkle
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2829,6 +2828,7 @@ id depoAdres
 id depoBuyuklugu
 id depoEkleUrunKategori
 id depoLogoDepolarim
+id depoLogoUrunlerim
 id depolarimRecyclerView
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -2917,6 +2917,7 @@ id item1
 id item2
 id item3
 id item4
+id itemImg
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3166,12 +3167,15 @@ id transition_transform
 id triangle
 id txtDepoAdi
 id txtDepoAdresi
+id txtDepolarim
 id txtFirebaseAd
 id txtGirisYap
 id txtGrsEmail
 id txtGrsSifre
 id txtHosgeldin
 id txtKayitOl
+id txtUrunAdi
+id txtUrunKategorisi
 id unchecked
 id uniform
 id unlabeled
@@ -3179,10 +3183,14 @@ id up
 id urunAdi
 id urunAdiWrapper
 id urunDeposu
+id urunDeposuWrapper
+id urunItemImg
 id urunKategori
 id urunKategoriWrapper
 id urunMiktar
 id urunMiktarWrapper
+id urunlerRecyclerView
+id urunlerimRecyclerView
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3296,10 +3304,12 @@ layout activity_depolarim
 layout activity_home_page
 layout activity_kayit_ol
 layout activity_main
-layout activity_urun_islemleri
+layout activity_urun_ekle
+layout activity_urunlerim
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
+layout depo_item
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -3315,7 +3325,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3397,6 +3406,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout urun_item
 menu example_menu
 menu example_menu2
 mipmap ic_launcher

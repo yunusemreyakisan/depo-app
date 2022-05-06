@@ -32,9 +32,6 @@ public final class ActivityHomePageBinding implements ViewBinding {
   public final MaterialButton btnSonIslemler;
 
   @NonNull
-  public final MaterialButton btnStokBilgisi;
-
-  @NonNull
   public final MaterialButton btnStokIslemleri;
 
   @NonNull
@@ -54,15 +51,14 @@ public final class ActivityHomePageBinding implements ViewBinding {
 
   private ActivityHomePageBinding(@NonNull ConstraintLayout rootView,
       @NonNull MaterialButton btnCikis, @NonNull MaterialButton btnDepoIslemleri,
-      @NonNull MaterialButton btnSonIslemler, @NonNull MaterialButton btnStokBilgisi,
-      @NonNull MaterialButton btnStokIslemleri, @NonNull MaterialButton btnUrunIslemleri,
-      @NonNull ImageView imageDepoDarkLogo, @NonNull LinearLayout linearLayout,
-      @NonNull TextView txtFirebaseAd, @NonNull TextView txtHosgeldin) {
+      @NonNull MaterialButton btnSonIslemler, @NonNull MaterialButton btnStokIslemleri,
+      @NonNull MaterialButton btnUrunIslemleri, @NonNull ImageView imageDepoDarkLogo,
+      @NonNull LinearLayout linearLayout, @NonNull TextView txtFirebaseAd,
+      @NonNull TextView txtHosgeldin) {
     this.rootView = rootView;
     this.btnCikis = btnCikis;
     this.btnDepoIslemleri = btnDepoIslemleri;
     this.btnSonIslemler = btnSonIslemler;
-    this.btnStokBilgisi = btnStokBilgisi;
     this.btnStokIslemleri = btnStokIslemleri;
     this.btnUrunIslemleri = btnUrunIslemleri;
     this.imageDepoDarkLogo = imageDepoDarkLogo;
@@ -116,12 +112,6 @@ public final class ActivityHomePageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnStokBilgisi;
-      MaterialButton btnStokBilgisi = ViewBindings.findChildViewById(rootView, id);
-      if (btnStokBilgisi == null) {
-        break missingId;
-      }
-
       id = R.id.btnStokIslemleri;
       MaterialButton btnStokIslemleri = ViewBindings.findChildViewById(rootView, id);
       if (btnStokIslemleri == null) {
@@ -159,8 +149,8 @@ public final class ActivityHomePageBinding implements ViewBinding {
       }
 
       return new ActivityHomePageBinding((ConstraintLayout) rootView, btnCikis, btnDepoIslemleri,
-          btnSonIslemler, btnStokBilgisi, btnStokIslemleri, btnUrunIslemleri, imageDepoDarkLogo,
-          linearLayout, txtFirebaseAd, txtHosgeldin);
+          btnSonIslemler, btnStokIslemleri, btnUrunIslemleri, imageDepoDarkLogo, linearLayout,
+          txtFirebaseAd, txtHosgeldin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

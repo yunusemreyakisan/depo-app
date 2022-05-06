@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/arkaplan"
     android:orientation="vertical"
-    tools:context=".HomePage">
+    tools:context=".layouts.HomePage">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -35,6 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imageDepoDarkLogo"
+                    android:layout_marginTop="10dp"
                     android:text="Hoşgeldin "
                     android:textColor="@color/colorPrimary"
                     android:textSize="25sp"
@@ -65,8 +66,8 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
-                android:layout_marginEnd="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/CD_logo"
                 android:gravity="center"
@@ -92,8 +93,8 @@
             <!-- Buton-1 Depo İşlemleri  -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnDepoIslemleri"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
                 android:layout_marginStart="10dp"
                 android:text="@string/txtDepoIslemleri"
                 android:textAlignment="gravity"
@@ -105,8 +106,8 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnUrunIslemleri"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="10dp"
                 android:text="@string/txtUrunIslemleri"
@@ -119,8 +120,8 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnStokIslemleri"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
                 android:layout_below="@+id/btnUrunIslemleri"
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="10dp"
@@ -134,8 +135,8 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSonIslemler"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
                 android:layout_below="@+id/btnDepoIslemleri"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="10dp"
@@ -148,20 +149,6 @@
                 app:iconGravity="top"
                 app:iconSize="50dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnStokBilgisi"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_below="@id/btnSonIslemler"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:gravity="center_vertical"
-                android:text="Stok Bilgisi"
-                android:textAlignment="gravity"
-                android:textSize="20sp"
-                app:cornerRadius="10dp"
-                app:icon="@android:drawable/ic_dialog_info"
-                app:iconGravity="end" />
         </RelativeLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

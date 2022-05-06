@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/arkaplan"
     android:orientation="vertical"
-    tools:context=".KayitOl">
+    tools:context=".layouts.auth.KayitOl">
 
 
     <!-- Kayıt ol yazısı ve Depo logosunun yer aldığı yer.  -->
@@ -33,7 +33,6 @@
         android:textColor="@color/colorPrimary"
         android:textSize="35sp"
         android:textStyle="bold" />
-
 
     <RelativeLayout
         android:layout_width="match_parent"

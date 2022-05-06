@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/arkaplan"
     android:orientation="vertical"
-    tools:context=".DepoEkle">
+    tools:context=".layouts.depoIslemleri.DepoEkle">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
 
 
             <TextView
-                android:id="@+id/txtGirisYap"
+                android:id="@+id/txtDepolarim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/depoLogoDepolarim"
@@ -39,7 +39,6 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
-
 
 
             <RelativeLayout
@@ -57,13 +56,11 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/depolarimRecyclerView"
                     android:layout_width="match_parent"
-                    android:layout_above="@+id/btnYeniDepoEkle"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/btnYeniDepoEkle" />
 
 
             </RelativeLayout>
-
-           
 
 
         </LinearLayout>

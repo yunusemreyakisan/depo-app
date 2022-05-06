@@ -27,22 +27,25 @@
         android:testOnly="true"
         android:theme="@style/Theme.Light" >
         <activity
-            android:name="mf.bm443.depo.UrunIslemleri"
+            android:name="mf.bm443.depo.layouts.urunIslemleri.Urunlerim"
             android:exported="true" />
         <activity
-            android:name="mf.bm443.depo.DepoEkle"
+            android:name="mf.bm443.depo.layouts.urunIslemleri.UrunEkle"
             android:exported="true" />
         <activity
-            android:name="mf.bm443.depo.Depolarim"
+            android:name="mf.bm443.depo.layouts.depoIslemleri.DepoEkle"
             android:exported="true" />
         <activity
-            android:name="mf.bm443.depo.KayitOl"
+            android:name="mf.bm443.depo.layouts.depoIslemleri.Depolarim"
             android:exported="true" />
         <activity
-            android:name="mf.bm443.depo.HomePage"
+            android:name="mf.bm443.depo.layouts.auth.KayitOl"
             android:exported="true" />
         <activity
-            android:name="mf.bm443.depo.MainActivity"
+            android:name="mf.bm443.depo.layouts.HomePage"
+            android:exported="true" />
+        <activity
+            android:name="mf.bm443.depo.layouts.auth.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
