@@ -4,7 +4,6 @@ package mf.bm443.depo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,24 +20,19 @@ public final class DepoItemBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final ImageView itemImg;
+  public final TextView depoAdresiWrap;
 
   @NonNull
   public final CardView recyclerView;
 
   @NonNull
-  public final TextView txtDepoAdi;
-
-  @NonNull
   public final TextView txtDepoAdresi;
 
-  private DepoItemBinding(@NonNull CardView rootView, @NonNull ImageView itemImg,
-      @NonNull CardView recyclerView, @NonNull TextView txtDepoAdi,
-      @NonNull TextView txtDepoAdresi) {
+  private DepoItemBinding(@NonNull CardView rootView, @NonNull TextView depoAdresiWrap,
+      @NonNull CardView recyclerView, @NonNull TextView txtDepoAdresi) {
     this.rootView = rootView;
-    this.itemImg = itemImg;
+    this.depoAdresiWrap = depoAdresiWrap;
     this.recyclerView = recyclerView;
-    this.txtDepoAdi = txtDepoAdi;
     this.txtDepoAdresi = txtDepoAdresi;
   }
 
@@ -69,19 +63,13 @@ public final class DepoItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.itemImg;
-      ImageView itemImg = ViewBindings.findChildViewById(rootView, id);
-      if (itemImg == null) {
+      id = R.id.depoAdresiWrap;
+      TextView depoAdresiWrap = ViewBindings.findChildViewById(rootView, id);
+      if (depoAdresiWrap == null) {
         break missingId;
       }
 
       CardView recyclerView = (CardView) rootView;
-
-      id = R.id.txtDepoAdi;
-      TextView txtDepoAdi = ViewBindings.findChildViewById(rootView, id);
-      if (txtDepoAdi == null) {
-        break missingId;
-      }
 
       id = R.id.txtDepoAdresi;
       TextView txtDepoAdresi = ViewBindings.findChildViewById(rootView, id);
@@ -89,8 +77,7 @@ public final class DepoItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DepoItemBinding((CardView) rootView, itemImg, recyclerView, txtDepoAdi,
-          txtDepoAdresi);
+      return new DepoItemBinding((CardView) rootView, depoAdresiWrap, recyclerView, txtDepoAdresi);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2824,6 +2824,7 @@ int id deltaRelative 0x7f0800ad
 int id dependency_ordering 0x7f0800ae
 int id depoAd 0x7f0800af
 int id depoAdres 0x7f0800b0
+int id depoAdresiWrap 0x7f080233
 int id depoBuyuklugu 0x7f0800b1
 int id depoEkleUrunKategori 0x7f0800b2
 int id depoLogoDepolarim 0x7f0800b3
@@ -2898,6 +2899,8 @@ int id homeAsUp 0x7f0800f7
 int id honorRequest 0x7f0800f8
 int id horizontal_only 0x7f0800f9
 int id icon 0x7f0800fa
+int id iconBoxDepoEkle 0x7f080235
+int id iconBoxUrunEkle 0x7f080236
 int id icon_group 0x7f0800fb
 int id icon_only 0x7f0800fc
 int id ifRoom 0x7f0800fd
@@ -2916,7 +2919,6 @@ int id item1 0x7f080109
 int id item2 0x7f08010a
 int id item3 0x7f08010b
 int id item4 0x7f08010c
-int id itemImg 0x7f08010d
 int id item_touch_helper_previous_elevation 0x7f08010e
 int id jumpToEnd 0x7f08010f
 int id jumpToStart 0x7f080110
@@ -3164,7 +3166,7 @@ int id transition_position 0x7f080201
 int id transition_scene_layoutid_cache 0x7f080202
 int id transition_transform 0x7f080203
 int id triangle 0x7f080204
-int id txtDepoAdi 0x7f080205
+int id tvwrapitem 0x7f080234
 int id txtDepoAdresi 0x7f080206
 int id txtDepolarim 0x7f080207
 int id txtFirebaseAd 0x7f080208
@@ -3174,7 +3176,6 @@ int id txtGrsSifre 0x7f08020b
 int id txtHosgeldin 0x7f08020c
 int id txtKayitOl 0x7f08020d
 int id txtUrunAdi 0x7f08020e
-int id txtUrunKategorisi 0x7f08020f
 int id unchecked 0x7f080210
 int id uniform 0x7f080211
 int id unlabeled 0x7f080212
@@ -3183,7 +3184,6 @@ int id urunAdi 0x7f080214
 int id urunAdiWrapper 0x7f080215
 int id urunDeposu 0x7f080216
 int id urunDeposuWrapper 0x7f080217
-int id urunItemImg 0x7f080218
 int id urunKategori 0x7f080219
 int id urunKategoriWrapper 0x7f08021a
 int id urunMiktar 0x7f08021b

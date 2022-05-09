@@ -3,11 +3,12 @@
     <CLASSES>
       <root url="file://D:/Program Files/Clock/caches/transforms-3/18de6eb7683cda1f7f87b8b1c8960892/transformed/jetified-play-services-measurement-api-20.1.2/res" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/45e1cd1b2682f71dcb7553f0d95932c7/transformed/jetified-play-services-measurement-api-20.1.2/res" />
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/45e1cd1b2682f71dcb7553f0d95932c7/transformed/jetified-play-services-measurement-api-20.1.2/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/45e1cd1b2682f71dcb7553f0d95932c7/transformed/jetified-play-services-measurement-api-20.1.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/45e1cd1b2682f71dcb7553f0d95932c7/transformed/jetified-play-services-measurement-api-20.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/45e1cd1b2682f71dcb7553f0d95932c7/transformed/jetified-play-services-measurement-api-20.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/45e1cd1b2682f71dcb7553f0d95932c7/transformed/jetified-play-services-measurement-api-20.1.2/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-api/20.1.2/b646ec23068483acdeb8467ab8e0b43dbdf6937c/play-services-measurement-api-20.1.2-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-api/20.1.2/b646ec23068483acdeb8467ab8e0b43dbdf6937c/play-services-measurement-api-20.1.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

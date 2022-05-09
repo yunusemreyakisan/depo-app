@@ -1,17 +1,18 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://D:/Program Files/Clock/caches/transforms-3/c90d3ee66ee840dbcd77f729a55c22a4/transformed/swiperefreshlayout-1.0.0/res" />
-      <root url="jar://D:/Program Files/Clock/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/jars/classes.jar!/" />
-      <root url="file://D:/Program Files/Clock/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/80d0b494458237e123836f91a69be5db/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/androidx.swiperefreshlayout/swiperefreshlayout/1.0.0/ab92d86c004eb1d48e45f311b02ca53d6c86b607/swiperefreshlayout-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.swiperefreshlayout/swiperefreshlayout/1.0.0/ab92d86c004eb1d48e45f311b02ca53d6c86b607/swiperefreshlayout-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

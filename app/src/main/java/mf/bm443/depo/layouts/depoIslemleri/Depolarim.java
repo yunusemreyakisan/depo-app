@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -28,15 +30,19 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import mf.bm443.depo.R;
 import mf.bm443.depo.adapter.DepoAdapter;
+import mf.bm443.depo.layouts.auth.MainActivity;
 import mf.bm443.depo.models.DepolarimModel;
 
 public class Depolarim extends AppCompatActivity {
     private Button btnYeniDepoEkle;
     private FirebaseFirestore db;
-    private TextView adTV,adresTV;
+    private TextView adTV, adresTV;
     ArrayList<DepolarimModel> depolarimList;
     DepoAdapter depoadapter;
     FirebaseAuth mAuth;
@@ -59,21 +65,16 @@ public class Depolarim extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(depoadapter);
 
-
-
         //Methods
         DepolarEventChangeListener();
         initComponents();
         yeniDepoEkle();
 
-       //RecyclerView loading.
+        //RecyclerView loading.
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
         progressDialog.setMessage("Depolar yükleniyor...");
         progressDialog.show();
-
-
-
     }
 
 
@@ -91,9 +92,6 @@ public class Depolarim extends AppCompatActivity {
                 .document(mUser.getUid())
                 .collection("Depolarım")
                 .document();
-
-
-
 
 
         cRef
@@ -115,6 +113,9 @@ public class Depolarim extends AppCompatActivity {
                         }
 
 
+
+
+
                         depoadapter.notifyDataSetChanged();
                         if (progressDialog.isShowing())
                             progressDialog.dismiss();
@@ -123,9 +124,7 @@ public class Depolarim extends AppCompatActivity {
 
                 });
 
-
     }
-
 
 
     private void yeniDepoEkle() {
@@ -137,8 +136,7 @@ public class Depolarim extends AppCompatActivity {
 
 
     private void initComponents() {
-        adTV=findViewById(R.id.txtDepoAdi);
-        adresTV =findViewById(R.id.txtDepoAdresi);
+        adresTV = findViewById(R.id.txtDepoAdresi);
         btnYeniDepoEkle = findViewById(R.id.btnYeniDepoEkle);
     }
 

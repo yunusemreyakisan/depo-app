@@ -5,6 +5,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -40,9 +42,12 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoHolder> {
     @Override
     public void onBindViewHolder(@NonNull DepoAdapter.DepoHolder holder, int position) {
 
+        Animation anim = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
+
         DepolarimModel depolarimmodel = depolarimList.get(position);
-        holder.depoAdi.setText(depolarimmodel.getDepoAdi());
         holder.depoAdresi.setText(depolarimmodel.getDepoAdresi());
+        //Animation
+        holder.itemView.startAnimation(anim);
     }
 
     @Override
@@ -51,16 +56,16 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoHolder> {
     }
 
 
+
+
+
     static class DepoHolder extends RecyclerView.ViewHolder {
 
-        TextView depoAdi, depoAdresi;
-        ImageView itemImg;
+        TextView depoAdresi;
 
         public DepoHolder(@NonNull View itemView) {
             super(itemView);
-            itemImg = itemView.findViewById(R.id.itemImg);
             depoAdresi = itemView.findViewById(R.id.txtDepoAdresi);
-            depoAdi = itemView.findViewById(R.id.txtDepoAdi);
 
 
         }

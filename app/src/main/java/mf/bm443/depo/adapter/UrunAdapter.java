@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,9 +39,14 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull UrunAdapter.UrunHolder holder, int position) {
+
+        //Animation
+        Animation anim = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
+
         UrunlerimModel urunlerimmodel = urunlerimList.get(position);
         holder.urunAdi.setText(urunlerimmodel.getUrunAdi());
-        holder.urunKategori.setText(urunlerimmodel.getUrunKategori());
+        //Animation
+        holder.itemView.startAnimation(anim);
 
         //CardView Dinleyicisi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -63,12 +70,11 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder>{
 
     public static class UrunHolder  extends RecyclerView.ViewHolder {
 
-        TextView urunAdi, urunKategori;
+        TextView urunAdi;
 
         public UrunHolder(@NonNull View itemView) {
             super(itemView);
             urunAdi = itemView.findViewById(R.id.txtUrunAdi);
-            urunKategori = itemView.findViewById(R.id.txtUrunKategorisi);
         }
     }
 }

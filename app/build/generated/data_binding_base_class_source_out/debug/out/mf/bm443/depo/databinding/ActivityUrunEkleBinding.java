@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -23,6 +24,9 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
 
   @NonNull
   public final MaterialButton btnUrunuEkle;
+
+  @NonNull
+  public final TextView iconBoxUrunEkle;
 
   @NonNull
   public final TextInputEditText urunAdi;
@@ -49,13 +53,14 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
   public final TextInputLayout urunMiktarWrapper;
 
   private ActivityUrunEkleBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton btnUrunuEkle, @NonNull TextInputEditText urunAdi,
-      @NonNull TextInputLayout urunAdiWrapper, @NonNull TextInputEditText urunDeposu,
-      @NonNull TextInputLayout urunDeposuWrapper, @NonNull TextInputEditText urunKategori,
-      @NonNull TextInputLayout urunKategoriWrapper, @NonNull TextInputEditText urunMiktar,
-      @NonNull TextInputLayout urunMiktarWrapper) {
+      @NonNull MaterialButton btnUrunuEkle, @NonNull TextView iconBoxUrunEkle,
+      @NonNull TextInputEditText urunAdi, @NonNull TextInputLayout urunAdiWrapper,
+      @NonNull TextInputEditText urunDeposu, @NonNull TextInputLayout urunDeposuWrapper,
+      @NonNull TextInputEditText urunKategori, @NonNull TextInputLayout urunKategoriWrapper,
+      @NonNull TextInputEditText urunMiktar, @NonNull TextInputLayout urunMiktarWrapper) {
     this.rootView = rootView;
     this.btnUrunuEkle = btnUrunuEkle;
+    this.iconBoxUrunEkle = iconBoxUrunEkle;
     this.urunAdi = urunAdi;
     this.urunAdiWrapper = urunAdiWrapper;
     this.urunDeposu = urunDeposu;
@@ -96,6 +101,12 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
       id = R.id.btnUrunuEkle;
       MaterialButton btnUrunuEkle = ViewBindings.findChildViewById(rootView, id);
       if (btnUrunuEkle == null) {
+        break missingId;
+      }
+
+      id = R.id.iconBoxUrunEkle;
+      TextView iconBoxUrunEkle = ViewBindings.findChildViewById(rootView, id);
+      if (iconBoxUrunEkle == null) {
         break missingId;
       }
 
@@ -147,8 +158,8 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityUrunEkleBinding((LinearLayout) rootView, btnUrunuEkle, urunAdi,
-          urunAdiWrapper, urunDeposu, urunDeposuWrapper, urunKategori, urunKategoriWrapper,
+      return new ActivityUrunEkleBinding((LinearLayout) rootView, btnUrunuEkle, iconBoxUrunEkle,
+          urunAdi, urunAdiWrapper, urunDeposu, urunDeposuWrapper, urunKategori, urunKategoriWrapper,
           urunMiktar, urunMiktarWrapper);
     }
     String missingId = rootView.getResources().getResourceName(id);

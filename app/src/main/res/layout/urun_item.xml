@@ -25,16 +25,17 @@
             android:layout_gravity="center_vertical"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/urunItemImg"
+            <TextView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                tools:srcCompat="@drawable/ic_baseline_warehouse" />
-
-
+                android:textSize="35sp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="🏷️" />
             <!-- Urun Adı -->
             <TextView
-                android:id="@+id/txtUrunAdi"
+                android:id="@+id/tvwrapitem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -48,23 +49,20 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtUrunAdi"
+                android:layout_below="@id/tvwrapitem"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="60dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ürün adı : "
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="16sp"
-                    android:textStyle="normal" />
 
                 <TextView
-                    android:id="@+id/txtUrunKategorisi"
+                    android:id="@+id/txtUrunAdi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                   />
 
             </LinearLayout>
         </RelativeLayout>

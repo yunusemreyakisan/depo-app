@@ -2825,6 +2825,7 @@ id deltaRelative
 id dependency_ordering
 id depoAd
 id depoAdres
+id depoAdresiWrap
 id depoBuyuklugu
 id depoEkleUrunKategori
 id depoLogoDepolarim
@@ -2899,6 +2900,8 @@ id homeAsUp
 id honorRequest
 id horizontal_only
 id icon
+id iconBoxDepoEkle
+id iconBoxUrunEkle
 id icon_group
 id icon_only
 id ifRoom
@@ -2917,7 +2920,6 @@ id item1
 id item2
 id item3
 id item4
-id itemImg
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3165,7 +3167,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id txtDepoAdi
+id tvwrapitem
 id txtDepoAdresi
 id txtDepolarim
 id txtFirebaseAd
@@ -3175,7 +3177,6 @@ id txtGrsSifre
 id txtHosgeldin
 id txtKayitOl
 id txtUrunAdi
-id txtUrunKategorisi
 id unchecked
 id uniform
 id unlabeled
@@ -3184,7 +3185,6 @@ id urunAdi
 id urunAdiWrapper
 id urunDeposu
 id urunDeposuWrapper
-id urunItemImg
 id urunKategori
 id urunKategoriWrapper
 id urunMiktar

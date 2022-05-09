@@ -4,7 +4,6 @@ package mf.bm443.depo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,24 +20,19 @@ public final class UrunItemBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final TextView tvwrapitem;
+
+  @NonNull
   public final TextView txtUrunAdi;
-
-  @NonNull
-  public final TextView txtUrunKategorisi;
-
-  @NonNull
-  public final ImageView urunItemImg;
 
   @NonNull
   public final CardView urunlerRecyclerView;
 
-  private UrunItemBinding(@NonNull CardView rootView, @NonNull TextView txtUrunAdi,
-      @NonNull TextView txtUrunKategorisi, @NonNull ImageView urunItemImg,
-      @NonNull CardView urunlerRecyclerView) {
+  private UrunItemBinding(@NonNull CardView rootView, @NonNull TextView tvwrapitem,
+      @NonNull TextView txtUrunAdi, @NonNull CardView urunlerRecyclerView) {
     this.rootView = rootView;
+    this.tvwrapitem = tvwrapitem;
     this.txtUrunAdi = txtUrunAdi;
-    this.txtUrunKategorisi = txtUrunKategorisi;
-    this.urunItemImg = urunItemImg;
     this.urunlerRecyclerView = urunlerRecyclerView;
   }
 
@@ -69,28 +63,21 @@ public final class UrunItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.tvwrapitem;
+      TextView tvwrapitem = ViewBindings.findChildViewById(rootView, id);
+      if (tvwrapitem == null) {
+        break missingId;
+      }
+
       id = R.id.txtUrunAdi;
       TextView txtUrunAdi = ViewBindings.findChildViewById(rootView, id);
       if (txtUrunAdi == null) {
         break missingId;
       }
 
-      id = R.id.txtUrunKategorisi;
-      TextView txtUrunKategorisi = ViewBindings.findChildViewById(rootView, id);
-      if (txtUrunKategorisi == null) {
-        break missingId;
-      }
-
-      id = R.id.urunItemImg;
-      ImageView urunItemImg = ViewBindings.findChildViewById(rootView, id);
-      if (urunItemImg == null) {
-        break missingId;
-      }
-
       CardView urunlerRecyclerView = (CardView) rootView;
 
-      return new UrunItemBinding((CardView) rootView, txtUrunAdi, txtUrunKategorisi, urunItemImg,
-          urunlerRecyclerView);
+      return new UrunItemBinding((CardView) rootView, tvwrapitem, txtUrunAdi, urunlerRecyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -20,9 +20,19 @@
         android:gravity="center_vertical">
 
         <TextView
+            android:id="@+id/iconBoxUrunEkle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:text="🏷️"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ürün Ekle"
+            android:layout_below="@+id/iconBoxUrunEkle"
             android:textColor="@color/colorPrimary"
             android:textSize="35sp"
             android:textStyle="bold" />
