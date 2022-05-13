@@ -77,6 +77,8 @@ id linearLayout
 id recyclerView
 id sifre
 id sifreWrapper
+id telNo
+id telNoWrapper
 id tvwrapitem
 id txtDepoAdresi
 id txtDepolarim

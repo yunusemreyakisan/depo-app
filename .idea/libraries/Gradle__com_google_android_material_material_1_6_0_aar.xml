@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.material:material:1.6.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/4164a13b6ed8f16c3f3d2aa043276e09/transformed/material-1.6.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/4164a13b6ed8f16c3f3d2aa043276e09/transformed/material-1.6.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/4164a13b6ed8f16c3f3d2aa043276e09/transformed/material-1.6.0/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/4164a13b6ed8f16c3f3d2aa043276e09/transformed/material-1.6.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.android.material/material/1.6.0/976aa22bd46c7748fade98594298bcd36b92f844/material-1.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

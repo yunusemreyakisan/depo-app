@@ -3,12 +3,12 @@
     <CLASSES>
       <root url="file://D:/Program Files/Clock/caches/transforms-3/bd5b05439ead162df3681e1fcc4e13f9/transformed/jetified-play-services-stats-17.0.2/res" />
       <root url="file://D:/Program Files/Clock/caches/transforms-3/d532f97a3d4a799785a66b05c51edb03/transformed/jetified-play-services-stats-17.0.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d532f97a3d4a799785a66b05c51edb03/transformed/jetified-play-services-stats-17.0.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d532f97a3d4a799785a66b05c51edb03/transformed/jetified-play-services-stats-17.0.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d532f97a3d4a799785a66b05c51edb03/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/d532f97a3d4a799785a66b05c51edb03/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml" />
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/d532f97a3d4a799785a66b05c51edb03/transformed/jetified-play-services-stats-17.0.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-stats/17.0.2/c0d58b8efa926b2c607984c54fb3d274490badd1/play-services-stats-17.0.2-javadoc.jar!/" />
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/com.google.android.gms/play-services-stats/17.0.2/c0d58b8efa926b2c607984c54fb3d274490badd1/play-services-stats-17.0.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

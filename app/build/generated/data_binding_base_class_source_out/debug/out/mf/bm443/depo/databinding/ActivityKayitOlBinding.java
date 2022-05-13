@@ -48,13 +48,20 @@ public final class ActivityKayitOlBinding implements ViewBinding {
   public final TextInputLayout sifreWrapper;
 
   @NonNull
+  public final TextInputEditText telNo;
+
+  @NonNull
+  public final TextInputLayout telNoWrapper;
+
+  @NonNull
   public final TextView txtKayitOl;
 
   private ActivityKayitOlBinding(@NonNull LinearLayout rootView, @NonNull TextInputEditText adSoyad,
       @NonNull TextInputLayout adSoyadWrapper, @NonNull MaterialButton btnKayitOl,
       @NonNull TextInputEditText ePosta, @NonNull TextInputLayout ePostaWrapper,
       @NonNull ImageView kayitOlLogo, @NonNull TextInputEditText sifre,
-      @NonNull TextInputLayout sifreWrapper, @NonNull TextView txtKayitOl) {
+      @NonNull TextInputLayout sifreWrapper, @NonNull TextInputEditText telNo,
+      @NonNull TextInputLayout telNoWrapper, @NonNull TextView txtKayitOl) {
     this.rootView = rootView;
     this.adSoyad = adSoyad;
     this.adSoyadWrapper = adSoyadWrapper;
@@ -64,6 +71,8 @@ public final class ActivityKayitOlBinding implements ViewBinding {
     this.kayitOlLogo = kayitOlLogo;
     this.sifre = sifre;
     this.sifreWrapper = sifreWrapper;
+    this.telNo = telNo;
+    this.telNoWrapper = telNoWrapper;
     this.txtKayitOl = txtKayitOl;
   }
 
@@ -142,6 +151,18 @@ public final class ActivityKayitOlBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.telNo;
+      TextInputEditText telNo = ViewBindings.findChildViewById(rootView, id);
+      if (telNo == null) {
+        break missingId;
+      }
+
+      id = R.id.telNoWrapper;
+      TextInputLayout telNoWrapper = ViewBindings.findChildViewById(rootView, id);
+      if (telNoWrapper == null) {
+        break missingId;
+      }
+
       id = R.id.txtKayitOl;
       TextView txtKayitOl = ViewBindings.findChildViewById(rootView, id);
       if (txtKayitOl == null) {
@@ -149,7 +170,8 @@ public final class ActivityKayitOlBinding implements ViewBinding {
       }
 
       return new ActivityKayitOlBinding((LinearLayout) rootView, adSoyad, adSoyadWrapper,
-          btnKayitOl, ePosta, ePostaWrapper, kayitOlLogo, sifre, sifreWrapper, txtKayitOl);
+          btnKayitOl, ePosta, ePostaWrapper, kayitOlLogo, sifre, sifreWrapper, telNo, telNoWrapper,
+          txtKayitOl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -28,9 +28,10 @@ import mf.bm443.depo.R;
 public class KayitOl extends AppCompatActivity {
     private Button KayitOl;
     FirebaseAuth mAuth;
-    private TextInputEditText AdiSoyadi;
+    private TextInputEditText adiSoyadi;
     private TextInputEditText sifre;
     private TextInputEditText eMail;
+    private TextInputEditText telNo;
     private DatabaseReference mDatabase;
     private FirebaseFirestore mFirestore;
     private HashMap<String, Object> mData;
@@ -49,13 +50,16 @@ public class KayitOl extends AppCompatActivity {
     private void btnKayitOlIslevi() {
         mAuth = FirebaseAuth.getInstance();
         KayitOl.setOnClickListener(view -> {
-            String name = AdiSoyadi.getText().toString();
+            String name = adiSoyadi.getText().toString();
             String email = eMail.getText().toString();
             String password = sifre.getText().toString();
-            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(name) || TextUtils.isEmpty(password)) {
+            String tel =  telNo.getText().toString();
+            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(name) || TextUtils.isEmpty(password) || TextUtils.isEmpty(tel))  {
                 Toast.makeText(KayitOl.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
             } else if (password.length() < 6) {
                 Toast.makeText(KayitOl.this, "Şifre 6 karakterden daha uzun olmalı.", Toast.LENGTH_SHORT).show();
+            }else if (tel.length() != 10 ){
+                    Toast.makeText(KayitOl.this, "Telefon numaranız 10 haneli olmalı.", Toast.LENGTH_SHORT).show();
             } else {
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -72,7 +76,8 @@ public class KayitOl extends AppCompatActivity {
                                     mData.put("E-Mail", email);
                                     mData.put("Password", password);
                                     mData.put("Name", name);
-
+                                    mData.put("Telefon", tel);
+/*
                                     mFirestore.collection("Kullanıcılar").document(mUser.getUid())
                                             .set(mData)
                                             .addOnCompleteListener(KayitOl.this, new OnCompleteListener<Void>() {
@@ -89,8 +94,10 @@ public class KayitOl extends AppCompatActivity {
                                                 }
                                             });
 
+ */
+
                                     //Realtime Database
-                                 /*   mDatabase.setValue(userMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                 mDatabase.setValue(mData).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if (task.isSuccessful()) {
@@ -101,7 +108,7 @@ public class KayitOl extends AppCompatActivity {
                                                 Toast.makeText(KayitOl.this, "Hesap oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show();
                                             }
                                         }
-                                    });*/
+                                    });
                                 }
                             }
                         });
@@ -112,8 +119,9 @@ public class KayitOl extends AppCompatActivity {
 
     private void initComponents() {
         KayitOl = (Button) findViewById(R.id.btnKayitOl);
-        AdiSoyadi = findViewById(R.id.adSoyad);
+        adiSoyadi = findViewById(R.id.adSoyad);
         sifre = findViewById(R.id.sifre);
         eMail = findViewById(R.id.ePosta);
+        telNo = findViewById(R.id.telNo);
     }
 }

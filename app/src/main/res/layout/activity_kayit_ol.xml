@@ -97,6 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ePostaWrapper"
+            android:layout_marginBottom="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
@@ -111,12 +112,34 @@
                 android:id="@+id/sifre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:hint="@string/sifre_hint"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
-                android:textColorHint="#616161"
+                android:textColorHint="#616161" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-                />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/telNoWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sifreWrapper"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Telefon No"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="#616161" />
         </com.google.android.material.textfield.TextInputLayout>
 
 

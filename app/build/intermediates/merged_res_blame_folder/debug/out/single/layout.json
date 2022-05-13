@@ -8,10 +8,6 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_depolarim.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_urun_islemleri.xml",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_urun_islemleri.xml"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_urunlerim.xml",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_urunlerim.xml"
     },
@@ -34,10 +30,6 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_urun_ekle.xml",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_urun_ekle.xml"
-    },
-    {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item.xml",
-        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\item.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\urun_item.xml",

@@ -15,6 +15,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -25,6 +30,8 @@ import mf.bm443.depo.layouts.urunIslemleri.Urunlerim;
 
 public class HomePage extends AppCompatActivity {
 
+    private DatabaseReference mDatabase;
+    FirebaseAuth mAuth;
     private TextView name;
     private Button btnDepoIslemleri, btnCikis, btnUrunIslemleri;
 
@@ -32,6 +39,9 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+
+
 
 
         isimOkuma();
@@ -43,6 +53,11 @@ public class HomePage extends AppCompatActivity {
 
 
     }
+
+    //Geri tuşuna basıldığında çalışacak method.
+    @Override
+    public void onBackPressed() {}
+
 
 
 
@@ -85,8 +100,39 @@ public class HomePage extends AppCompatActivity {
     }
 
 
+    private void isimOkuma(){
+        mAuth = FirebaseAuth.getInstance();
+        String user_id = mAuth.getCurrentUser().getUid();
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id).child("Name");
 
-    //İsimi ekrana çekme
+
+        mDatabase.addValueEventListener(new ValueEventListener(){
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                if(snapshot.exists()){
+                    String isim = snapshot.getValue().toString();
+                    name.setText(isim);
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.d("Firebase İsim Çekme", "Böyle bir döküman yok!");
+            }
+        });
+
+    }
+
+
+
+
+
+
+
+/*
+    //İsimi ekrana çekme (Firestore)
     private void isimOkuma() {
         FirebaseUser mUser = FirebaseAuth.getInstance().getCurrentUser();
         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -112,6 +158,8 @@ public class HomePage extends AppCompatActivity {
                     }
                 });
     }
+
+ */
 
 
     private void depoIslemleri() {
