@@ -1,11 +1,8 @@
 package mf.bm443.depo.layouts.depoIslemleri;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -13,41 +10,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.annotations.Nullable;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentChange;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import mf.bm443.depo.R;
 import mf.bm443.depo.adapter.DepoAdapter;
-import mf.bm443.depo.layouts.auth.MainActivity;
+import mf.bm443.depo.layouts.HomePage;
 import mf.bm443.depo.models.DepolarimModel;
 
 public class Depolarim extends AppCompatActivity {
     private Button btnYeniDepoEkle;
     private FirebaseFirestore db;
-    private TextView adTV, adresTV;
     ArrayList<DepolarimModel> depolarimList;
     DepoAdapter depoadapter;
     FirebaseAuth mAuth;
+    DatabaseReference mDatabaseReference;
     private FirebaseUser mUser;
-    ProgressDialog progressDialog;
 
 
     @Override
@@ -56,6 +42,16 @@ public class Depolarim extends AppCompatActivity {
         setContentView(R.layout.activity_depolarim);
         mAuth = FirebaseAuth.getInstance();
         RecyclerView recyclerView = findViewById(R.id.depolarimRecyclerView);
+
+        //Realtime DB
+        String user_id = mAuth.getCurrentUser().getUid();
+        mUser = mAuth.getCurrentUser();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference()
+                .child("Kullanıcılar")
+                .child(user_id)
+                .child("Depolarım")
+                .child("");
+
 
         db = FirebaseFirestore.getInstance();
         depolarimList = new ArrayList<DepolarimModel>();
@@ -66,18 +62,61 @@ public class Depolarim extends AppCompatActivity {
         recyclerView.setAdapter(depoadapter);
 
         //Methods
-        DepolarEventChangeListener();
+        //DepolarEventChangeListener();
+
         initComponents();
         yeniDepoEkle();
+        DepoEventChangeListener();
 
-        //RecyclerView loading.
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setCancelable(false);
-        progressDialog.setMessage("Depolar yükleniyor...");
-        progressDialog.show();
+    }
+
+    //Geri tuşuna basıldığında çalışacak method.
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Depolarim.this, HomePage.class);
+        startActivity(intent);
+    }
+
+    private void DepoEventChangeListener() {
+        mDatabaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    DepolarimModel model = dataSnapshot.getValue(DepolarimModel.class);
+                    depolarimList.add(model);
+
+                }
+                depoadapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(getApplicationContext(), "Veritabanı hatası!", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+    }
+
+    private void yeniDepoEkle() {
+        btnYeniDepoEkle.setOnClickListener(view -> {
+            Intent intent = new Intent(Depolarim.this, DepoEkle.class);
+            startActivity(intent);
+        });
     }
 
 
+    private void initComponents() {
+        btnYeniDepoEkle = findViewById(R.id.btnYeniDepoEkle);
+    }
+
+
+}
+
+
+//Firestore
+/*
     private void DepolarEventChangeListener() {
         FirebaseUser mUser = mAuth.getCurrentUser();
         mAuth = FirebaseAuth.getInstance();
@@ -126,19 +165,5 @@ public class Depolarim extends AppCompatActivity {
 
     }
 
+ */
 
-    private void yeniDepoEkle() {
-        btnYeniDepoEkle.setOnClickListener(view -> {
-            Intent intent = new Intent(Depolarim.this, DepoEkle.class);
-            startActivity(intent);
-        });
-    }
-
-
-    private void initComponents() {
-        adresTV = findViewById(R.id.txtDepoAdresi);
-        btnYeniDepoEkle = findViewById(R.id.btnYeniDepoEkle);
-    }
-
-
-}

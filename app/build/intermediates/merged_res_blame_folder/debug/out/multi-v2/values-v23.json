@@ -4,6 +4,25 @@
             "outputFile": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\360f82f6ebd63efd3bcb39006f5a00a9\\transformed\\material-1.7.0-alpha01\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,5,8,13,17,20,23,26,31,34,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,271,481,801,1038,1245,1452,1655,1987,2189,2454",
+                        "endLines": "4,7,12,16,19,22,25,30,33,37,41",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "266,476,796,1033,1240,1447,1650,1982,2184,2449,2722"
+                    },
+                    "to": {
+                        "startLines": "53,56,59,64,68,71,74,77,82,85,89",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3674,3890,4100,4420,4657,4864,5071,5274,5606,5808,6073",
+                        "endLines": "55,58,63,67,70,73,76,81,84,88,92",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "3885,4095,4415,4652,4859,5066,5269,5601,5803,6068,6341"
+                    }
+                },
+                {
                     "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\67c0381ea558987e872d7ddaceb3e747\\transformed\\appcompat-1.4.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
@@ -31,25 +50,6 @@
                         "endLines": "52",
                         "endColumns": "12",
                         "endOffsets": "3669"
-                    }
-                },
-                {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\4164a13b6ed8f16c3f3d2aa043276e09\\transformed\\material-1.6.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,5,8,13,17,20,23,26,31,34,38",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,271,481,801,1038,1245,1452,1655,1987,2189,2454",
-                        "endLines": "4,7,12,16,19,22,25,30,33,37,41",
-                        "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "266,476,796,1033,1240,1447,1650,1982,2184,2449,2722"
-                    },
-                    "to": {
-                        "startLines": "53,56,59,64,68,71,74,77,82,85,89",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3674,3890,4100,4420,4657,4864,5071,5274,5606,5808,6073",
-                        "endLines": "55,58,63,67,70,73,76,81,84,88,92",
-                        "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "3885,4095,4415,4652,4859,5066,5269,5601,5803,6068,6341"
                     }
                 }
             ]

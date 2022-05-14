@@ -21,8 +21,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 
-import javax.annotation.Nonnull;
-
 import mf.bm443.depo.R;
 
 public class KayitOl extends AppCompatActivity {
@@ -53,13 +51,13 @@ public class KayitOl extends AppCompatActivity {
             String name = adiSoyadi.getText().toString();
             String email = eMail.getText().toString();
             String password = sifre.getText().toString();
-            String tel =  telNo.getText().toString();
-            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(name) || TextUtils.isEmpty(password) || TextUtils.isEmpty(tel))  {
+            String tel = telNo.getText().toString();
+            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(name) || TextUtils.isEmpty(password) || TextUtils.isEmpty(tel)) {
                 Toast.makeText(KayitOl.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
             } else if (password.length() < 6) {
                 Toast.makeText(KayitOl.this, "Şifre 6 karakterden daha uzun olmalı.", Toast.LENGTH_SHORT).show();
-            }else if (tel.length() != 10 ){
-                    Toast.makeText(KayitOl.this, "Telefon numaranız 10 haneli olmalı.", Toast.LENGTH_SHORT).show();
+            } else if (tel.length() != 10) {
+                Toast.makeText(KayitOl.this, "Telefon numaranız 10 haneli olmalı.", Toast.LENGTH_SHORT).show();
             } else {
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -69,41 +67,23 @@ public class KayitOl extends AppCompatActivity {
                                     //Veritabanına Canlı Kayıt Etme (Realtime Database)
                                     String user_id = mAuth.getCurrentUser().getUid();
                                     mUser = mAuth.getCurrentUser();
-                                    mDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id);
+                                    mDatabase = FirebaseDatabase.getInstance().getReference().child("Kullanıcılar").child(user_id);
 
-                                    mData = new HashMap<>();
-                                   //HashMap<String, String> mData = new HashMap<>();
+                                    HashMap<String, String> mData = new HashMap<>();
                                     mData.put("E-Mail", email);
                                     mData.put("Password", password);
                                     mData.put("Name", name);
                                     mData.put("Telefon", tel);
-/*
-                                    mFirestore.collection("Kullanıcılar").document(mUser.getUid())
-                                            .set(mData)
-                                            .addOnCompleteListener(KayitOl.this, new OnCompleteListener<Void>() {
-                                                @Override
-                                                public void onComplete(@Nonnull Task<Void> task) {
-                                                    if (task.isSuccessful()) {
-                                                        Intent intent = new Intent(KayitOl.this, MainActivity.class);
-                                                        startActivity(intent);
-                                                        Toast.makeText(KayitOl.this, "Hesap başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
-                                                    } else {
-                                                        Toast.makeText(KayitOl.this, "Hesap oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show();
-                                                    }
-
-                                                }
-                                            });
-
- */
 
                                     //Realtime Database
-                                 mDatabase.setValue(mData).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    mDatabase.setValue(mData).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if (task.isSuccessful()) {
                                                 Intent intent = new Intent(KayitOl.this, MainActivity.class);
                                                 startActivity(intent);
-                                                Toast.makeText(KayitOl.this, "Hesap başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
+
+                                                Toast.makeText(KayitOl.this, "Hesap oluşturuldu.", Toast.LENGTH_SHORT).show();
                                             } else {
                                                 Toast.makeText(KayitOl.this, "Hesap oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show();
                                             }
@@ -125,3 +105,25 @@ public class KayitOl extends AppCompatActivity {
         telNo = findViewById(R.id.telNo);
     }
 }
+
+
+
+
+/*
+                                    mFirestore.collection("Kullanıcılar").document(mUser.getUid())
+                                            .set(mData)
+                                            .addOnCompleteListener(KayitOl.this, new OnCompleteListener<Void>() {
+                                                @Override
+                                                public void onComplete(@Nonnull Task<Void> task) {
+                                                    if (task.isSuccessful()) {
+                                                        Intent intent = new Intent(KayitOl.this, MainActivity.class);
+                                                        startActivity(intent);
+                                                        Toast.makeText(KayitOl.this, "Hesap başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
+                                                    } else {
+                                                        Toast.makeText(KayitOl.this, "Hesap oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show();
+                                                    }
+
+                                                }
+                                            });
+
+ */

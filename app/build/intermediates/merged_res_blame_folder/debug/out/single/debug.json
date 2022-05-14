@@ -4,20 +4,20 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_24.xml.flat",
@@ -36,10 +36,6 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_logo.xml"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_urun_item.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\urun_item.xml"
     },
@@ -52,8 +48,16 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_splash_screen_dark.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_splash_screen_dark.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_backg.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\backg.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
@@ -106,6 +110,10 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_depo_item.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\depo_item.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_dlogo.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\dlogo.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_urunlerim.xml.flat",

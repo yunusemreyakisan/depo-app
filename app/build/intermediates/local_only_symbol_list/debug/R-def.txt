@@ -28,6 +28,8 @@ dimen fab_margin
 dimen genel_activity_margin
 dimen marginBottom
 drawable arkaplan
+drawable backg
+drawable dlogo
 drawable ic_back
 drawable ic_baseline_add_24
 drawable ic_baseline_auto_delete_24
@@ -42,6 +44,7 @@ drawable logodark
 drawable logowhite
 id adSoyad
 id adSoyadWrapper
+id adresWrapper
 id beniHatirlaCheckbox
 id btnBackUrunlerim
 id btnCikis
@@ -58,7 +61,6 @@ id btnYeniDepoEkle
 id btnYeniUrunEkle
 id depoAd
 id depoAdres
-id depoAdresiWrap
 id depoBuyuklugu
 id depoEkleUrunKategori
 id depoLogoDepolarim
@@ -80,7 +82,10 @@ id sifreWrapper
 id telNo
 id telNoWrapper
 id tvwrapitem
+id txtDepoAdi
 id txtDepoAdresi
+id txtDepoBuyuklugu
+id txtDepoKategorisi
 id txtDepolarim
 id txtFirebaseAd
 id txtGirisYap
@@ -149,6 +154,7 @@ string txtUrunIslemleri
 string txt_depolarima_ekle
 string txt_urunu_ekle
 style AppTheme
+style AppTheme.Launcher
 style Theme.Dark
 style Theme.Depo.AppBarOverlay
 style Theme.Depo.PopupOverlay

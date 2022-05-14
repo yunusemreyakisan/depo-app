@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/arkaplan"
+    android:background="@drawable/backg"
     android:orientation="vertical"
     tools:context=".layouts.auth.MainActivity">
 
@@ -115,6 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:textStyle="bold"
             android:text="@string/btn_giris_yap" />
 
 

@@ -23,6 +23,7 @@ anim btn_radio_to_off_mtrl_ring_outer_path_animation
 anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
+anim custom_anim_interpolator
 anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
@@ -804,17 +805,34 @@ attr mock_labelColor
 attr mock_showDiagonals
 attr mock_showLabel
 attr motionDebug
+attr motionDurationExtraLong1
+attr motionDurationExtraLong2
+attr motionDurationExtraLong3
+attr motionDurationExtraLong4
 attr motionDurationLong1
 attr motionDurationLong2
+attr motionDurationLong3
+attr motionDurationLong4
 attr motionDurationMedium1
 attr motionDurationMedium2
+attr motionDurationMedium3
+attr motionDurationMedium4
 attr motionDurationShort1
 attr motionDurationShort2
+attr motionDurationShort3
+attr motionDurationShort4
 attr motionEasingAccelerated
 attr motionEasingDecelerated
 attr motionEasingEmphasized
+attr motionEasingEmphasizedAccelerateInterpolator
+attr motionEasingEmphasizedDecelerateInterpolator
+attr motionEasingEmphasizedInterpolator
 attr motionEasingLinear
+attr motionEasingLinearInterpolator
 attr motionEasingStandard
+attr motionEasingStandardAccelerateInterpolator
+attr motionEasingStandardDecelerateInterpolator
+attr motionEasingStandardInterpolator
 attr motionEffect_alpha
 attr motionEffect_end
 attr motionEffect_move
@@ -1287,6 +1305,7 @@ color checkbox_themeable_attribute_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color color_primary
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -2101,6 +2120,7 @@ dimen m3_chip_hovered_translation_z
 dimen m3_chip_icon_size
 dimen m3_datepicker_elevation
 dimen m3_divider_heavy_thickness
+dimen m3_exposed_dropdown_menu_popup_elevation
 dimen m3_extended_fab_bottom_padding
 dimen m3_extended_fab_end_padding
 dimen m3_extended_fab_icon_padding
@@ -2397,7 +2417,6 @@ dimen mtrl_slider_thumb_elevation
 dimen mtrl_slider_thumb_radius
 dimen mtrl_slider_track_height
 dimen mtrl_slider_track_side_padding
-dimen mtrl_slider_track_top
 dimen mtrl_slider_widget_height
 dimen mtrl_snackbar_action_text_color_alpha
 dimen mtrl_snackbar_background_corner_radius
@@ -2552,6 +2571,7 @@ drawable abc_vector_test
 drawable arkaplan
 drawable avd_hide_password
 drawable avd_show_password
+drawable backg
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2586,6 +2606,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dlogo
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_back
@@ -2731,6 +2752,7 @@ id adSoyadWrapper
 id add
 id adjust_height
 id adjust_width
+id adresWrapper
 id alertTitle
 id aligned
 id all
@@ -2834,7 +2856,6 @@ id deltaRelative
 id dependency_ordering
 id depoAd
 id depoAdres
-id depoAdresiWrap
 id depoBuyuklugu
 id depoEkleUrunKategori
 id depoLogoDepolarim
@@ -3165,6 +3186,7 @@ id textStart
 id textTop
 id text_input_end_icon
 id text_input_error_icon
+id text_input_layout
 id text_input_start_icon
 id textinput_counter
 id textinput_error
@@ -3189,7 +3211,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvwrapitem
+id txtDepoAdi
 id txtDepoAdresi
+id txtDepoBuyuklugu
+id txtDepoKategorisi
 id txtDepolarim
 id txtFirebaseAd
 id txtGirisYap
@@ -3294,7 +3319,15 @@ interpolator btn_checkbox_unchecked_mtrl_animation_interpolator_0
 interpolator btn_checkbox_unchecked_mtrl_animation_interpolator_1
 interpolator btn_radio_to_off_mtrl_animation_interpolator_0
 interpolator btn_radio_to_on_mtrl_animation_interpolator_0
+interpolator custom_interpolator
 interpolator fast_out_slow_in
+interpolator m3_sys_motion_easing_emphasized
+interpolator m3_sys_motion_easing_emphasized_accelerate
+interpolator m3_sys_motion_easing_emphasized_decelerate
+interpolator m3_sys_motion_easing_linear
+interpolator m3_sys_motion_easing_standard
+interpolator m3_sys_motion_easing_standard_accelerate
+interpolator m3_sys_motion_easing_standard_decelerate
 interpolator mtrl_fast_out_linear_in
 interpolator mtrl_fast_out_slow_in
 interpolator mtrl_linear
@@ -3428,6 +3461,7 @@ layout test_design_radiobutton
 layout test_exposed_dropdown_menu
 layout test_navigation_bar_item_layout
 layout test_reflow_chipgroup
+layout test_text_input_layout
 layout test_toolbar
 layout test_toolbar_custom_background
 layout test_toolbar_elevation
@@ -3571,6 +3605,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string motion_easing_standard_missing_control_point
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
@@ -3645,6 +3680,7 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
 style AppTheme
+style AppTheme_Launcher
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -3786,6 +3822,7 @@ style Base_V14_ThemeOverlay_MaterialComponents_BottomSheetDialog
 style Base_V14_ThemeOverlay_MaterialComponents_Dialog
 style Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert
 style Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog
+style Base_V14_Widget_MaterialComponents_AutoCompleteTextView
 style Base_V21_Theme_AppCompat
 style Base_V21_Theme_AppCompat_Dialog
 style Base_V21_Theme_AppCompat_Light
@@ -4195,10 +4232,13 @@ style Theme_Material3_Dark_DialogWhenLarge
 style Theme_Material3_Dark_NoActionBar
 style Theme_Material3_DayNight
 style Theme_Material3_DayNight_BottomSheetDialog
+style Theme_Material3_DayNight_CustomAnimInterpolator
+style Theme_Material3_DayNight_CustomInterpolator
 style Theme_Material3_DayNight_Dialog
 style Theme_Material3_DayNight_Dialog_Alert
 style Theme_Material3_DayNight_Dialog_MinWidth
 style Theme_Material3_DayNight_DialogWhenLarge
+style Theme_Material3_DayNight_IncorrectEasing
 style Theme_Material3_DayNight_NoActionBar
 style Theme_Material3_DynamicColors_Dark
 style Theme_Material3_DynamicColors_DayNight
@@ -4228,6 +4268,8 @@ style Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge
 style Theme_MaterialComponents_DayNight_Dialog_MinWidth
 style Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge
 style Theme_MaterialComponents_DayNight_DialogWhenLarge
+style Theme_MaterialComponents_DayNight_IncorrectLegacyEasingAttrType
+style Theme_MaterialComponents_DayNight_IncorrectLegacyEasingFormat
 style Theme_MaterialComponents_DayNight_NoActionBar
 style Theme_MaterialComponents_DayNight_NoActionBar_Bridge
 style Theme_MaterialComponents_Dialog
@@ -4302,7 +4344,6 @@ style ThemeOverlay_Material3_FloatingActionButton_Secondary
 style ThemeOverlay_Material3_FloatingActionButton_Surface
 style ThemeOverlay_Material3_FloatingActionButton_Tertiary
 style ThemeOverlay_Material3_HarmonizedColors
-style ThemeOverlay_Material3_HarmonizedColors_Empty
 style ThemeOverlay_Material3_Light
 style ThemeOverlay_Material3_Light_Dialog_Alert_Framework
 style ThemeOverlay_Material3_MaterialAlertDialog
@@ -4794,7 +4835,7 @@ styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerti
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
-styleable MaterialAutoCompleteTextView android_inputType simpleItemLayout simpleItems
+styleable MaterialAutoCompleteTextView android_inputType android_popupElevation simpleItemLayout simpleItems
 styleable MaterialButton android_background android_insetLeft android_insetRight android_insetTop android_insetBottom android_checkable backgroundTint backgroundTintMode cornerRadius elevation icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
 styleable MaterialButtonToggleGroup checkedButton selectionRequired singleSelection
 styleable MaterialCalendar android_windowFullscreen dayInvalidStyle daySelectedStyle dayStyle dayTodayStyle nestedScrollable rangeFillColor yearSelectedStyle yearStyle yearTodayStyle

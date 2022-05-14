@@ -20,20 +20,33 @@ public final class DepoItemBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final TextView depoAdresiWrap;
+  public final TextView adresWrapper;
 
   @NonNull
   public final CardView recyclerView;
 
   @NonNull
+  public final TextView txtDepoAdi;
+
+  @NonNull
   public final TextView txtDepoAdresi;
 
-  private DepoItemBinding(@NonNull CardView rootView, @NonNull TextView depoAdresiWrap,
-      @NonNull CardView recyclerView, @NonNull TextView txtDepoAdresi) {
+  @NonNull
+  public final TextView txtDepoBuyuklugu;
+
+  @NonNull
+  public final TextView txtDepoKategorisi;
+
+  private DepoItemBinding(@NonNull CardView rootView, @NonNull TextView adresWrapper,
+      @NonNull CardView recyclerView, @NonNull TextView txtDepoAdi, @NonNull TextView txtDepoAdresi,
+      @NonNull TextView txtDepoBuyuklugu, @NonNull TextView txtDepoKategorisi) {
     this.rootView = rootView;
-    this.depoAdresiWrap = depoAdresiWrap;
+    this.adresWrapper = adresWrapper;
     this.recyclerView = recyclerView;
+    this.txtDepoAdi = txtDepoAdi;
     this.txtDepoAdresi = txtDepoAdresi;
+    this.txtDepoBuyuklugu = txtDepoBuyuklugu;
+    this.txtDepoKategorisi = txtDepoKategorisi;
   }
 
   @Override
@@ -63,13 +76,19 @@ public final class DepoItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.depoAdresiWrap;
-      TextView depoAdresiWrap = ViewBindings.findChildViewById(rootView, id);
-      if (depoAdresiWrap == null) {
+      id = R.id.adresWrapper;
+      TextView adresWrapper = ViewBindings.findChildViewById(rootView, id);
+      if (adresWrapper == null) {
         break missingId;
       }
 
       CardView recyclerView = (CardView) rootView;
+
+      id = R.id.txtDepoAdi;
+      TextView txtDepoAdi = ViewBindings.findChildViewById(rootView, id);
+      if (txtDepoAdi == null) {
+        break missingId;
+      }
 
       id = R.id.txtDepoAdresi;
       TextView txtDepoAdresi = ViewBindings.findChildViewById(rootView, id);
@@ -77,7 +96,20 @@ public final class DepoItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DepoItemBinding((CardView) rootView, depoAdresiWrap, recyclerView, txtDepoAdresi);
+      id = R.id.txtDepoBuyuklugu;
+      TextView txtDepoBuyuklugu = ViewBindings.findChildViewById(rootView, id);
+      if (txtDepoBuyuklugu == null) {
+        break missingId;
+      }
+
+      id = R.id.txtDepoKategorisi;
+      TextView txtDepoKategorisi = ViewBindings.findChildViewById(rootView, id);
+      if (txtDepoKategorisi == null) {
+        break missingId;
+      }
+
+      return new DepoItemBinding((CardView) rootView, adresWrapper, recyclerView, txtDepoAdi,
+          txtDepoAdresi, txtDepoBuyuklugu, txtDepoKategorisi);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
