@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -26,48 +25,44 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
   public final MaterialButton btnUrunuEkle;
 
   @NonNull
-  public final TextView iconBoxUrunEkle;
+  public final TextInputEditText txtUrunAdi;
 
   @NonNull
-  public final TextInputEditText urunAdi;
+  public final TextInputEditText txtUrunDeposu;
+
+  @NonNull
+  public final TextInputEditText txtUrunKategori;
+
+  @NonNull
+  public final TextInputEditText txtUrunMiktar;
 
   @NonNull
   public final TextInputLayout urunAdiWrapper;
 
   @NonNull
-  public final TextInputEditText urunDeposu;
-
-  @NonNull
   public final TextInputLayout urunDeposuWrapper;
-
-  @NonNull
-  public final TextInputEditText urunKategori;
 
   @NonNull
   public final TextInputLayout urunKategoriWrapper;
 
   @NonNull
-  public final TextInputEditText urunMiktar;
-
-  @NonNull
   public final TextInputLayout urunMiktarWrapper;
 
   private ActivityUrunEkleBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton btnUrunuEkle, @NonNull TextView iconBoxUrunEkle,
-      @NonNull TextInputEditText urunAdi, @NonNull TextInputLayout urunAdiWrapper,
-      @NonNull TextInputEditText urunDeposu, @NonNull TextInputLayout urunDeposuWrapper,
-      @NonNull TextInputEditText urunKategori, @NonNull TextInputLayout urunKategoriWrapper,
-      @NonNull TextInputEditText urunMiktar, @NonNull TextInputLayout urunMiktarWrapper) {
+      @NonNull MaterialButton btnUrunuEkle, @NonNull TextInputEditText txtUrunAdi,
+      @NonNull TextInputEditText txtUrunDeposu, @NonNull TextInputEditText txtUrunKategori,
+      @NonNull TextInputEditText txtUrunMiktar, @NonNull TextInputLayout urunAdiWrapper,
+      @NonNull TextInputLayout urunDeposuWrapper, @NonNull TextInputLayout urunKategoriWrapper,
+      @NonNull TextInputLayout urunMiktarWrapper) {
     this.rootView = rootView;
     this.btnUrunuEkle = btnUrunuEkle;
-    this.iconBoxUrunEkle = iconBoxUrunEkle;
-    this.urunAdi = urunAdi;
+    this.txtUrunAdi = txtUrunAdi;
+    this.txtUrunDeposu = txtUrunDeposu;
+    this.txtUrunKategori = txtUrunKategori;
+    this.txtUrunMiktar = txtUrunMiktar;
     this.urunAdiWrapper = urunAdiWrapper;
-    this.urunDeposu = urunDeposu;
     this.urunDeposuWrapper = urunDeposuWrapper;
-    this.urunKategori = urunKategori;
     this.urunKategoriWrapper = urunKategoriWrapper;
-    this.urunMiktar = urunMiktar;
     this.urunMiktarWrapper = urunMiktarWrapper;
   }
 
@@ -104,15 +99,27 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.iconBoxUrunEkle;
-      TextView iconBoxUrunEkle = ViewBindings.findChildViewById(rootView, id);
-      if (iconBoxUrunEkle == null) {
+      id = R.id.txtUrunAdi;
+      TextInputEditText txtUrunAdi = ViewBindings.findChildViewById(rootView, id);
+      if (txtUrunAdi == null) {
         break missingId;
       }
 
-      id = R.id.urunAdi;
-      TextInputEditText urunAdi = ViewBindings.findChildViewById(rootView, id);
-      if (urunAdi == null) {
+      id = R.id.txtUrunDeposu;
+      TextInputEditText txtUrunDeposu = ViewBindings.findChildViewById(rootView, id);
+      if (txtUrunDeposu == null) {
+        break missingId;
+      }
+
+      id = R.id.txtUrunKategori;
+      TextInputEditText txtUrunKategori = ViewBindings.findChildViewById(rootView, id);
+      if (txtUrunKategori == null) {
+        break missingId;
+      }
+
+      id = R.id.txtUrunMiktar;
+      TextInputEditText txtUrunMiktar = ViewBindings.findChildViewById(rootView, id);
+      if (txtUrunMiktar == null) {
         break missingId;
       }
 
@@ -122,21 +129,9 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.urunDeposu;
-      TextInputEditText urunDeposu = ViewBindings.findChildViewById(rootView, id);
-      if (urunDeposu == null) {
-        break missingId;
-      }
-
       id = R.id.urunDeposuWrapper;
       TextInputLayout urunDeposuWrapper = ViewBindings.findChildViewById(rootView, id);
       if (urunDeposuWrapper == null) {
-        break missingId;
-      }
-
-      id = R.id.urunKategori;
-      TextInputEditText urunKategori = ViewBindings.findChildViewById(rootView, id);
-      if (urunKategori == null) {
         break missingId;
       }
 
@@ -146,21 +141,15 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.urunMiktar;
-      TextInputEditText urunMiktar = ViewBindings.findChildViewById(rootView, id);
-      if (urunMiktar == null) {
-        break missingId;
-      }
-
       id = R.id.urunMiktarWrapper;
       TextInputLayout urunMiktarWrapper = ViewBindings.findChildViewById(rootView, id);
       if (urunMiktarWrapper == null) {
         break missingId;
       }
 
-      return new ActivityUrunEkleBinding((LinearLayout) rootView, btnUrunuEkle, iconBoxUrunEkle,
-          urunAdi, urunAdiWrapper, urunDeposu, urunDeposuWrapper, urunKategori, urunKategoriWrapper,
-          urunMiktar, urunMiktarWrapper);
+      return new ActivityUrunEkleBinding((LinearLayout) rootView, btnUrunuEkle, txtUrunAdi,
+          txtUrunDeposu, txtUrunKategori, txtUrunMiktar, urunAdiWrapper, urunDeposuWrapper,
+          urunKategoriWrapper, urunMiktarWrapper);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

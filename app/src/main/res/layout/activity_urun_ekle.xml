@@ -8,7 +8,6 @@
     tools:context=".layouts.urunIslemleri.UrunEkle">
 
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
@@ -20,19 +19,9 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:id="@+id/iconBoxUrunEkle"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:gravity="center_horizontal"
-            android:text="🏷️"
-            android:textColor="@color/colorPrimary"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ürün Ekle"
-            android:layout_below="@+id/iconBoxUrunEkle"
             android:textColor="@color/colorPrimary"
             android:textSize="35sp"
             android:textStyle="bold" />
@@ -51,7 +40,7 @@
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/urunAdi"
+                android:id="@+id/txtUrunAdi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -76,7 +65,7 @@
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/urunDeposu"
+                android:id="@+id/txtUrunDeposu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ürün Deposu"
@@ -90,17 +79,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/urunDeposuWrapper"
+            android:layout_marginBottom="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
-            android:layout_marginBottom="10dp"
             app:boxCornerRadiusTopStart="10dp"
             app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            >
+            app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/urunKategori"
+                android:id="@+id/txtUrunKategori"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ürün Kategorisi"
@@ -115,25 +103,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/urunKategoriWrapper"
+            android:layout_marginBottom="30dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
             app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            >
+            app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/urunMiktar"
+                android:id="@+id/txtUrunMiktar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ürün Miktarı (Adet)"
                 android:minHeight="48dp"
-                android:textColorHint="#616161"
-                />
+                android:textColorHint="#616161" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
+
+
+            <!-- Ürün Fotoğrafı -->
+
+        <!-- Ürün Photo Bilgi -->
 
         <!-- Ürün Ekle butonu-->
         <com.google.android.material.button.MaterialButton
@@ -143,10 +135,11 @@
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:text="@string/txt_urunu_ekle" />
+
+
+
+
     </RelativeLayout>
-
-
-
 
 
 </LinearLayout>

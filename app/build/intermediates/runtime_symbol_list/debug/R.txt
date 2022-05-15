@@ -2570,7 +2570,6 @@ int drawable abc_vector_test 0x7f070055
 int drawable arkaplan 0x7f070056
 int drawable avd_hide_password 0x7f070057
 int drawable avd_show_password 0x7f070058
-int drawable backg 0x7f0700c1
 int drawable btn_checkbox_checked_mtrl 0x7f070059
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07005a
 int drawable btn_checkbox_unchecked_mtrl 0x7f07005b
@@ -2675,6 +2674,7 @@ int drawable test_custom_background 0x7f0700bc
 int drawable test_level_drawable 0x7f0700bd
 int drawable tooltip_frame_dark 0x7f0700be
 int drawable tooltip_frame_light 0x7f0700bf
+int drawable upload 0x7f0700c2
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
@@ -2689,6 +2689,10 @@ int id SHOW_PROGRESS 0x7f08000a
 int id SYM 0x7f08000b
 int id TOP_END 0x7f08000c
 int id TOP_START 0x7f08000d
+int id UrunAdi 0x7f080249
+int id UrunDeposu 0x7f08024a
+int id UrunKategorisi 0x7f08024b
+int id UrunMiktari 0x7f08024c
 int id accelerate 0x7f08000e
 int id accessibility_action_clickable_span 0x7f08000f
 int id accessibility_custom_action_0 0x7f080010
@@ -2787,7 +2791,6 @@ int id browser_actions_menu_item_icon 0x7f08006b
 int id browser_actions_menu_item_text 0x7f08006c
 int id browser_actions_menu_items 0x7f08006d
 int id browser_actions_menu_view 0x7f08006e
-int id btnBackUrunlerim 0x7f08006f
 int id btnCikis 0x7f080070
 int id btnDepoIslemleri 0x7f080071
 int id btnDepolarimaEkle 0x7f080072
@@ -2923,6 +2926,7 @@ int id ghost_view 0x7f0800e8
 int id ghost_view_holder 0x7f0800e9
 int id girisLogo 0x7f0800ea
 int id girisSifreWrapper 0x7f0800eb
+int id glide_custom_view_target_tag 0x7f080251
 int id gone 0x7f0800ec
 int id graph 0x7f0800ed
 int id graph_wrap 0x7f0800ee
@@ -2939,7 +2943,6 @@ int id honorRequest 0x7f0800f8
 int id horizontal_only 0x7f0800f9
 int id icon 0x7f0800fa
 int id iconBoxDepoEkle 0x7f080235
-int id iconBoxUrunEkle 0x7f080236
 int id icon_group 0x7f0800fb
 int id icon_only 0x7f0800fc
 int id ifRoom 0x7f0800fd
@@ -3209,7 +3212,6 @@ int id transition_position 0x7f080201
 int id transition_scene_layoutid_cache 0x7f080202
 int id transition_transform 0x7f080203
 int id triangle 0x7f080204
-int id tvwrapitem 0x7f080234
 int id txtDepoAdi 0x7f080205
 int id txtDepoAdresi 0x7f080206
 int id txtDepoBuyuklugu 0x7f080246
@@ -3222,19 +3224,17 @@ int id txtGrsSifre 0x7f08020b
 int id txtHosgeldin 0x7f08020c
 int id txtKayitOl 0x7f08020d
 int id txtUrunAdi 0x7f08020e
+int id txtUrunDeposu 0x7f08024d
+int id txtUrunKategori 0x7f08024e
+int id txtUrunMiktar 0x7f08024f
 int id unchecked 0x7f080210
 int id uniform 0x7f080211
 int id unlabeled 0x7f080212
 int id up 0x7f080213
-int id urunAdi 0x7f080214
 int id urunAdiWrapper 0x7f080215
-int id urunDeposu 0x7f080216
 int id urunDeposuWrapper 0x7f080217
-int id urunKategori 0x7f080219
 int id urunKategoriWrapper 0x7f08021a
-int id urunMiktar 0x7f08021b
 int id urunMiktarWrapper 0x7f08021c
-int id urunlerRecyclerView 0x7f08021d
 int id urunlerimRecyclerView 0x7f08021e
 int id useLogo 0x7f08021f
 int id vertical_only 0x7f080220

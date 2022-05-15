@@ -25,12 +25,12 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="50dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:gravity="center"
                 android:text="📦"
                 android:textColor="@color/colorPrimary"
-                android:textSize="35sp"
+                android:textSize="50sp"
                 android:textStyle="bold" />
 
 
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="110dp"
                 android:orientation="vertical">
 
                 <!-- Depo Adresi -->
@@ -59,10 +59,10 @@
                     <!--Depo Adresi -->
                     <TextView
                         android:id="@+id/adresWrapper"
-                        android:textColor="@color/colorPrimary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Depo adresi : " />
+                        android:text="Depo adresi : "
+                        android:textColor="@color/colorPrimary" />
 
 
                     <TextView
@@ -83,8 +83,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimary"
-                        android:text="Depo kategorisi : " />
+                        android:text="Depo kategorisi : "
+                        android:textColor="@color/colorPrimary" />
 
 
                     <TextView
@@ -96,7 +96,6 @@
                 </LinearLayout>
 
 
-
                 <!--Depo Buyuklugu -->
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -106,8 +105,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimary"
-                        android:text="Depo büyüklüğü : " />
+                        android:text="Depo büyüklüğü : "
+                        android:textColor="@color/colorPrimary" />
 
 
                     <TextView

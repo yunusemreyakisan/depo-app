@@ -22,9 +22,6 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final MaterialButton btnBackUrunlerim;
-
-  @NonNull
   public final MaterialButton btnYeniUrunEkle;
 
   @NonNull
@@ -34,10 +31,9 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
   public final RecyclerView urunlerimRecyclerView;
 
   private ActivityUrunlerimBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton btnBackUrunlerim, @NonNull MaterialButton btnYeniUrunEkle,
-      @NonNull ImageView depoLogoUrunlerim, @NonNull RecyclerView urunlerimRecyclerView) {
+      @NonNull MaterialButton btnYeniUrunEkle, @NonNull ImageView depoLogoUrunlerim,
+      @NonNull RecyclerView urunlerimRecyclerView) {
     this.rootView = rootView;
-    this.btnBackUrunlerim = btnBackUrunlerim;
     this.btnYeniUrunEkle = btnYeniUrunEkle;
     this.depoLogoUrunlerim = depoLogoUrunlerim;
     this.urunlerimRecyclerView = urunlerimRecyclerView;
@@ -70,12 +66,6 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnBackUrunlerim;
-      MaterialButton btnBackUrunlerim = ViewBindings.findChildViewById(rootView, id);
-      if (btnBackUrunlerim == null) {
-        break missingId;
-      }
-
       id = R.id.btnYeniUrunEkle;
       MaterialButton btnYeniUrunEkle = ViewBindings.findChildViewById(rootView, id);
       if (btnYeniUrunEkle == null) {
@@ -94,8 +84,8 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityUrunlerimBinding((LinearLayout) rootView, btnBackUrunlerim,
-          btnYeniUrunEkle, depoLogoUrunlerim, urunlerimRecyclerView);
+      return new ActivityUrunlerimBinding((LinearLayout) rootView, btnYeniUrunEkle,
+          depoLogoUrunlerim, urunlerimRecyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

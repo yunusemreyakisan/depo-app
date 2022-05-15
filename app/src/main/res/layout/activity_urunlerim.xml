@@ -14,18 +14,6 @@
         android:layout_margin="@dimen/genel_activity_margin"
         android:layout_weight="0.5">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnBackUrunlerim"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/CD_logo"
-            android:gravity="center"
-            app:icon="@drawable/ic_back"
-            app:iconGravity="top"
-            app:iconSize="40dp" />
 
 
         <LinearLayout

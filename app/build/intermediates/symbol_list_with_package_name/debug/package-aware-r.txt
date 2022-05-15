@@ -2571,7 +2571,6 @@ drawable abc_vector_test
 drawable arkaplan
 drawable avd_hide_password
 drawable avd_show_password
-drawable backg
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2676,6 +2675,7 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable upload
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2690,6 +2690,10 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id UrunAdi
+id UrunDeposu
+id UrunKategorisi
+id UrunMiktari
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2788,7 +2792,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id btnBackUrunlerim
 id btnCikis
 id btnDepoIslemleri
 id btnDepolarimaEkle
@@ -2924,6 +2927,7 @@ id ghost_view
 id ghost_view_holder
 id girisLogo
 id girisSifreWrapper
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -2940,7 +2944,6 @@ id honorRequest
 id horizontal_only
 id icon
 id iconBoxDepoEkle
-id iconBoxUrunEkle
 id icon_group
 id icon_only
 id ifRoom
@@ -3210,7 +3213,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvwrapitem
 id txtDepoAdi
 id txtDepoAdresi
 id txtDepoBuyuklugu
@@ -3223,19 +3225,17 @@ id txtGrsSifre
 id txtHosgeldin
 id txtKayitOl
 id txtUrunAdi
+id txtUrunDeposu
+id txtUrunKategori
+id txtUrunMiktar
 id unchecked
 id uniform
 id unlabeled
 id up
-id urunAdi
 id urunAdiWrapper
-id urunDeposu
 id urunDeposuWrapper
-id urunKategori
 id urunKategoriWrapper
-id urunMiktar
 id urunMiktarWrapper
-id urunlerRecyclerView
 id urunlerimRecyclerView
 id useLogo
 id vertical_only

@@ -4,6 +4,7 @@ public class UrunlerimModel {
 
     private String urunAdi, urunDeposu, urunKategori, urunMiktar;
 
+
     UrunlerimModel() {
         //Boş Cons.
     }
@@ -46,4 +47,5 @@ public class UrunlerimModel {
     public void setUrunMiktar(String urunMiktar) {
         this.urunMiktar = urunMiktar;
     }
+
 }

@@ -1,48 +1,45 @@
 package mf.bm443.depo.layouts.urunIslemleri;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.annotations.Nullable;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentChange;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.EventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.QuerySnapshot;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
 import mf.bm443.depo.R;
-import mf.bm443.depo.adapter.DepoAdapter;
 import mf.bm443.depo.adapter.UrunAdapter;
 import mf.bm443.depo.layouts.HomePage;
-import mf.bm443.depo.layouts.depoIslemleri.Depolarim;
-import mf.bm443.depo.models.DepolarimModel;
+import mf.bm443.depo.layouts.auth.MainActivity;
 import mf.bm443.depo.models.UrunlerimModel;
 
 public class Urunlerim extends AppCompatActivity {
 
     private RecyclerView urunlerRecyclerView;
     private ImageView depoLogoUrunlerim;
-    private Button btnUrunEkle, btnBackUrunEkle;
+    private Button btnUrunEkle;
     private FirebaseFirestore db;
     ArrayList<UrunlerimModel> urunlerimList;
     UrunAdapter urunadapter;
     FirebaseAuth mAuth;
+    DatabaseReference mDatabaseReference;
     private FirebaseUser mUser;
-    ProgressDialog progressDialog;
 
 
     @Override
@@ -60,35 +57,77 @@ public class Urunlerim extends AppCompatActivity {
         urunlerRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         urunlerRecyclerView.setAdapter(urunadapter);
 
-
-
-
-
+        //Realtime DB
+        String user_id = mAuth.getCurrentUser().getUid();
+        mUser = mAuth.getCurrentUser();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference()
+                .child("Kullanıcılar")
+                .child(user_id)
+                .child("Ürünlerim");
 
 
         //Methods
         UrunlerEventChangeListener();
         initComponents();
         urunEkleyeGit();
-        urunlerimeGit();
-
-
-
-        //RecyclerView loading.
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setCancelable(false);
-        progressDialog.setMessage("Ürünler yükleniyor...");
-        progressDialog.show();
 
 
 
     }
 
-    private void UrunlerEventChangeListener() {
 
+    //Geri tuşuna basıldığında çalışacak method.
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Urunlerim.this, HomePage.class);
+        startActivity(intent);
+    }
+
+    public void pullImage() {
+        String user_id = mAuth.getCurrentUser().getUid();
+        //Fotografları Çekme
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference();
+        DatabaseReference getImage = databaseReference.child("Kullanıcılar")
+                .child(user_id)
+                .child("Fotograflar")
+                .child("Image");
+    }
+
+
+
+
+
+
+    private void UrunlerEventChangeListener() {
         FirebaseUser mUser = mAuth.getCurrentUser();
         mAuth = FirebaseAuth.getInstance();
 
+
+        mDatabaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    UrunlerimModel model = dataSnapshot.getValue(UrunlerimModel.class);
+                    urunlerimList.add(model);
+
+                }
+                urunadapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(getApplicationContext(), "Veritabanı hatası!", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+    }
+
+
+        //Firestore DB
+       /*
         CollectionReference cRef = (CollectionReference) db
                 .collection("Kullanıcılar")
                 .document(mUser.getUid())
@@ -129,19 +168,7 @@ public class Urunlerim extends AppCompatActivity {
                     }
                 });
 
-
-
-    }
-
-
-    private void urunlerimeGit() {
-        btnBackUrunEkle.setOnClickListener(view -> {
-            Intent intent = new Intent(Urunlerim.this, HomePage.class);
-            startActivity(intent);
-        });
-    }
-
-
+        */
 
 
     private void urunEkleyeGit() {
@@ -152,7 +179,7 @@ public class Urunlerim extends AppCompatActivity {
     }
 
     private void initComponents() {
-        btnBackUrunEkle = findViewById(R.id.btnBackUrunlerim);
+
         urunlerRecyclerView = findViewById(R.id.urunlerimRecyclerView);
         btnUrunEkle = (Button) findViewById(R.id.btnYeniUrunEkle);
         depoLogoUrunlerim = findViewById(R.id.depoLogoUrunlerim);

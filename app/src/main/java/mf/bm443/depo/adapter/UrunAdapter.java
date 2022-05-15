@@ -1,8 +1,6 @@
 package mf.bm443.depo.adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,13 +15,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import mf.bm443.depo.R;
-import mf.bm443.depo.layouts.auth.MainActivity;
 import mf.bm443.depo.models.UrunlerimModel;
 
-public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder>{
+public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
 
     Context context;
     ArrayList<UrunlerimModel> urunlerimList;
+
 
     public UrunAdapter(Context context, ArrayList<UrunlerimModel> urunlerimList) {
         this.context = context;
@@ -34,7 +32,7 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder>{
     @Override
     public UrunAdapter.UrunHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.urun_item, parent, false);
-        return new UrunHolder(v);
+        return new UrunAdapter.UrunHolder(v);
     }
 
     @Override
@@ -43,24 +41,26 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder>{
         //Animation
         Animation anim = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
 
+
         UrunlerimModel urunlerimmodel = urunlerimList.get(position);
         holder.urunAdi.setText(urunlerimmodel.getUrunAdi());
+        holder.urunDeposu.setText(urunlerimmodel.getUrunDeposu());
+        holder.urunKategori.setText(urunlerimmodel.getUrunKategori());
+        holder.urunMiktar.setText(urunlerimmodel.getUrunMiktar());
+
+
         //Animation
         holder.itemView.startAnimation(anim);
-
         //CardView Dinleyicisi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 Toast.makeText(context, "İçeriğe tıklandı.", Toast.LENGTH_SHORT).show();
+
+
             }
 
         });
-
-
-
-
-
     }
 
     @Override
@@ -68,13 +68,18 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder>{
         return urunlerimList.size();
     }
 
-    public static class UrunHolder  extends RecyclerView.ViewHolder {
+    public static class UrunHolder extends RecyclerView.ViewHolder {
 
-        TextView urunAdi;
+        TextView urunAdi, urunDeposu, urunKategori, urunMiktar;
 
         public UrunHolder(@NonNull View itemView) {
             super(itemView);
-            urunAdi = itemView.findViewById(R.id.txtUrunAdi);
+            urunAdi = itemView.findViewById(R.id.UrunAdi);
+            urunDeposu = itemView.findViewById(R.id.UrunDeposu);
+            urunKategori = itemView.findViewById(R.id.UrunKategorisi);
+            urunMiktar = itemView.findViewById(R.id.UrunMiktari);
+
+
         }
     }
 }

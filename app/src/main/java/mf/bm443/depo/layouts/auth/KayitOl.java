@@ -67,7 +67,7 @@ public class KayitOl extends AppCompatActivity {
                                     //Veritabanına Canlı Kayıt Etme (Realtime Database)
                                     String user_id = mAuth.getCurrentUser().getUid();
                                     mUser = mAuth.getCurrentUser();
-                                    mDatabase = FirebaseDatabase.getInstance().getReference().child("Kullanıcılar").child(user_id);
+                                    mDatabase = FirebaseDatabase.getInstance().getReference().child("Kullanıcılar").child(user_id).child("Kullanıcı Bilgileri");
 
                                     HashMap<String, String> mData = new HashMap<>();
                                     mData.put("E-Mail", email);

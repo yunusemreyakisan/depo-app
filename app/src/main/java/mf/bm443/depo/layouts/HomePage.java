@@ -125,7 +125,7 @@ public class HomePage extends AppCompatActivity {
     private void isimOkuma() {
         mAuth = FirebaseAuth.getInstance();
         String user_id = mAuth.getCurrentUser().getUid();
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("Kullanıcılar").child(user_id).child("Name");
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Kullanıcılar").child(user_id).child("Kullanıcı Bilgileri").child("Name");
 
 
         mDatabase.addValueEventListener(new ValueEventListener() {

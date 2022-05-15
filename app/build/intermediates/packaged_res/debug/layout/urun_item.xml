@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/urunlerRecyclerView"
+    android:id="@+id/recyclerView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
@@ -26,47 +26,122 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:textSize="35sp"
-                android:gravity="center_horizontal"
-                android:textStyle="bold"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="🏷️"
+                android:gravity="center"
                 android:textColor="@color/colorPrimary"
-                android:text="🏷️" />
-            <!-- Urun Adı -->
-            <TextView
-                android:id="@+id/tvwrapitem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="60dp"
-                android:gravity="center_horizontal"
-                android:text="Ürün Adı"
-                android:textColor="@color/colorPrimary"
-                android:textSize="20sp"
+                android:textSize="50sp"
                 android:textStyle="bold" />
+
+
+            <!--
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="🏷️"
+                android:textColor="@color/colorPrimary"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+            -->
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvwrapitem"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="60dp">
+                android:layout_marginStart="110dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
 
-
+                <!-- Ürün adı -->
                 <TextView
-                    android:id="@+id/txtUrunAdi"
+                    android:id="@+id/UrunAdi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:gravity="center_horizontal"
-                    android:text=""
+                    android:text="Ürün Adı"
                     android:textColor="@color/colorPrimary"
-                   />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/adresWrapper"
+                    android:orientation="horizontal">
+
+                    <!--Depo Deposu -->
+                    <TextView
+                        android:id="@+id/urunDeposuWrapper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ürün deposu : "
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:id="@+id/UrunDeposu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+
+                <!--Ürün Kategorisi -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ürün kategorisi : "
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:id="@+id/UrunKategorisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+
+                <!--Ürün Miktarı -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ürün miktarı : "
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:id="@+id/UrunMiktari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
 
             </LinearLayout>
+
+
         </RelativeLayout>
 
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
+
+
+
+
+
+
