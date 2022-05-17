@@ -1,32 +1,40 @@
 package mf.bm443.depo.layouts.urunIslemleri;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+
+import javax.sql.DataSource;
 
 import mf.bm443.depo.R;
 import mf.bm443.depo.adapter.UrunAdapter;
 import mf.bm443.depo.layouts.HomePage;
-import mf.bm443.depo.layouts.auth.MainActivity;
 import mf.bm443.depo.models.UrunlerimModel;
 
 public class Urunlerim extends AppCompatActivity {
@@ -55,6 +63,8 @@ public class Urunlerim extends AppCompatActivity {
 
         urunlerRecyclerView.setHasFixedSize(true);
         urunlerRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
+        itemTouchHelper.attachToRecyclerView(urunlerRecyclerView);
         urunlerRecyclerView.setAdapter(urunadapter);
 
         //Realtime DB
@@ -65,11 +75,16 @@ public class Urunlerim extends AppCompatActivity {
                 .child(user_id)
                 .child("Ürünlerim");
 
-
         //Methods
         UrunlerEventChangeListener();
         initComponents();
         urunEkleyeGit();
+
+
+
+
+
+
 
 
 
@@ -82,20 +97,6 @@ public class Urunlerim extends AppCompatActivity {
         Intent intent = new Intent(Urunlerim.this, HomePage.class);
         startActivity(intent);
     }
-
-    public void pullImage() {
-        String user_id = mAuth.getCurrentUser().getUid();
-        //Fotografları Çekme
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference databaseReference = firebaseDatabase.getReference();
-        DatabaseReference getImage = databaseReference.child("Kullanıcılar")
-                .child(user_id)
-                .child("Fotograflar")
-                .child("Image");
-    }
-
-
-
 
 
 
@@ -114,6 +115,10 @@ public class Urunlerim extends AppCompatActivity {
 
                 }
                 urunadapter.notifyDataSetChanged();
+
+                //snapshot.getRef().removeValue();
+
+
             }
 
             @Override
@@ -126,7 +131,35 @@ public class Urunlerim extends AppCompatActivity {
     }
 
 
-        //Firestore DB
+    //SwipeToAction
+    ItemTouchHelper.SimpleCallback simpleItemTouchCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {
+
+        @Override
+        public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+            return false;
+        }
+
+        @Override
+        public void onSwiped(RecyclerView.ViewHolder holder, int direction) {
+            Toast.makeText(Urunlerim.this, "Ürün Silindi", Toast.LENGTH_SHORT).show();
+            //Remove swiped item from list and notify the RecyclerView
+            int position = holder.getAdapterPosition(); // this is how you can get the position
+            urunlerimList.remove(position);
+
+            mDatabaseReference.child(String.valueOf(position)).removeValue();
+            urunadapter.notifyItemRemoved(position);
+            urunadapter.notifyDataSetChanged();
+
+
+
+        }
+
+    };
+
+
+
+
+    //Firestore DB
        /*
         CollectionReference cRef = (CollectionReference) db
                 .collection("Kullanıcılar")
@@ -182,7 +215,7 @@ public class Urunlerim extends AppCompatActivity {
 
         urunlerRecyclerView = findViewById(R.id.urunlerimRecyclerView);
         btnUrunEkle = (Button) findViewById(R.id.btnYeniUrunEkle);
-        depoLogoUrunlerim = findViewById(R.id.depoLogoUrunlerim);
+        //depoLogoUrunlerim = findViewById(R.id.depoLogoUrunlerim);
     }
 
 

@@ -6,21 +6,33 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 import mf.bm443.depo.R;
 import mf.bm443.depo.models.UrunlerimModel;
 
-public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
 
+public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
     Context context;
     ArrayList<UrunlerimModel> urunlerimList;
+    FirebaseAuth mAuth;
+    private FirebaseUser mUser;
+
 
 
     public UrunAdapter(Context context, ArrayList<UrunlerimModel> urunlerimList) {
@@ -49,6 +61,14 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
         holder.urunMiktar.setText(urunlerimmodel.getUrunMiktar());
 
 
+
+        holder.btnEdit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         //Animation
         holder.itemView.startAnimation(anim);
         //CardView Dinleyicisi
@@ -56,8 +76,6 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "İçeriğe tıklandı.", Toast.LENGTH_SHORT).show();
-
-
             }
 
         });
@@ -68,9 +86,12 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
         return urunlerimList.size();
     }
 
+
+
     public static class UrunHolder extends RecyclerView.ViewHolder {
 
         TextView urunAdi, urunDeposu, urunKategori, urunMiktar;
+        ImageButton btnEdit;
 
         public UrunHolder(@NonNull View itemView) {
             super(itemView);
@@ -78,6 +99,7 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
             urunDeposu = itemView.findViewById(R.id.UrunDeposu);
             urunKategori = itemView.findViewById(R.id.UrunKategorisi);
             urunMiktar = itemView.findViewById(R.id.UrunMiktari);
+            btnEdit = itemView.findViewById(R.id.btnUrunEdit);
 
 
         }

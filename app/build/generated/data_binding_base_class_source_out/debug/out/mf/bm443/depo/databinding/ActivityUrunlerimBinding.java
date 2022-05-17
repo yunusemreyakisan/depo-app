@@ -4,7 +4,6 @@ package mf.bm443.depo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,17 +24,12 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
   public final MaterialButton btnYeniUrunEkle;
 
   @NonNull
-  public final ImageView depoLogoUrunlerim;
-
-  @NonNull
   public final RecyclerView urunlerimRecyclerView;
 
   private ActivityUrunlerimBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton btnYeniUrunEkle, @NonNull ImageView depoLogoUrunlerim,
-      @NonNull RecyclerView urunlerimRecyclerView) {
+      @NonNull MaterialButton btnYeniUrunEkle, @NonNull RecyclerView urunlerimRecyclerView) {
     this.rootView = rootView;
     this.btnYeniUrunEkle = btnYeniUrunEkle;
-    this.depoLogoUrunlerim = depoLogoUrunlerim;
     this.urunlerimRecyclerView = urunlerimRecyclerView;
   }
 
@@ -72,12 +66,6 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.depoLogoUrunlerim;
-      ImageView depoLogoUrunlerim = ViewBindings.findChildViewById(rootView, id);
-      if (depoLogoUrunlerim == null) {
-        break missingId;
-      }
-
       id = R.id.urunlerimRecyclerView;
       RecyclerView urunlerimRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (urunlerimRecyclerView == null) {
@@ -85,7 +73,7 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
       }
 
       return new ActivityUrunlerimBinding((LinearLayout) rootView, btnYeniUrunEkle,
-          depoLogoUrunlerim, urunlerimRecyclerView);
+          urunlerimRecyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -14,14 +14,15 @@
         android:layout_marginVertical="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:orientation="vertical">
 
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
@@ -38,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
                 android:layout_marginStart="110dp"
                 android:orientation="vertical">
 

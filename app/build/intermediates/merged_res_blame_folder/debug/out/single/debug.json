@@ -12,6 +12,10 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_edit_button.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\edit_button.png"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },

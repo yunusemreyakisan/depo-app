@@ -28,8 +28,8 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:text="🏷️"
                 android:gravity="center"
+                android:text="🏷️"
                 android:textColor="@color/colorPrimary"
                 android:textSize="50sp"
                 android:textStyle="bold" />
@@ -132,6 +132,8 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+
 
 
         </RelativeLayout>

@@ -29,6 +29,7 @@ dimen genel_activity_margin
 dimen marginBottom
 drawable arkaplan
 drawable dlogo
+drawable edit_button
 drawable ic_back
 drawable ic_baseline_add_24
 drawable ic_baseline_auto_delete_24
@@ -66,8 +67,6 @@ id depoAd
 id depoAdres
 id depoBuyuklugu
 id depoEkleUrunKategori
-id depoLogoDepolarim
-id depoLogoUrunlerim
 id depolarimRecyclerView
 id ePosta
 id ePostaWrapper

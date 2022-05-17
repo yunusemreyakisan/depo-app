@@ -41,11 +41,8 @@ public class UrunEkle extends AppCompatActivity {
     private Button btnUrunekle;
     FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
-    private DatabaseReference dbReferenceForImage;
     //private FirebaseFirestore mFirestore;
     private FirebaseUser mUser;
-    private FirebaseStorage storage;
-    private StorageReference storageReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,79 +51,9 @@ public class UrunEkle extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         //mFirestore = FirebaseFirestore.getInstance();
 
-
-        storage = FirebaseStorage.getInstance();
-        storageReference = storage.getReference();
-
-
         initComponents();
         btnUrunEkleIslevi();
     }
-/*
-
-        urunPhoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fotografSec();
-            }
-        });
-
-
-    }
-
-    //Ürün için fotoğraf seçimi
-    private void fotografSec() {
-        Intent intent = new Intent();
-        intent.setType("image/");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent, 1);
-    }
-
-    //Fotograf yükleme isteği
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == 1 && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            imageUri = data.getData();
-            urunPhoto.setImageURI(imageUri);
-            uploadPicture();
-        }
-    }
-
-    /*
-    //Fotograf Yüklenmesi
-    private void uploadPicture() {
-        //Fotoğrafları kayıt ederken kullanıcı adına kayıt ediyoruz.
-        String user_id = mAuth.getCurrentUser().getUid();
-        mUser = mAuth.getCurrentUser();
-
-        final ProgressDialog pD = new ProgressDialog(this);
-        pD.setTitle("Fotograf yükleniyor...");
-        pD.show();
-
-        //Fotograf için rastgele isim oluşturulması
-        final String randomKey = UUID.randomUUID().toString();
-        //Geçerli kullanıcı için fotoğrafların UID ile kayıt alınması
-        StorageReference ref = storageReference.child(user_id + "/images/" + randomKey);
-
-        ref.putFile(imageUri)
-                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot task) {
-                        pD.dismiss();
-                        Snackbar.make(findViewById(android.R.id.content), "Fotoğraf yüklendi", Snackbar.LENGTH_SHORT).show();
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@Nonnull Exception e) {
-                        pD.dismiss();
-                        Toast.makeText(getApplicationContext(), "Hata oluştu, yeniden deneyin.", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-    }*/
 
 
         private void btnUrunEkleIslevi () {

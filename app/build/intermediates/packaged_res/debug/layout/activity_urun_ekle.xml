@@ -46,7 +46,6 @@
                 android:layout_gravity="center_vertical"
                 android:hint="Ürün Adı"
                 android:inputType="text"
-                android:minHeight="48dp"
                 android:textColorHint="@color/editTextColor" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Ürün Deposu"
                 android:inputType="textEmailAddress"
-                android:minHeight="48dp"
+
                 android:textColorHint="@color/editTextColor" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,10 +79,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/urunDeposuWrapper"
             android:layout_marginBottom="10dp"
+            android:minHeight="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
+            android:maxLines="1"
+            android:inputType="text"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
@@ -92,7 +94,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ürün Kategorisi"
-                android:minHeight="48dp"
+                android:minHeight="10dp"
+                android:inputType="text"
+                android:maxLines="1"
                 android:textColorHint="#616161"
 
                 />
@@ -104,7 +108,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/urunKategoriWrapper"
             android:layout_marginBottom="30dp"
+            android:minHeight="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
+            android:maxLines="1"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -116,14 +122,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ürün Miktarı (Adet)"
-                android:minHeight="48dp"
+                android:inputType="number"
+                android:minHeight="10dp"
                 android:textColorHint="#616161" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
-            <!-- Ürün Fotoğrafı -->
+        <!-- Ürün Fotoğrafı -->
 
         <!-- Ürün Photo Bilgi -->
 
@@ -135,8 +140,6 @@
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:text="@string/txt_urunu_ekle" />
-
-
 
 
     </RelativeLayout>

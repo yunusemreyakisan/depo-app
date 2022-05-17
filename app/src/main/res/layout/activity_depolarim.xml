@@ -20,25 +20,27 @@
             android:orientation="vertical">
 
 
-            <ImageView
-                android:id="@+id/depoLogoDepolarim"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="@dimen/depo_logo_marginTop"
-                app:srcCompat="@drawable/logodark" />
 
 
             <TextView
                 android:id="@+id/txtDepolarim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/depoLogoDepolarim"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="80dp"
+                android:layout_marginBottom="10dp"
                 android:text="Depolarım"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Güncelleme yapmak istediğiniz deponuzun üzerine uzun basınız."
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="30dp"
+                android:textSize="15sp"
+                android:textStyle="normal" />
 
 
             <RelativeLayout
