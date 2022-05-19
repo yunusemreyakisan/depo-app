@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -31,7 +32,7 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
   public final TextInputEditText txtUrunDeposu;
 
   @NonNull
-  public final TextInputEditText txtUrunKategori;
+  public final Spinner txtUrunKategori;
 
   @NonNull
   public final TextInputEditText txtUrunMiktar;
@@ -50,7 +51,7 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
 
   private ActivityUrunEkleBinding(@NonNull LinearLayout rootView,
       @NonNull MaterialButton btnUrunuEkle, @NonNull TextInputEditText txtUrunAdi,
-      @NonNull TextInputEditText txtUrunDeposu, @NonNull TextInputEditText txtUrunKategori,
+      @NonNull TextInputEditText txtUrunDeposu, @NonNull Spinner txtUrunKategori,
       @NonNull TextInputEditText txtUrunMiktar, @NonNull TextInputLayout urunAdiWrapper,
       @NonNull TextInputLayout urunDeposuWrapper, @NonNull TextInputLayout urunKategoriWrapper,
       @NonNull TextInputLayout urunMiktarWrapper) {
@@ -112,7 +113,7 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
       }
 
       id = R.id.txtUrunKategori;
-      TextInputEditText txtUrunKategori = ViewBindings.findChildViewById(rootView, id);
+      Spinner txtUrunKategori = ViewBindings.findChildViewById(rootView, id);
       if (txtUrunKategori == null) {
         break missingId;
       }

@@ -89,12 +89,12 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <Spinner
                 android:id="@+id/txtUrunKategori"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ürün Kategorisi"
-                android:minHeight="10dp"
+                android:minHeight="48dp"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="#616161"

@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -26,6 +28,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -37,7 +40,7 @@ import mf.bm443.depo.models.UrunlerimModel;
 
 public class UrunEkle extends AppCompatActivity {
 
-    private EditText urunAdi, urunDeposu, urunKategorisi, urunMiktari;
+    private EditText urunAdi, urunDeposu, urunMiktari,urunKategorisi;
     private Button btnUrunekle;
     FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
@@ -53,6 +56,8 @@ public class UrunEkle extends AppCompatActivity {
 
         initComponents();
         btnUrunEkleIslevi();
+
+
     }
 
 
