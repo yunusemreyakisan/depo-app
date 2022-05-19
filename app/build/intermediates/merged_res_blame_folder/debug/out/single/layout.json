@@ -28,8 +28,16 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_kayit_ol.xml"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_kategoriler.xml",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_kategoriler.xml"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_urun_ekle.xml",
         "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_urun_ekle.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\kategori_item.xml",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\kategori_item.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\urun_item.xml",
