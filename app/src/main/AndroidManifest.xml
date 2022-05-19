@@ -16,6 +16,9 @@
         <activity
             android:name=".layouts.urunIslemleri.Urunlerim"
             android:exported="true" />
+        <activity
+            android:name=".layouts.kategoriIslemleri.Kategoriler"
+            android:exported="true" />
 
         <activity
             android:name=".layouts.urunIslemleri.UrunEkle"
@@ -36,8 +39,8 @@
 
         <activity
             android:name=".layouts.auth.MainActivity"
-            android:theme="@style/AppTheme.Launcher"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

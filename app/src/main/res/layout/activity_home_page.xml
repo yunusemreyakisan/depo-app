@@ -57,7 +57,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:contentDescription="@string/cdTodo"
-                    app:srcCompat="@android:drawable/ic_menu_mylocation" />
+                    app:srcCompat="@drawable/logodark" />
             </RelativeLayout>
 
 

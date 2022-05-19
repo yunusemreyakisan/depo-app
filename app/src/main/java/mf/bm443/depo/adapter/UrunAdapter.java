@@ -30,8 +30,7 @@ import mf.bm443.depo.models.UrunlerimModel;
 public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
     Context context;
     ArrayList<UrunlerimModel> urunlerimList;
-    FirebaseAuth mAuth;
-    private FirebaseUser mUser;
+
 
 
 
@@ -60,15 +59,6 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
         holder.urunKategori.setText(urunlerimmodel.getUrunKategori());
         holder.urunMiktar.setText(urunlerimmodel.getUrunMiktar());
 
-
-
-        holder.btnEdit.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
         //Animation
         holder.itemView.startAnimation(anim);
         //CardView Dinleyicisi
@@ -91,7 +81,6 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
     public static class UrunHolder extends RecyclerView.ViewHolder {
 
         TextView urunAdi, urunDeposu, urunKategori, urunMiktar;
-        ImageButton btnEdit;
 
         public UrunHolder(@NonNull View itemView) {
             super(itemView);
@@ -99,7 +88,6 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
             urunDeposu = itemView.findViewById(R.id.UrunDeposu);
             urunKategori = itemView.findViewById(R.id.UrunKategorisi);
             urunMiktar = itemView.findViewById(R.id.UrunMiktari);
-            btnEdit = itemView.findViewById(R.id.btnUrunEdit);
 
 
         }

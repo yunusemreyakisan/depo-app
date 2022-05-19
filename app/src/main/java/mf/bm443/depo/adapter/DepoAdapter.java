@@ -2,6 +2,7 @@ package mf.bm443.depo.adapter;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,11 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import mf.bm443.depo.models.DepolarimModel;
 import mf.bm443.depo.R;
+import mf.bm443.depo.layouts.kategoriIslemleri.Kategoriler;
+import mf.bm443.depo.models.DepolarimModel;
 
 
-public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder>{
+public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder> {
 
     Context context;
     ArrayList<DepolarimModel> depolarimList;
@@ -43,6 +45,22 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder
         holder.depoKategorisi.setText(model.getDepoUrunKategorisi());
         holder.depoBuyuklugu.setText(model.getDepoBuyuklugu());
 
+
+        //CardView Dinleyicisi
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, Kategoriler.class);
+                context.startActivity(intent);
+
+
+
+
+                //Toast.makeText(context, "İçeriğe tıklandı.", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
     }
 
     @Override
@@ -51,7 +69,7 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder
     }
 
 
-    public static class DepoViewHolder extends RecyclerView.ViewHolder{
+    public static class DepoViewHolder extends RecyclerView.ViewHolder {
 
         TextView depoAdi, depoAdresi, depoBuyuklugu, depoKategorisi;
 
@@ -66,8 +84,6 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder
 
         }
     }
-
-
 
 
 }

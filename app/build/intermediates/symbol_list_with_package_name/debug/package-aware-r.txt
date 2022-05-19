@@ -2682,6 +2682,8 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id KategoriAdi
+id KategoriUrunAdeti
 id META
 id NO_DEBUG
 id SHIFT
@@ -2964,6 +2966,7 @@ id item4
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id kategorilerimRecyclerView
 id kayitOlLogo
 id kullaniciAdiWrapper
 id labeled
@@ -3362,6 +3365,7 @@ layout abc_tooltip
 layout activity_depo_ekle
 layout activity_depolarim
 layout activity_home_page
+layout activity_kategoriler
 layout activity_kayit_ol
 layout activity_main
 layout activity_urun_ekle
@@ -3385,6 +3389,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout kategori_item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

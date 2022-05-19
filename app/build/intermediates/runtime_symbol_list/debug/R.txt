@@ -2681,6 +2681,8 @@ int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
 int id FUNCTION 0x7f080004
+int id KategoriAdi 0x7f080244
+int id KategoriUrunAdeti 0x7f080245
 int id META 0x7f080005
 int id NO_DEBUG 0x7f080006
 int id SHIFT 0x7f080007
@@ -2963,6 +2965,7 @@ int id item4 0x7f08011b
 int id item_touch_helper_previous_elevation 0x7f08011c
 int id jumpToEnd 0x7f08011d
 int id jumpToStart 0x7f08011e
+int id kategorilerimRecyclerView 0x7f080246
 int id kayitOlLogo 0x7f08011f
 int id kullaniciAdiWrapper 0x7f080120
 int id labeled 0x7f080121
@@ -3361,6 +3364,7 @@ int layout abc_tooltip 0x7f0b001b
 int layout activity_depo_ekle 0x7f0b001c
 int layout activity_depolarim 0x7f0b001d
 int layout activity_home_page 0x7f0b001e
+int layout activity_kategoriler 0x7f0b008c
 int layout activity_kayit_ol 0x7f0b001f
 int layout activity_main 0x7f0b0020
 int layout activity_urun_ekle 0x7f0b0021
@@ -3384,6 +3388,7 @@ int layout design_navigation_menu 0x7f0b0032
 int layout design_navigation_menu_item 0x7f0b0033
 int layout design_text_input_end_icon 0x7f0b0034
 int layout design_text_input_start_icon 0x7f0b0035
+int layout kategori_item 0x7f0b008d
 int layout m3_alert_dialog 0x7f0b0036
 int layout m3_alert_dialog_actions 0x7f0b0037
 int layout m3_alert_dialog_title 0x7f0b0038

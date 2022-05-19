@@ -23,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 import mf.bm443.depo.R;
 import mf.bm443.depo.layouts.auth.MainActivity;
 import mf.bm443.depo.layouts.depoIslemleri.Depolarim;
+import mf.bm443.depo.layouts.kategoriIslemleri.Kategoriler;
 import mf.bm443.depo.layouts.urunIslemleri.Urunlerim;
 
 public class HomePage extends AppCompatActivity {
@@ -30,7 +31,7 @@ public class HomePage extends AppCompatActivity {
     private DatabaseReference mDatabase;
     FirebaseAuth mAuth;
     private TextView name;
-    private Button btnDepoIslemleri, btnCikis, btnUrunIslemleri;
+    private Button btnDepoIslemleri, btnCikis, btnUrunIslemleri, btnStokIslemleri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +43,12 @@ public class HomePage extends AppCompatActivity {
         initComponents();
         depoIslemleri();
         urunIslemleri();
+      //  stokIslemleri();
         logoutWithAlertDialog();
 
 
     }
+
 
     //Geri tuşuna basıldığında çalışacak method.
     @Override
@@ -164,12 +167,20 @@ public class HomePage extends AppCompatActivity {
         });
     }
 
-
+    /*
+    private void stokIslemleri() {
+        btnStokIslemleri.setOnClickListener(view -> {
+            Intent intent = new Intent(HomePage.this, Kategoriler.class);
+            startActivity(intent);
+        });
+    }
+     */
     private void initComponents() {
         name = findViewById(R.id.txtFirebaseAd);
         btnDepoIslemleri = findViewById(R.id.btnDepoIslemleri);
         btnCikis = findViewById(R.id.btnCikis);
         btnUrunIslemleri = findViewById(R.id.btnUrunIslemleri);
+       // btnStokIslemleri = findViewById(R.id.btnStokIslemleri);
     }
 }
 

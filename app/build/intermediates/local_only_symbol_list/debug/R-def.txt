@@ -43,6 +43,8 @@ drawable ic_splash_screen_dark
 drawable logodark
 drawable logowhite
 drawable upload
+id KategoriAdi
+id KategoriUrunAdeti
 id UrunAdi
 id UrunDeposu
 id UrunKategorisi
@@ -74,6 +76,7 @@ id girisLogo
 id girisSifreWrapper
 id iconBoxDepoEkle
 id imageDepoDarkLogo
+id kategorilerimRecyclerView
 id kayitOlLogo
 id kullaniciAdiWrapper
 id linearLayout
@@ -105,11 +108,13 @@ id urunlerimRecyclerView
 layout activity_depo_ekle
 layout activity_depolarim
 layout activity_home_page
+layout activity_kategoriler
 layout activity_kayit_ol
 layout activity_main
 layout activity_urun_ekle
 layout activity_urunlerim
 layout depo_item
+layout kategori_item
 layout urun_item
 mipmap ic_launcher
 mipmap ic_launcher_background

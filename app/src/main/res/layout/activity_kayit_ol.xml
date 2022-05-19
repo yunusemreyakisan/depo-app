@@ -136,7 +136,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Telefon No"
+                android:hint="Telefon No (Opsiyonel)"
                 android:inputType="number"
                 android:minHeight="48dp"
                 android:textColorHint="#616161" />

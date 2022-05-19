@@ -3,6 +3,7 @@ package mf.bm443.depo.layouts.auth;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -52,12 +53,20 @@ public class KayitOl extends AppCompatActivity {
             String email = eMail.getText().toString();
             String password = sifre.getText().toString();
             String tel = telNo.getText().toString();
-            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(name) || TextUtils.isEmpty(password) || TextUtils.isEmpty(tel)) {
+
+            //E-Mail Validation
+            String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
+
+            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(name) || TextUtils.isEmpty(password)) {
                 Toast.makeText(KayitOl.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
             } else if (password.length() < 6) {
                 Toast.makeText(KayitOl.this, "Şifre 6 karakterden daha uzun olmalı.", Toast.LENGTH_SHORT).show();
-            } else if (tel.length() != 10) {
+            } else if (!TextUtils.isEmpty(tel) && tel.length() != 10) {
                 Toast.makeText(KayitOl.this, "Telefon numaranız 10 haneli olmalı.", Toast.LENGTH_SHORT).show();
+            } else if (!email.matches(emailPattern)) {
+                Log.i("E-Mail Valid", "Geçerli E-posta girildi.");
+                Toast.makeText(getApplicationContext(), "Geçersiz E-Posta", Toast.LENGTH_SHORT).show();
             } else {
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {

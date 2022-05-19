@@ -130,24 +130,8 @@
                         android:text="TextView" />
 
                 </LinearLayout>
-
             </LinearLayout>
-
-
-            <ImageButton
-                android:id="@+id/btnUrunEdit"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:textStyle="bold"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/edit_button"/>
-
         </RelativeLayout>
-
-
-
-
     </LinearLayout>
 </androidx.cardview.widget.CardView>
 
