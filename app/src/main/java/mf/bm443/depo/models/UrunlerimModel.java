@@ -4,18 +4,16 @@ import android.widget.ImageButton;
 
 public class UrunlerimModel {
 
-    private String urunAdi, urunDeposu, urunKategori, urunMiktar;
-    private ImageButton urunEdit;
+    private String urunAdi, urunDeposu, urunMiktar;
 
 
     UrunlerimModel() {
         //Boş Cons.
     }
 
-    public UrunlerimModel(String urunAdi, String urunDeposu, String urunKategori, String urunMiktar) {
+    public UrunlerimModel(String urunAdi, String urunDeposu, String urunMiktar) {
         this.urunAdi = urunAdi;
         this.urunDeposu = urunDeposu;
-        this.urunKategori = urunKategori;
         this.urunMiktar = urunMiktar;
     }
 
@@ -33,14 +31,6 @@ public class UrunlerimModel {
 
     public void setUrunDeposu(String urunDeposu) {
         this.urunDeposu = urunDeposu;
-    }
-
-    public String getUrunKategori() {
-        return urunKategori;
-    }
-
-    public void setUrunKategori(String urunKategori) {
-        this.urunKategori = urunKategori;
     }
 
     public String getUrunMiktar() {

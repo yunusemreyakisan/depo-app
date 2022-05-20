@@ -41,7 +41,7 @@ public class KategoriAdapter extends RecyclerView.Adapter<KategoriAdapter.Katego
         Animation anim = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
 
         UrunlerimModel model = kategorilerimList.get(position);
-        holder.kategoriAdi.setText(model.getUrunKategori());
+        //holder.kategoriAdi.setText(model.getUrunKategori());
         holder.urunAdeti.setText(model.getUrunMiktar());
 
         //Animation

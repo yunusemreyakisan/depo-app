@@ -56,7 +56,7 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
         UrunlerimModel urunlerimmodel = urunlerimList.get(position);
         holder.urunAdi.setText(urunlerimmodel.getUrunAdi());
         holder.urunDeposu.setText(urunlerimmodel.getUrunDeposu());
-        holder.urunKategori.setText(urunlerimmodel.getUrunKategori());
+        //holder.urunKategori.setText(urunlerimmodel.getUrunKategori());
         holder.urunMiktar.setText(urunlerimmodel.getUrunMiktar());
 
         //Animation
@@ -80,13 +80,12 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
 
     public static class UrunHolder extends RecyclerView.ViewHolder {
 
-        TextView urunAdi, urunDeposu, urunKategori, urunMiktar;
+        TextView urunAdi, urunDeposu, urunMiktar;
 
         public UrunHolder(@NonNull View itemView) {
             super(itemView);
             urunAdi = itemView.findViewById(R.id.UrunAdi);
             urunDeposu = itemView.findViewById(R.id.UrunDeposu);
-            urunKategori = itemView.findViewById(R.id.UrunKategorisi);
             urunMiktar = itemView.findViewById(R.id.UrunMiktari);
 
 

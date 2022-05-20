@@ -30,7 +30,7 @@
             android:id="@+id/urunAdiWrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="120dp"
             android:layout_marginBottom="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
@@ -79,13 +79,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/urunDeposuWrapper"
             android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:maxLines="1"
             android:minHeight="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
-            android:maxLines="1"
-            android:inputType="text"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
@@ -93,14 +93,13 @@
                 android:id="@+id/txtUrunKategori"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ürün Kategorisi"
-                android:spinnerMode="dropdown"
                 android:background="@drawable/spinner_bg"
-                android:minHeight="50dp"
+                android:hint="Ürün Kategorisi"
                 android:inputType="text"
                 android:maxLines="1"
-
-
+                android:minHeight="55dp"
+                android:spinnerMode="dropdown"
+                android:contentDescription="Ürün Kategorileri"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -110,9 +109,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/urunKategoriWrapper"
             android:layout_marginBottom="30dp"
+            android:maxLines="1"
             android:minHeight="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
-            android:maxLines="1"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -130,6 +129,54 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
+        <LinearLayout
+            android:id="@+id/kategoriLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/urunMiktarWrapper"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/yeniKategoriWrapper"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:minHeight="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtYeniKategori"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Kategori"
+                    android:inputType="text"
+                    android:minHeight="10dp"
+                    android:textColorHint="#616161" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUrunKategoriEkle"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="Ekle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/kategoriLinearLayout"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="*Eklemek istediğiniz kategoriyi yukarıdaki alana giriniz." />
         <!-- Ürün Fotoğrafı -->
 
         <!-- Ürün Photo Bilgi -->
