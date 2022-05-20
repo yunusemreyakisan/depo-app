@@ -1,10 +1,7 @@
 package mf.bm443.depo.layouts.urunIslemleri;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -15,22 +12,16 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
-
-import javax.sql.DataSource;
 
 import mf.bm443.depo.R;
 import mf.bm443.depo.adapter.UrunAdapter;
@@ -81,13 +72,6 @@ public class Urunlerim extends AppCompatActivity {
         urunEkleyeGit();
 
 
-
-
-
-
-
-
-
     }
 
 
@@ -97,7 +81,6 @@ public class Urunlerim extends AppCompatActivity {
         Intent intent = new Intent(Urunlerim.this, HomePage.class);
         startActivity(intent);
     }
-
 
 
     private void UrunlerEventChangeListener() {
@@ -112,7 +95,6 @@ public class Urunlerim extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     UrunlerimModel model = dataSnapshot.getValue(UrunlerimModel.class);
                     urunlerimList.add(model);
-
                 }
                 urunadapter.notifyDataSetChanged();
 
@@ -151,12 +133,9 @@ public class Urunlerim extends AppCompatActivity {
             urunadapter.notifyDataSetChanged();
 
 
-
         }
 
     };
-
-
 
 
     //Firestore DB

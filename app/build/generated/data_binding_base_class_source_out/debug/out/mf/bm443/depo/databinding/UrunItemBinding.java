@@ -26,9 +26,6 @@ public final class UrunItemBinding implements ViewBinding {
   public final TextView UrunDeposu;
 
   @NonNull
-  public final TextView UrunKategorisi;
-
-  @NonNull
   public final TextView UrunMiktari;
 
   @NonNull
@@ -38,12 +35,11 @@ public final class UrunItemBinding implements ViewBinding {
   public final TextView urunDeposuWrapper;
 
   private UrunItemBinding(@NonNull CardView rootView, @NonNull TextView UrunAdi,
-      @NonNull TextView UrunDeposu, @NonNull TextView UrunKategorisi, @NonNull TextView UrunMiktari,
-      @NonNull CardView recyclerView, @NonNull TextView urunDeposuWrapper) {
+      @NonNull TextView UrunDeposu, @NonNull TextView UrunMiktari, @NonNull CardView recyclerView,
+      @NonNull TextView urunDeposuWrapper) {
     this.rootView = rootView;
     this.UrunAdi = UrunAdi;
     this.UrunDeposu = UrunDeposu;
-    this.UrunKategorisi = UrunKategorisi;
     this.UrunMiktari = UrunMiktari;
     this.recyclerView = recyclerView;
     this.urunDeposuWrapper = urunDeposuWrapper;
@@ -88,12 +84,6 @@ public final class UrunItemBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.UrunKategorisi;
-      TextView UrunKategorisi = ViewBindings.findChildViewById(rootView, id);
-      if (UrunKategorisi == null) {
-        break missingId;
-      }
-
       id = R.id.UrunMiktari;
       TextView UrunMiktari = ViewBindings.findChildViewById(rootView, id);
       if (UrunMiktari == null) {
@@ -108,8 +98,8 @@ public final class UrunItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new UrunItemBinding((CardView) rootView, UrunAdi, UrunDeposu, UrunKategorisi,
-          UrunMiktari, recyclerView, urunDeposuWrapper);
+      return new UrunItemBinding((CardView) rootView, UrunAdi, UrunDeposu, UrunMiktari,
+          recyclerView, urunDeposuWrapper);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

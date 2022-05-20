@@ -42,12 +42,12 @@ drawable ic_logout
 drawable ic_splash_screen_dark
 drawable logodark
 drawable logowhite
+drawable spinner_bg
 drawable upload
 id KategoriAdi
 id KategoriUrunAdeti
 id UrunAdi
 id UrunDeposu
-id UrunKategorisi
 id UrunMiktari
 id adSoyad
 id adSoyadWrapper
@@ -62,6 +62,7 @@ id btnKayitOl
 id btnSonIslemler
 id btnStokIslemleri
 id btnUrunIslemleri
+id btnUrunKategoriEkle
 id btnUrunuEkle
 id btnYeniDepoEkle
 id btnYeniUrunEkle
@@ -76,6 +77,7 @@ id girisLogo
 id girisSifreWrapper
 id iconBoxDepoEkle
 id imageDepoDarkLogo
+id kategoriLinearLayout
 id kategorilerimRecyclerView
 id kayitOlLogo
 id kullaniciAdiWrapper
@@ -100,11 +102,13 @@ id txtUrunAdi
 id txtUrunDeposu
 id txtUrunKategori
 id txtUrunMiktar
+id txtYeniKategori
 id urunAdiWrapper
 id urunDeposuWrapper
 id urunKategoriWrapper
 id urunMiktarWrapper
 id urunlerimRecyclerView
+id yeniKategoriWrapper
 layout activity_depo_ekle
 layout activity_depolarim
 layout activity_home_page

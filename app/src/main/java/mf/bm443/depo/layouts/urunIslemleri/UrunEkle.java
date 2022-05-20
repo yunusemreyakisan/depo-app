@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -70,30 +71,28 @@ public class UrunEkle extends AppCompatActivity {
         spinnerList = new ArrayList<>();
         spinnerAdapter = new ArrayAdapter<String>(UrunEkle.this, android.R.layout.simple_spinner_dropdown_item, spinnerList);
 
-        btnKategoriEkle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                String value = yeniKategori.getText().toString();
-                String key = spinnerRef.push().getKey();
+        btnKategoriEkle.setOnClickListener(v -> {
+            String value = yeniKategori.getText().toString();
+            String key = spinnerRef.push().getKey(); //UID ile kayıt etme
 
-                spinnerRef.child(key).setValue(value);
-                yeniKategori.setText("");
-                spinnerList.clear();
-                spinnerAdapter.notifyDataSetChanged();
+            assert key != null;
+            spinnerRef.child(key).setValue(value);
+            yeniKategori.setText("Kategori");
+            spinnerList.clear();
+            spinnerAdapter.notifyDataSetChanged();
 
-                Toast.makeText(getApplicationContext(), "Kategori eklendi.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), value + " kategorisi eklendi.", Toast.LENGTH_SHORT).show();
 
-            }
         });
 
         spinnerUrunKategorisi.setAdapter(spinnerAdapter);
-        ShowData();
+        showData();
 
     }
 
     //Spinner Veriyi Gösterme
-    private void ShowData() {
+    private void showData() {
         spinnerRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -101,6 +100,7 @@ public class UrunEkle extends AppCompatActivity {
                     spinnerList.add(item.getValue().toString());
                 }
                 spinnerAdapter.notifyDataSetChanged();
+
             }
 
             @Override

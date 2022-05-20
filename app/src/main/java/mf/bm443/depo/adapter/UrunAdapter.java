@@ -6,22 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
 
 import mf.bm443.depo.R;
 import mf.bm443.depo.models.UrunlerimModel;
@@ -30,8 +21,6 @@ import mf.bm443.depo.models.UrunlerimModel;
 public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
     Context context;
     ArrayList<UrunlerimModel> urunlerimList;
-
-
 
 
     public UrunAdapter(Context context, ArrayList<UrunlerimModel> urunlerimList) {
@@ -53,11 +42,13 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
         Animation anim = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
 
 
+
         UrunlerimModel urunlerimmodel = urunlerimList.get(position);
         holder.urunAdi.setText(urunlerimmodel.getUrunAdi());
         holder.urunDeposu.setText(urunlerimmodel.getUrunDeposu());
         //holder.urunKategori.setText(urunlerimmodel.getUrunKategori());
         holder.urunMiktar.setText(urunlerimmodel.getUrunMiktar());
+
 
         //Animation
         holder.itemView.startAnimation(anim);
@@ -75,7 +66,6 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
     public int getItemCount() {
         return urunlerimList.size();
     }
-
 
 
     public static class UrunHolder extends RecyclerView.ViewHolder {

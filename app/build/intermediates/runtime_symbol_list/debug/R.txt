@@ -2671,6 +2671,7 @@ int drawable notification_template_icon_bg 0x7f0700ba
 int drawable notification_template_icon_low_bg 0x7f0700bb
 int drawable notification_tile_bg 0x7f0700bc
 int drawable notify_panel_notification_icon_bg 0x7f0700bd
+int drawable spinner_bg 0x7f0700c3
 int drawable test_custom_background 0x7f0700be
 int drawable test_level_drawable 0x7f0700bf
 int drawable tooltip_frame_dark 0x7f0700c0
@@ -2694,7 +2695,6 @@ int id TOP_END 0x7f08000c
 int id TOP_START 0x7f08000d
 int id UrunAdi 0x7f08000e
 int id UrunDeposu 0x7f08000f
-int id UrunKategorisi 0x7f080010
 int id UrunMiktari 0x7f080011
 int id accelerate 0x7f080012
 int id accessibility_action_clickable_span 0x7f080013
@@ -2803,6 +2803,7 @@ int id btnKayitOl 0x7f080079
 int id btnSonIslemler 0x7f08007a
 int id btnStokIslemleri 0x7f08007b
 int id btnUrunIslemleri 0x7f08007c
+int id btnUrunKategoriEkle 0x7f080248
 int id btnUrunuEkle 0x7f08007d
 int id btnYeniDepoEkle 0x7f08007e
 int id btnYeniUrunEkle 0x7f08007f
@@ -2965,6 +2966,7 @@ int id item4 0x7f08011b
 int id item_touch_helper_previous_elevation 0x7f08011c
 int id jumpToEnd 0x7f08011d
 int id jumpToStart 0x7f08011e
+int id kategoriLinearLayout 0x7f080249
 int id kategorilerimRecyclerView 0x7f080246
 int id kayitOlLogo 0x7f08011f
 int id kullaniciAdiWrapper 0x7f080120
@@ -3229,6 +3231,7 @@ int id txtUrunAdi 0x7f080222
 int id txtUrunDeposu 0x7f080223
 int id txtUrunKategori 0x7f080224
 int id txtUrunMiktar 0x7f080225
+int id txtYeniKategori 0x7f08024a
 int id unchecked 0x7f080226
 int id uniform 0x7f080227
 int id unlabeled 0x7f080228
@@ -3257,6 +3260,7 @@ int id wrap_content_constrained 0x7f08023e
 int id wrapped_composition_tag 0x7f08023f
 int id x_left 0x7f080240
 int id x_right 0x7f080241
+int id yeniKategoriWrapper 0x7f08024b
 int id zero_corner_chip 0x7f080242
 int integer abc_config_activityDefaultDur 0x7f090000
 int integer abc_config_activityShortDur 0x7f090001

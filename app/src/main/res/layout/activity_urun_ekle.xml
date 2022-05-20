@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/urunDeposuWrapper"
             android:layout_marginBottom="10dp"
-            android:inputType="text"
+            android:drawableEnd="@drawable/ic_back"
             android:maxLines="1"
             android:minHeight="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
@@ -93,14 +93,12 @@
                 android:id="@+id/txtUrunKategori"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/spinner_bg"
-                android:hint="Ürün Kategorisi"
+                android:contentDescription="Ürün Kategorileri"
+                android:dropDownHeight="50dp"
                 android:inputType="text"
                 android:maxLines="1"
                 android:minHeight="55dp"
-                android:spinnerMode="dropdown"
-                android:contentDescription="Ürün Kategorileri"
-                />
+                android:spinnerMode="dropdown" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -164,6 +162,7 @@
                 android:id="@+id/btnUrunKategoriEkle"
                 android:layout_width="70dp"
                 android:layout_height="60dp"
+                app:cornerRadius="10dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="10dp"
                 android:text="Ekle" />

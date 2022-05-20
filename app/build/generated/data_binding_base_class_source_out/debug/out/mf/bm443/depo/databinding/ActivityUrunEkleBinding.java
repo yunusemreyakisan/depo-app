@@ -23,7 +23,13 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final MaterialButton btnUrunKategoriEkle;
+
+  @NonNull
   public final MaterialButton btnUrunuEkle;
+
+  @NonNull
+  public final LinearLayout kategoriLinearLayout;
 
   @NonNull
   public final TextInputEditText txtUrunAdi;
@@ -38,6 +44,9 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
   public final TextInputEditText txtUrunMiktar;
 
   @NonNull
+  public final TextInputEditText txtYeniKategori;
+
+  @NonNull
   public final TextInputLayout urunAdiWrapper;
 
   @NonNull
@@ -49,22 +58,31 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
   @NonNull
   public final TextInputLayout urunMiktarWrapper;
 
+  @NonNull
+  public final TextInputLayout yeniKategoriWrapper;
+
   private ActivityUrunEkleBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton btnUrunuEkle, @NonNull TextInputEditText txtUrunAdi,
+      @NonNull MaterialButton btnUrunKategoriEkle, @NonNull MaterialButton btnUrunuEkle,
+      @NonNull LinearLayout kategoriLinearLayout, @NonNull TextInputEditText txtUrunAdi,
       @NonNull TextInputEditText txtUrunDeposu, @NonNull Spinner txtUrunKategori,
-      @NonNull TextInputEditText txtUrunMiktar, @NonNull TextInputLayout urunAdiWrapper,
-      @NonNull TextInputLayout urunDeposuWrapper, @NonNull TextInputLayout urunKategoriWrapper,
-      @NonNull TextInputLayout urunMiktarWrapper) {
+      @NonNull TextInputEditText txtUrunMiktar, @NonNull TextInputEditText txtYeniKategori,
+      @NonNull TextInputLayout urunAdiWrapper, @NonNull TextInputLayout urunDeposuWrapper,
+      @NonNull TextInputLayout urunKategoriWrapper, @NonNull TextInputLayout urunMiktarWrapper,
+      @NonNull TextInputLayout yeniKategoriWrapper) {
     this.rootView = rootView;
+    this.btnUrunKategoriEkle = btnUrunKategoriEkle;
     this.btnUrunuEkle = btnUrunuEkle;
+    this.kategoriLinearLayout = kategoriLinearLayout;
     this.txtUrunAdi = txtUrunAdi;
     this.txtUrunDeposu = txtUrunDeposu;
     this.txtUrunKategori = txtUrunKategori;
     this.txtUrunMiktar = txtUrunMiktar;
+    this.txtYeniKategori = txtYeniKategori;
     this.urunAdiWrapper = urunAdiWrapper;
     this.urunDeposuWrapper = urunDeposuWrapper;
     this.urunKategoriWrapper = urunKategoriWrapper;
     this.urunMiktarWrapper = urunMiktarWrapper;
+    this.yeniKategoriWrapper = yeniKategoriWrapper;
   }
 
   @Override
@@ -94,9 +112,21 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnUrunKategoriEkle;
+      MaterialButton btnUrunKategoriEkle = ViewBindings.findChildViewById(rootView, id);
+      if (btnUrunKategoriEkle == null) {
+        break missingId;
+      }
+
       id = R.id.btnUrunuEkle;
       MaterialButton btnUrunuEkle = ViewBindings.findChildViewById(rootView, id);
       if (btnUrunuEkle == null) {
+        break missingId;
+      }
+
+      id = R.id.kategoriLinearLayout;
+      LinearLayout kategoriLinearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (kategoriLinearLayout == null) {
         break missingId;
       }
 
@@ -124,6 +154,12 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtYeniKategori;
+      TextInputEditText txtYeniKategori = ViewBindings.findChildViewById(rootView, id);
+      if (txtYeniKategori == null) {
+        break missingId;
+      }
+
       id = R.id.urunAdiWrapper;
       TextInputLayout urunAdiWrapper = ViewBindings.findChildViewById(rootView, id);
       if (urunAdiWrapper == null) {
@@ -148,9 +184,16 @@ public final class ActivityUrunEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityUrunEkleBinding((LinearLayout) rootView, btnUrunuEkle, txtUrunAdi,
-          txtUrunDeposu, txtUrunKategori, txtUrunMiktar, urunAdiWrapper, urunDeposuWrapper,
-          urunKategoriWrapper, urunMiktarWrapper);
+      id = R.id.yeniKategoriWrapper;
+      TextInputLayout yeniKategoriWrapper = ViewBindings.findChildViewById(rootView, id);
+      if (yeniKategoriWrapper == null) {
+        break missingId;
+      }
+
+      return new ActivityUrunEkleBinding((LinearLayout) rootView, btnUrunKategoriEkle, btnUrunuEkle,
+          kategoriLinearLayout, txtUrunAdi, txtUrunDeposu, txtUrunKategori, txtUrunMiktar,
+          txtYeniKategori, urunAdiWrapper, urunDeposuWrapper, urunKategoriWrapper,
+          urunMiktarWrapper, yeniKategoriWrapper);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

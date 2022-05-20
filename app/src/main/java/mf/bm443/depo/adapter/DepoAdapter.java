@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,12 +41,17 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder
     public void onBindViewHolder(@NonNull DepoAdapter.DepoViewHolder holder, int position) {
 
 
+        //Animation
+        Animation anim = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
+
         DepolarimModel model = depolarimList.get(position);
         holder.depoAdi.setText(model.getDepoAdi());
         holder.depoAdresi.setText(model.getDepoAdresi());
         holder.depoKategorisi.setText(model.getDepoUrunKategorisi());
         holder.depoBuyuklugu.setText(model.getDepoBuyuklugu());
 
+        //Animation
+        holder.itemView.startAnimation(anim);
 
         //CardView Dinleyicisi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
