@@ -1,7 +1,5 @@
 package mf.bm443.depo.models;
 
-import android.widget.ImageButton;
-
 public class UrunlerimModel {
 
     private String urunAdi, urunDeposu, urunMiktar;

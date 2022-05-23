@@ -34,6 +34,7 @@ drawable ic_back
 drawable ic_baseline_add_24
 drawable ic_baseline_auto_delete_24
 drawable ic_baseline_compare_arrows_24
+drawable ic_baseline_search_24
 drawable ic_baseline_warehouse
 drawable ic_kayitolresmi
 drawable ic_launcher_foreground
@@ -107,6 +108,7 @@ id urunAdiWrapper
 id urunDeposuWrapper
 id urunKategoriWrapper
 id urunMiktarWrapper
+id urunSearch
 id urunlerimRecyclerView
 id yeniKategoriWrapper
 layout activity_depo_ekle

@@ -29,16 +29,33 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:text="Güncelleme yapmak istediğiniz ürünü sola kaydırın."
                 android:textColor="@color/colorPrimary"
-                android:layout_marginBottom="30dp"
                 android:textSize="15sp"
                 android:textStyle="normal" />
 
-
+            <!-- Searchview -->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/urunSearch"
+                android:layout_width="325dp"
+                android:inputType="textNoSuggestions"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/editTextColor"
+                android:textColor="#FA615E5E"
+                android:textColorHint="#FAA59D9D"
+                android:textStyle="bold"
+                android:focusable="false"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@null"
+                app:actionViewClass="android.widget.SearchView"
+                app:searchIcon="@drawable/ic_baseline_search_24"
+                app:queryHint="Ürün ara" />
 
             <RelativeLayout
                 android:layout_width="wrap_content"

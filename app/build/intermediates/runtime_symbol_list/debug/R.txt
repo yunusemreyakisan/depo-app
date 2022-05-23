@@ -2612,6 +2612,7 @@ int drawable ic_back 0x7f07007f
 int drawable ic_baseline_add_24 0x7f070080
 int drawable ic_baseline_auto_delete_24 0x7f070081
 int drawable ic_baseline_compare_arrows_24 0x7f070082
+int drawable ic_baseline_search_24 0x7f0700c4
 int drawable ic_baseline_warehouse 0x7f070083
 int drawable ic_clock_black_24dp 0x7f070084
 int drawable ic_kayitolresmi 0x7f070085
@@ -3240,6 +3241,7 @@ int id urunAdiWrapper 0x7f08022a
 int id urunDeposuWrapper 0x7f08022b
 int id urunKategoriWrapper 0x7f08022c
 int id urunMiktarWrapper 0x7f08022d
+int id urunSearch 0x7f08024c
 int id urunlerimRecyclerView 0x7f08022e
 int id useLogo 0x7f08022f
 int id vertical_only 0x7f080230

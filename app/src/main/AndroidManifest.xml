@@ -13,8 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Light">
 
+        <!-- windowSoftInputMode : Sanal klavye kontrolü -->
         <activity
             android:name=".layouts.urunIslemleri.Urunlerim"
+            android:windowSoftInputMode="stateHidden|adjustPan"
             android:exported="true" />
         <activity
             android:name=".layouts.kategoriIslemleri.Kategoriler"

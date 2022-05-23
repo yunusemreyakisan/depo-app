@@ -97,6 +97,7 @@ public class Kategoriler extends AppCompatActivity {
 
     }
 
+
     private void initComponents() {
         kategorilerimRecyclerView = findViewById(R.id.kategorilerimRecyclerView);
     }

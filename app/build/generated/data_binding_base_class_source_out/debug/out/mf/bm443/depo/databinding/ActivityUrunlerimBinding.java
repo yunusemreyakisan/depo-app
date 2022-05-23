@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -24,12 +25,17 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
   public final MaterialButton btnYeniUrunEkle;
 
   @NonNull
+  public final SearchView urunSearch;
+
+  @NonNull
   public final RecyclerView urunlerimRecyclerView;
 
   private ActivityUrunlerimBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton btnYeniUrunEkle, @NonNull RecyclerView urunlerimRecyclerView) {
+      @NonNull MaterialButton btnYeniUrunEkle, @NonNull SearchView urunSearch,
+      @NonNull RecyclerView urunlerimRecyclerView) {
     this.rootView = rootView;
     this.btnYeniUrunEkle = btnYeniUrunEkle;
+    this.urunSearch = urunSearch;
     this.urunlerimRecyclerView = urunlerimRecyclerView;
   }
 
@@ -66,13 +72,19 @@ public final class ActivityUrunlerimBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.urunSearch;
+      SearchView urunSearch = ViewBindings.findChildViewById(rootView, id);
+      if (urunSearch == null) {
+        break missingId;
+      }
+
       id = R.id.urunlerimRecyclerView;
       RecyclerView urunlerimRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (urunlerimRecyclerView == null) {
         break missingId;
       }
 
-      return new ActivityUrunlerimBinding((LinearLayout) rootView, btnYeniUrunEkle,
+      return new ActivityUrunlerimBinding((LinearLayout) rootView, btnYeniUrunEkle, urunSearch,
           urunlerimRecyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);

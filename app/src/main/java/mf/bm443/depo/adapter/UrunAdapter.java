@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,14 +20,18 @@ import mf.bm443.depo.R;
 import mf.bm443.depo.models.UrunlerimModel;
 
 
-public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
+public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> implements Filterable{
     Context context;
     ArrayList<UrunlerimModel> urunlerimList;
+    ArrayList<UrunlerimModel> urunlerimFullList;
 
 
     public UrunAdapter(Context context, ArrayList<UrunlerimModel> urunlerimList) {
         this.context = context;
-        this.urunlerimList = urunlerimList;
+        this.urunlerimFullList = urunlerimList;
+        this.urunlerimList = new ArrayList<>(urunlerimFullList);
+
+
     }
 
     @NonNull
@@ -40,7 +46,6 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
 
         //Animation
         Animation anim = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
-
 
 
         UrunlerimModel urunlerimmodel = urunlerimList.get(position);
@@ -67,6 +72,60 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
         return urunlerimList.size();
     }
 
+    @Override
+    public Filter getFilter() {
+        return urunlerFilter;
+    }
+
+
+    private final Filter urunlerFilter = new Filter(){
+
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+
+            ArrayList<UrunlerimModel> filteredUrunList = new ArrayList<>();
+
+            if(constraint == null || constraint.length() == 0 ){
+                filteredUrunList.addAll(urunlerimFullList);
+            }else{
+                String filterPattern = constraint.toString().toLowerCase().trim();
+
+                for(UrunlerimModel m : urunlerimFullList){
+
+                   if(m.getUrunAdi().toLowerCase().contains(filterPattern)){
+                       filteredUrunList.add(m);
+                   }
+
+                }
+
+            }
+
+            FilterResults sonuc = new FilterResults();
+            sonuc.values = filteredUrunList;
+            sonuc.count = filteredUrunList.size();
+
+
+            return sonuc;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults sonuc) {
+
+            urunlerimList.clear();
+            urunlerimList.addAll((ArrayList) sonuc.values);
+            notifyDataSetChanged();
+
+        }
+    };
+
+
+
+
+
+
+
+
+
 
     public static class UrunHolder extends RecyclerView.ViewHolder {
 
@@ -81,4 +140,12 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder> {
 
         }
     }
+
+
+
+
+
+
+
+
 }

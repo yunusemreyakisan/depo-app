@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import androidx.appcompat.widget.SearchView;
+
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,15 +30,16 @@ import mf.bm443.depo.R;
 import mf.bm443.depo.adapter.UrunAdapter;
 import mf.bm443.depo.layouts.HomePage;
 import mf.bm443.depo.models.UrunlerimModel;
-
 public class Urunlerim extends AppCompatActivity {
 
     private RecyclerView urunlerRecyclerView;
+
     private ImageView depoLogoUrunlerim;
     private Button btnUrunEkle;
     private FirebaseFirestore db;
     ArrayList<UrunlerimModel> urunlerimList;
     UrunAdapter urunadapter;
+    SearchView sV;
     FirebaseAuth mAuth;
     DatabaseReference mDatabaseReference;
     private FirebaseUser mUser;
@@ -58,6 +62,7 @@ public class Urunlerim extends AppCompatActivity {
         itemTouchHelper.attachToRecyclerView(urunlerRecyclerView);
         urunlerRecyclerView.setAdapter(urunadapter);
 
+
         //Realtime DB
         String user_id = mAuth.getCurrentUser().getUid();
         mUser = mAuth.getCurrentUser();
@@ -70,6 +75,22 @@ public class Urunlerim extends AppCompatActivity {
         UrunlerEventChangeListener();
         initComponents();
         urunEkleyeGit();
+
+
+
+
+        sV.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                urunadapter.getFilter().filter(newText);
+                return false;
+            }
+        });
 
 
     }
@@ -86,7 +107,6 @@ public class Urunlerim extends AppCompatActivity {
     private void UrunlerEventChangeListener() {
         FirebaseUser mUser = mAuth.getCurrentUser();
         mAuth = FirebaseAuth.getInstance();
-
 
         mDatabaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -110,7 +130,14 @@ public class Urunlerim extends AppCompatActivity {
             }
         });
 
+
     }
+
+
+
+
+
+
 
 
     //SwipeToAction
@@ -132,13 +159,46 @@ public class Urunlerim extends AppCompatActivity {
             urunadapter.notifyItemRemoved(position);
             urunadapter.notifyDataSetChanged();
 
-
         }
 
     };
 
 
-    //Firestore DB
+
+    private void urunEkleyeGit() {
+        btnUrunEkle.setOnClickListener(view -> {
+            Intent intent = new Intent(Urunlerim.this, UrunEkle.class);
+            startActivity(intent);
+        });
+    }
+
+    private void initComponents() {
+
+        urunlerRecyclerView = findViewById(R.id.urunlerimRecyclerView);
+        btnUrunEkle = (Button) findViewById(R.id.btnYeniUrunEkle);
+        sV = (SearchView) findViewById(R.id.urunSearch);
+        //depoLogoUrunlerim = findViewById(R.id.depoLogoUrunlerim);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Firestore DB
        /*
         CollectionReference cRef = (CollectionReference) db
                 .collection("Kullanıcılar")
@@ -181,21 +241,3 @@ public class Urunlerim extends AppCompatActivity {
                 });
 
         */
-
-
-    private void urunEkleyeGit() {
-        btnUrunEkle.setOnClickListener(view -> {
-            Intent intent = new Intent(Urunlerim.this, UrunEkle.class);
-            startActivity(intent);
-        });
-    }
-
-    private void initComponents() {
-
-        urunlerRecyclerView = findViewById(R.id.urunlerimRecyclerView);
-        btnUrunEkle = (Button) findViewById(R.id.btnYeniUrunEkle);
-        //depoLogoUrunlerim = findViewById(R.id.depoLogoUrunlerim);
-    }
-
-
-}

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -50,6 +51,7 @@ public class UrunEkle extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         //mFirestore = FirebaseFirestore.getInstance();
 
+
         String user_id = mAuth.getCurrentUser().getUid();
         mUser = mAuth.getCurrentUser();
 
@@ -64,13 +66,11 @@ public class UrunEkle extends AppCompatActivity {
         btnUrunEkleIslevi();
         urunKategorisiEkle();
 
-
     }
 
     private void urunKategorisiEkle() {
         spinnerList = new ArrayList<>();
         spinnerAdapter = new ArrayAdapter<String>(UrunEkle.this, android.R.layout.simple_spinner_dropdown_item, spinnerList);
-
 
         btnKategoriEkle.setOnClickListener(v -> {
             String value = yeniKategori.getText().toString();
@@ -78,7 +78,7 @@ public class UrunEkle extends AppCompatActivity {
 
             assert key != null;
             spinnerRef.child(key).setValue(value);
-            yeniKategori.setText("Kategori");
+            yeniKategori.setText("");
             spinnerList.clear();
             spinnerAdapter.notifyDataSetChanged();
 
@@ -91,13 +91,14 @@ public class UrunEkle extends AppCompatActivity {
 
     }
 
+
     //Spinner Veriyi Gösterme
     private void showData() {
         spinnerRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot item : snapshot.getChildren()) {
-                    spinnerList.add(item.getValue().toString());
+                    spinnerList.add(Objects.requireNonNull(item.getValue()).toString());
                 }
                 spinnerAdapter.notifyDataSetChanged();
 
@@ -105,7 +106,7 @@ public class UrunEkle extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                throw error.toException(); // never ignore errors.
             }
         });
     }
@@ -114,6 +115,11 @@ public class UrunEkle extends AppCompatActivity {
     private void btnUrunEkleIslevi() {
         mAuth = FirebaseAuth.getInstance();
         btnUrunekle.setOnClickListener(view -> {
+
+            //Kategori Boşluk Kontrolü
+            if(spinnerList.isEmpty()){
+                Toast.makeText(getApplicationContext(), "Lütfen kategori seçiniz", Toast.LENGTH_SHORT).show();
+            }
 
             //Veritabanına Canlı Kayıt Etme (Realtime Database)
             String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
