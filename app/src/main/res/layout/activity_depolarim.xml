@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
-                android:text="Depolarım"
+                android:text="@string/txt_depolarim"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Güncelleme yapmak istediğiniz deponuzun üzerine uzun basınız."
+                android:text="💡 Güncelleme yapmak istediğiniz deponuzun \n      üzerine dokunun."
                 android:textColor="@color/colorPrimary"
                 android:layout_marginBottom="30dp"
                 android:textSize="15sp"
@@ -52,7 +52,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="@color/btnColor"
-                    android:text="YENİ DEPO EKLE" />
+                    android:text="@string/txt_yeni_depo_ekle" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/depolarimRecyclerView"

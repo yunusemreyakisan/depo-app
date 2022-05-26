@@ -28,9 +28,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Light" >
+
+        <!-- windowSoftInputMode : Sanal klavye kontrolü -->
         <activity
             android:name="mf.bm443.depo.layouts.urunIslemleri.Urunlerim"
-            android:exported="true" />
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name="mf.bm443.depo.layouts.kategoriIslemleri.Kategoriler"
             android:exported="true" />
@@ -135,10 +138,6 @@
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
             android:visibleToInstantApps="true" />
 
-        <provider
-            android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.mf.bm443.depo.com.squareup.picasso"
-            android:exported="false" />
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.mf.bm443.depo.firebaseinitprovider"

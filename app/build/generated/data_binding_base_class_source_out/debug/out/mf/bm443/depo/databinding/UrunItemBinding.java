@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -29,18 +30,27 @@ public final class UrunItemBinding implements ViewBinding {
   public final TextView UrunMiktari;
 
   @NonNull
+  public final MaterialButton btnRemoveItem;
+
+  @NonNull
+  public final MaterialButton btnUpdateItem;
+
+  @NonNull
   public final CardView recyclerView;
 
   @NonNull
   public final TextView urunDeposuWrapper;
 
   private UrunItemBinding(@NonNull CardView rootView, @NonNull TextView UrunAdi,
-      @NonNull TextView UrunDeposu, @NonNull TextView UrunMiktari, @NonNull CardView recyclerView,
-      @NonNull TextView urunDeposuWrapper) {
+      @NonNull TextView UrunDeposu, @NonNull TextView UrunMiktari,
+      @NonNull MaterialButton btnRemoveItem, @NonNull MaterialButton btnUpdateItem,
+      @NonNull CardView recyclerView, @NonNull TextView urunDeposuWrapper) {
     this.rootView = rootView;
     this.UrunAdi = UrunAdi;
     this.UrunDeposu = UrunDeposu;
     this.UrunMiktari = UrunMiktari;
+    this.btnRemoveItem = btnRemoveItem;
+    this.btnUpdateItem = btnUpdateItem;
     this.recyclerView = recyclerView;
     this.urunDeposuWrapper = urunDeposuWrapper;
   }
@@ -90,6 +100,18 @@ public final class UrunItemBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnRemoveItem;
+      MaterialButton btnRemoveItem = ViewBindings.findChildViewById(rootView, id);
+      if (btnRemoveItem == null) {
+        break missingId;
+      }
+
+      id = R.id.btnUpdateItem;
+      MaterialButton btnUpdateItem = ViewBindings.findChildViewById(rootView, id);
+      if (btnUpdateItem == null) {
+        break missingId;
+      }
+
       CardView recyclerView = (CardView) rootView;
 
       id = R.id.urunDeposuWrapper;
@@ -99,7 +121,7 @@ public final class UrunItemBinding implements ViewBinding {
       }
 
       return new UrunItemBinding((CardView) rootView, UrunAdi, UrunDeposu, UrunMiktari,
-          recyclerView, urunDeposuWrapper);
+          btnRemoveItem, btnUpdateItem, recyclerView, urunDeposuWrapper);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

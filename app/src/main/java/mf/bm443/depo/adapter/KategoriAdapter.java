@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,8 +42,9 @@ public class KategoriAdapter extends RecyclerView.Adapter<KategoriAdapter.Katego
         Animation anim = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
 
         UrunlerimModel model = kategorilerimList.get(position);
-       // holder.kategoriAdi.setText(model.getUrunKategori());
+       // holder.kategoriAdi.setText(model.getKey());
         holder.urunAdeti.setText(model.getUrunMiktar());
+
 
         //Animation
         holder.itemView.startAnimation(anim);
@@ -78,3 +80,5 @@ public class KategoriAdapter extends RecyclerView.Adapter<KategoriAdapter.Katego
 
 
 }
+
+

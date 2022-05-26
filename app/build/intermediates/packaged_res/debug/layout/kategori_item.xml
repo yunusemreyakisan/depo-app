@@ -26,10 +26,10 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:gravity="center"
-                android:text="📁"
+                android:text="@string/kategori_itemLogo"
                 android:textColor="@color/colorPrimary"
                 android:textSize="50sp"
                 android:textStyle="bold" />
@@ -59,7 +59,7 @@
                     android:id="@+id/KategoriAdi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kategori Adı"
+                    android:text="@string/item_kategori_ad"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -73,7 +73,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ürün adeti : "
+                        android:text="@string/item_urun_adeti"
                         android:textColor="@color/colorPrimary" />
 
 

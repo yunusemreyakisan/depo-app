@@ -47,7 +47,6 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder
         DepolarimModel model = depolarimList.get(position);
         holder.depoAdi.setText(model.getDepoAdi());
         holder.depoAdresi.setText(model.getDepoAdresi());
-        holder.depoKategorisi.setText(model.getDepoUrunKategorisi());
         holder.depoBuyuklugu.setText(model.getDepoBuyuklugu());
 
         //Animation
@@ -78,7 +77,8 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder
 
     public static class DepoViewHolder extends RecyclerView.ViewHolder {
 
-        TextView depoAdi, depoAdresi, depoBuyuklugu, depoKategorisi;
+        TextView depoAdi, depoAdresi, depoBuyuklugu;
+
 
         public DepoViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -86,7 +86,6 @@ public class DepoAdapter extends RecyclerView.Adapter<DepoAdapter.DepoViewHolder
             depoAdi = itemView.findViewById(R.id.txtDepoAdi);
             depoAdresi = itemView.findViewById(R.id.txtDepoAdresi);
             depoBuyuklugu = itemView.findViewById(R.id.txtDepoBuyuklugu);
-            depoKategorisi = itemView.findViewById(R.id.txtDepoKategorisi);
 
 
         }

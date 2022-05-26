@@ -24,7 +24,7 @@ import mf.bm443.depo.models.DepolarimModel;
 public class DepoEkle extends AppCompatActivity {
 
     private Button depolarimaEkle;
-    private EditText depoAd, depoAdres, depoBuyuklugu, depoKategori;
+    private EditText depoAd, depoAdres, depoBuyuklugu;
     //Depo Kaydetme
     FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
@@ -51,7 +51,6 @@ public class DepoEkle extends AppCompatActivity {
         depoAd = findViewById(R.id.depoAd);
         depoAdres = findViewById(R.id.depoAdres);
         depoBuyuklugu = findViewById(R.id.depoBuyuklugu);
-        depoKategori = findViewById(R.id.depoEkleUrunKategori);
     }
 
 
@@ -69,12 +68,11 @@ public class DepoEkle extends AppCompatActivity {
             String depoadi = depoAd.getText().toString();
             String depoAdresi = depoAdres.getText().toString();
             String depoBuyukluk = depoBuyuklugu.getText().toString();
-            String depoUrunKategori = depoKategori.getText().toString();
-            if (TextUtils.isEmpty(depoadi) || TextUtils.isEmpty(depoBuyukluk) || TextUtils.isEmpty(depoUrunKategori)) {
+            if (TextUtils.isEmpty(depoadi) || TextUtils.isEmpty(depoBuyukluk)) {
                 Toast.makeText(DepoEkle.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
             } else {
 
-                DepolarimModel model = new DepolarimModel(depoadi, depoAdresi, depoBuyukluk, depoUrunKategori);
+                DepolarimModel model = new DepolarimModel(depoadi, depoAdresi, depoBuyukluk);
                 mDatabase.push().setValue(model);
                 Intent sayfa = new Intent(DepoEkle.this, Depolarim.class);
                 startActivity(sayfa);

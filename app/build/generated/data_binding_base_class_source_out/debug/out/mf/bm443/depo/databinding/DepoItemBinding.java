@@ -34,19 +34,15 @@ public final class DepoItemBinding implements ViewBinding {
   @NonNull
   public final TextView txtDepoBuyuklugu;
 
-  @NonNull
-  public final TextView txtDepoKategorisi;
-
   private DepoItemBinding(@NonNull CardView rootView, @NonNull TextView adresWrapper,
       @NonNull CardView recyclerView, @NonNull TextView txtDepoAdi, @NonNull TextView txtDepoAdresi,
-      @NonNull TextView txtDepoBuyuklugu, @NonNull TextView txtDepoKategorisi) {
+      @NonNull TextView txtDepoBuyuklugu) {
     this.rootView = rootView;
     this.adresWrapper = adresWrapper;
     this.recyclerView = recyclerView;
     this.txtDepoAdi = txtDepoAdi;
     this.txtDepoAdresi = txtDepoAdresi;
     this.txtDepoBuyuklugu = txtDepoBuyuklugu;
-    this.txtDepoKategorisi = txtDepoKategorisi;
   }
 
   @Override
@@ -102,14 +98,8 @@ public final class DepoItemBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtDepoKategorisi;
-      TextView txtDepoKategorisi = ViewBindings.findChildViewById(rootView, id);
-      if (txtDepoKategorisi == null) {
-        break missingId;
-      }
-
       return new DepoItemBinding((CardView) rootView, adresWrapper, recyclerView, txtDepoAdi,
-          txtDepoAdresi, txtDepoBuyuklugu, txtDepoKategorisi);
+          txtDepoAdresi, txtDepoBuyuklugu);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

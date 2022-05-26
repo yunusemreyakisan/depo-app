@@ -1,18 +1,18 @@
 package mf.bm443.depo.models;
 
 public class DepolarimModel {
-    private String DepoAdi, DepoAdresi, DepoBuyuklugu, DepoUrunKategorisi;
+    private String DepoAdi, DepoAdresi, DepoBuyuklugu;
 
 
     public DepolarimModel() {
         //Boş Cons.
     }
 
-    public DepolarimModel(String depoAdi, String depoAdresi, String depoBuyuklugu, String depoUrunKategorisi) {
+    public DepolarimModel(String depoAdi, String depoAdresi, String depoBuyuklugu) {
         DepoAdi = depoAdi;
         DepoAdresi = depoAdresi;
         DepoBuyuklugu = depoBuyuklugu;
-        DepoUrunKategorisi = depoUrunKategorisi;
+
     }
 
     public String getDepoAdi() {
@@ -39,13 +39,6 @@ public class DepolarimModel {
         DepoBuyuklugu = depoBuyuklugu;
     }
 
-    public String getDepoUrunKategorisi() {
-        return DepoUrunKategorisi;
-    }
-
-    public void setDepoUrunKategorisi(String depoUrunKategorisi) {
-        DepoUrunKategorisi = depoUrunKategorisi;
-    }
 
 }
 

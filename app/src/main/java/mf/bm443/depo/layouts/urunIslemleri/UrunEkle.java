@@ -22,10 +22,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.local.LruGarbageCollector;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import mf.bm443.depo.R;
 import mf.bm443.depo.models.UrunlerimModel;
@@ -39,6 +44,7 @@ public class UrunEkle extends AppCompatActivity {
     FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
     private DatabaseReference spinnerRef;
+    private DatabaseReference mDBRef;
     private ArrayList<String> spinnerList;
     private ArrayAdapter<String> spinnerAdapter;
     //private FirebaseFirestore mFirestore;
@@ -73,17 +79,22 @@ public class UrunEkle extends AppCompatActivity {
         spinnerAdapter = new ArrayAdapter<String>(UrunEkle.this, android.R.layout.simple_spinner_dropdown_item, spinnerList);
 
         btnKategoriEkle.setOnClickListener(v -> {
+
             String value = yeniKategori.getText().toString();
             String key = spinnerRef.push().getKey(); //UID ile kayıt etme
 
-            assert key != null;
-            spinnerRef.child(key).setValue(value);
-            yeniKategori.setText("");
-            spinnerList.clear();
-            spinnerAdapter.notifyDataSetChanged();
+            if(TextUtils.isEmpty(value)){
+            Toast.makeText(getApplicationContext(), "Boş kategori kaydedilemez.", Toast.LENGTH_SHORT).show();
+            }else{
 
-            Toast.makeText(getApplicationContext(), value + " kategorisi eklendi.", Toast.LENGTH_SHORT).show();
+                assert key != null;
+                spinnerRef.child(key).setValue(value);
+                yeniKategori.setText("");
+                spinnerList.clear();
+                spinnerAdapter.notifyDataSetChanged();
 
+                Toast.makeText(getApplicationContext(), value + " kategorisi eklendi.", Toast.LENGTH_SHORT).show();
+            }
         });
 
         spinnerUrunKategorisi.setAdapter(spinnerAdapter);
@@ -114,10 +125,11 @@ public class UrunEkle extends AppCompatActivity {
 
     private void btnUrunEkleIslevi() {
         mAuth = FirebaseAuth.getInstance();
+        String value = yeniKategori.getText().toString();
         btnUrunekle.setOnClickListener(view -> {
 
             //Kategori Boşluk Kontrolü
-            if(spinnerList.isEmpty()){
+            if(spinnerList.isEmpty() && value.isEmpty()){
                 Toast.makeText(getApplicationContext(), "Lütfen kategori seçiniz", Toast.LENGTH_SHORT).show();
             }
 
@@ -136,7 +148,7 @@ public class UrunEkle extends AppCompatActivity {
             } else {
 
                 UrunlerimModel urunlerimmodel = new UrunlerimModel(urunadi, urundeposu, urunMiktar);
-                mDatabase.push().setValue(urunlerimmodel);
+                mDatabase.push().setValue(urunlerimmodel); //without push()
                 Intent intent = new Intent(UrunEkle.this, Urunlerim.class);
                 startActivity(intent);
                 Toast.makeText(UrunEkle.this, "Ürün başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();

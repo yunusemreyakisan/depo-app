@@ -27,17 +27,20 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="genel_activity_margin">40dp</dimen>
     <dimen name="marginBottom">10dp</dimen>
+    <string name="CD_UrunKategorileri">Ürün Kategorileri</string>
     <string name="CD_logo">Logo</string>
     <string name="CD_logo_image">Logo Image</string>
     <string name="ad_soyad_hint">Ad-Soyad</string>
     <string name="app_name">Depo</string>
     <string name="beni_hatirla">Beni Hatırla</string>
-    <string name="btnKaydol">Kaydol</string>
+    <string name="btnKaydol">Kayıt ol</string>
+    <string name="btnTextEkle">Ekle</string>
     <string name="btn_giris_yap">Giriş Yap</string>
     <string name="btn_google_giris">Google Giriş</string>
     <string name="cdTodo">TODO</string>
     <string name="copyright">Copyright © 2022 All Rights Reserved.</string>
     <string name="default_web_client_id" translatable="false">41520331102-206cubelalfgdfe5uhnhr2l2d4mr2fs4.apps.googleusercontent.com</string>
+    <string name="depo_itemLogo">📦</string>
     <string name="e_posta_hint">E-Posta</string>
     <string name="email_text">E-Mail</string>
     <string name="first_fragment_label">First Fragment</string>
@@ -47,6 +50,14 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC_mMVvFFAOyxECXMev36j8ql-hg8EJOI8</string>
     <string name="google_storage_bucket" translatable="false">depoenvanteryonetimi.appspot.com</string>
     <string name="hey_giris_yap">Hey, \nGiriş yap.</string>
+    <string name="item_depoBuyuklugu">Depo büyüklüğü :</string>
+    <string name="item_depo_ad">Depo Adı</string>
+    <string name="item_depo_adresi">Depo adresi :</string>
+    <string name="item_kategori_ad">Kategori Adı</string>
+    <string name="item_urunAdi">Ürün Adı</string>
+    <string name="item_urun_adeti">Ürün adeti :</string>
+    <string name="kategori_hint">Kategori</string>
+    <string name="kategori_itemLogo">📁</string>
     <string name="kayit_ol_hint">KAYIT OL</string>
     <string name="lbl_kayit_ol">Kayıt Ol</string>
     <string name="logo">Logo</string>
@@ -60,8 +71,22 @@
     <string name="txtDepoIslemleri">Depo İşlemleri</string>
     <string name="txtHosgeldniz">Hoşgeldiniz</string>
     <string name="txtUrunIslemleri">Ürün İşlemleri</string>
+    <string name="txt_UrunDeposu">Ürün Deposu</string>
+    <string name="txt_UrunMiktar_hint">Ürün Miktarı (Adet)</string>
+    <string name="txt_Urun_Adi">Ürün Adı</string>
+    <string name="txt_Urun_Ekle">Ürün Ekle</string>
+    <string name="txt_depo_buyuklugu">DEPO BÜYÜKLÜĞÜ (KG)</string>
+    <string name="txt_depolarim">Depolarım</string>
     <string name="txt_depolarima_ekle">DEPOLARIMA Ekle</string>
+    <string name="txt_hosgeldin">Hoşgeldin</string>
+    <string name="txt_kategoriler">Kategoriler</string>
+    <string name="txt_son_islemler">Son İşlemler</string>
+    <string name="txt_stok_islemleri">Stok İşlemleri</string>
     <string name="txt_urunu_ekle">Ürünü ekle</string>
+    <string name="txt_yeni_depo_ekle">YENİ DEPO EKLE</string>
+    <string name="urunDeposu_item">Ürün deposu :</string>
+    <string name="urunMiktari_item">Ürün miktarı :</string>
+    <string name="urunlerim_yeniurunekle">Yeni ürün ekle</string>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -78,15 +103,15 @@
     <style name="Theme.Depo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.Depo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Theme.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">#6e080f</item>
         <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
+        
         <item name="colorSecondary">#FF9800</item>
         <item name="colorSecondaryVariant">@android:color/holo_orange_dark</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
 </resources>

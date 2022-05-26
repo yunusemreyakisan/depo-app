@@ -34,21 +34,16 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
   public final TextInputEditText depoBuyuklugu;
 
   @NonNull
-  public final TextInputEditText depoEkleUrunKategori;
-
-  @NonNull
   public final TextView iconBoxDepoEkle;
 
   private ActivityDepoEkleBinding(@NonNull LinearLayout rootView, @NonNull Button btnDepolarimaEkle,
       @NonNull TextInputEditText depoAd, @NonNull TextInputEditText depoAdres,
-      @NonNull TextInputEditText depoBuyuklugu, @NonNull TextInputEditText depoEkleUrunKategori,
-      @NonNull TextView iconBoxDepoEkle) {
+      @NonNull TextInputEditText depoBuyuklugu, @NonNull TextView iconBoxDepoEkle) {
     this.rootView = rootView;
     this.btnDepolarimaEkle = btnDepolarimaEkle;
     this.depoAd = depoAd;
     this.depoAdres = depoAdres;
     this.depoBuyuklugu = depoBuyuklugu;
-    this.depoEkleUrunKategori = depoEkleUrunKategori;
     this.iconBoxDepoEkle = iconBoxDepoEkle;
   }
 
@@ -103,12 +98,6 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.depoEkleUrunKategori;
-      TextInputEditText depoEkleUrunKategori = ViewBindings.findChildViewById(rootView, id);
-      if (depoEkleUrunKategori == null) {
-        break missingId;
-      }
-
       id = R.id.iconBoxDepoEkle;
       TextView iconBoxDepoEkle = ViewBindings.findChildViewById(rootView, id);
       if (iconBoxDepoEkle == null) {
@@ -116,7 +105,7 @@ public final class ActivityDepoEkleBinding implements ViewBinding {
       }
 
       return new ActivityDepoEkleBinding((LinearLayout) rootView, btnDepolarimaEkle, depoAd,
-          depoAdres, depoBuyuklugu, depoEkleUrunKategori, iconBoxDepoEkle);
+          depoAdres, depoBuyuklugu, iconBoxDepoEkle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

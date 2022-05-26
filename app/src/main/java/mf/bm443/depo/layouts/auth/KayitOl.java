@@ -16,11 +16,16 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 import mf.bm443.depo.R;
 
@@ -30,7 +35,6 @@ public class KayitOl extends AppCompatActivity {
     private TextInputEditText adiSoyadi;
     private TextInputEditText sifre;
     private TextInputEditText eMail;
-    private TextInputEditText telNo;
     private DatabaseReference mDatabase;
     private FirebaseFirestore mFirestore;
     private HashMap<String, Object> mData;
@@ -52,7 +56,6 @@ public class KayitOl extends AppCompatActivity {
             String name = adiSoyadi.getText().toString();
             String email = eMail.getText().toString();
             String password = sifre.getText().toString();
-            String tel = telNo.getText().toString();
 
             //E-Mail Validation
             String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -62,8 +65,6 @@ public class KayitOl extends AppCompatActivity {
                 Toast.makeText(KayitOl.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
             } else if (password.length() < 6) {
                 Toast.makeText(KayitOl.this, "Şifre 6 karakterden daha uzun olmalı.", Toast.LENGTH_SHORT).show();
-            } else if (!TextUtils.isEmpty(tel) && tel.length() != 10) {
-                Toast.makeText(KayitOl.this, "Telefon numaranız 10 haneli olmalı.", Toast.LENGTH_SHORT).show();
             } else if (!email.matches(emailPattern)) {
                 Log.i("E-Mail Valid", "Geçerli E-posta girildi.");
                 Toast.makeText(getApplicationContext(), "Geçersiz E-Posta", Toast.LENGTH_SHORT).show();
@@ -76,34 +77,38 @@ public class KayitOl extends AppCompatActivity {
                                     //Veritabanına Canlı Kayıt Etme (Realtime Database)
                                     String user_id = mAuth.getCurrentUser().getUid();
                                     mUser = mAuth.getCurrentUser();
-                                    mDatabase = FirebaseDatabase.getInstance().getReference().child("Kullanıcılar").child(user_id).child("Kullanıcı Bilgileri");
+                                    mDatabase = FirebaseDatabase.getInstance().getReference()
+                                            .child("Kullanıcılar")
+                                            .child(user_id)
+                                            .child("Kullanıcı Bilgileri");
 
                                     HashMap<String, String> mData = new HashMap<>();
                                     mData.put("E-Mail", email);
                                     mData.put("Password", password);
                                     mData.put("Name", name);
-                                    mData.put("Telefon", tel);
 
-                                    //Realtime Database
-                                    mDatabase.setValue(mData).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-                                            if (task.isSuccessful()) {
-                                                Intent intent = new Intent(KayitOl.this, MainActivity.class);
-                                                startActivity(intent);
-
-                                                Toast.makeText(KayitOl.this, "Hesap oluşturuldu.", Toast.LENGTH_SHORT).show();
-                                            } else {
-                                                Toast.makeText(KayitOl.this, "Hesap oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show();
+                                        //Realtime Database
+                                        mDatabase.setValue(mData).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task) {
+                                                if (task.isSuccessful()) {
+                                                    Intent intent = new Intent(KayitOl.this, MainActivity.class);
+                                                    startActivity(intent);
+                                                    Toast.makeText(KayitOl.this, "Hesap oluşturuldu.", Toast.LENGTH_SHORT).show();
+                                                }
+                                                else {
+                                                    Toast.makeText(KayitOl.this, "Hesap oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show();
+                                                }
                                             }
-                                        }
-                                    });
+                                        });
+                                    }
                                 }
-                            }
-                        });
+                            });
             }
         });
     }
+
+
 
 
     private void initComponents() {
@@ -111,7 +116,6 @@ public class KayitOl extends AppCompatActivity {
         adiSoyadi = findViewById(R.id.adSoyad);
         sifre = findViewById(R.id.sifre);
         eMail = findViewById(R.id.ePosta);
-        telNo = findViewById(R.id.telNo);
     }
 }
 

@@ -2,18 +2,21 @@ package mf.bm443.depo.models;
 
 public class UrunlerimModel {
 
-    private String urunAdi, urunDeposu, urunMiktar;
+    private String urunAdi, urunDeposu, urunMiktar, key;
 
 
-    UrunlerimModel() {
+    public UrunlerimModel() {
         //Boş Cons.
     }
+
+
 
     public UrunlerimModel(String urunAdi, String urunDeposu, String urunMiktar) {
         this.urunAdi = urunAdi;
         this.urunDeposu = urunDeposu;
         this.urunMiktar = urunMiktar;
     }
+
 
     public String getUrunAdi() {
         return urunAdi;

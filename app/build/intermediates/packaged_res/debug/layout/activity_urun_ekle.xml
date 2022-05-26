@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ürün Ekle"
+            android:text="@string/txt_Urun_Ekle"
             android:textColor="@color/colorPrimary"
             android:textSize="35sp"
             android:textStyle="bold" />
@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:hint="Ürün Adı"
+                android:hint="@string/txt_Urun_Adi"
                 android:inputType="text"
                 android:textColorHint="@color/editTextColor" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -67,7 +67,7 @@
                 android:id="@+id/txtUrunDeposu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ürün Deposu"
+                android:hint="@string/txt_UrunDeposu"
                 android:inputType="textEmailAddress"
 
                 android:textColorHint="@color/editTextColor" />
@@ -80,7 +80,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/urunMiktarWrapper"
             android:layout_marginBottom="10dp"
-            android:hint="Kategori seçiniz"
             android:maxLines="1"
             android:minHeight="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
@@ -94,7 +93,7 @@
                 android:id="@+id/txtUrunKategori"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="Ürün Kategorileri"
+                android:contentDescription="@string/CD_UrunKategorileri"
                 android:dropDownHeight="50dp"
                 android:inputType="text"
                 android:maxLines="1"
@@ -121,7 +120,7 @@
                 android:id="@+id/txtUrunMiktar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ürün Miktarı (Adet)"
+                android:hint="@string/txt_UrunMiktar_hint"
                 android:inputType="number"
                 android:minHeight="10dp"
                 android:textColorHint="#616161" />
@@ -154,7 +153,7 @@
                     android:id="@+id/txtYeniKategori"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:hint="Kategori"
+                    android:hint="@string/kategori_hint"
                     android:inputType="text"
                     android:minHeight="10dp"
                     android:textColorHint="#616161" />
@@ -166,7 +165,7 @@
                 android:layout_height="60dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="10dp"
-                android:text="Ekle"
+                android:text="@string/btnTextEkle"
                 app:cornerRadius="10dp" />
 
         </LinearLayout>
@@ -177,7 +176,7 @@
             android:layout_below="@+id/kategoriLinearLayout"
             android:layout_marginTop="5dp"
             android:text="*Eklemek istediğiniz kategoriyi yukarıdaki alana giriniz."
-            android:textSize="12dp" />
+            android:textSize="12sp" />
 
         <!-- Ürün Ekle butonu-->
         <com.google.android.material.button.MaterialButton

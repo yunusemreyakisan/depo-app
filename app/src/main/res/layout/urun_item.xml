@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/recyclerView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -24,6 +23,30 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUpdateItem"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_baseline_create_24"
+                    app:backgroundTint="@color/orangeButtonColor" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRemoveItem"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_delete_24" />
+
+
+            </LinearLayout>
+
 
             <TextView
                 android:layout_width="70dp"
@@ -59,7 +82,7 @@
                     android:id="@+id/UrunAdi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ürün Adı"
+                    android:text="@string/item_urunAdi"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -67,7 +90,6 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/adresWrapper"
                     android:orientation="horizontal">
 
                     <!--Depo Deposu -->
@@ -75,7 +97,7 @@
                         android:id="@+id/urunDeposuWrapper"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ürün deposu : "
+                        android:text="@string/urunDeposu_item"
                         android:textColor="@color/colorPrimary" />
 
 
@@ -104,7 +126,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ürün miktarı : "
+                        android:text="@string/urunMiktari_item"
                         android:textColor="@color/colorPrimary" />
 
 

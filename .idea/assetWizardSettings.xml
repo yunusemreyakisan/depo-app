@@ -332,7 +332,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/search/baseline_search_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/create/baseline_create_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -342,8 +342,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="616161" />
-                            <entry key="outputName" value="ic_baseline_search_24" />
+                            <entry key="color" value="f2913d" />
+                            <entry key="outputName" value="ic_baseline_create_24" />
                             <entry key="sourceFile" value="D:\logoIcon.svg" />
                           </map>
                         </option>

@@ -25,13 +25,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
-                android:text="Kategoriler"
+                android:text="@string/txt_kategoriler"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tüm kategorileriniz tek bir yerde."
                 android:textColor="@color/colorPrimary"

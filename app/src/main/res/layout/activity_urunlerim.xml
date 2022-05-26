@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:text="Güncelleme yapmak istediğiniz ürünü sola kaydırın."
+                android:text="Tüm ürünleriniz tek bir yerde."
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp"
                 android:textStyle="normal" />
@@ -68,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="@color/btnColor"
-                    android:text="Yeni ürün ekle" />
+                    android:text="@string/urunlerim_yeniurunekle" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/urunlerimRecyclerView"

@@ -104,26 +104,6 @@ public class HomePage extends AppCompatActivity {
 
 
 
-
-
-
-
-   /* //Hesaptan çıkış işlemi
-    private void logout() {
-        btnCikis.setOnClickListener(view -> {
-            SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putString("Remember", "false");
-            editor.apply();
-            finish();
-            //Giriş sayfasına atma işlemi
-            Intent intent = new Intent(HomePage.this, MainActivity.class);
-            startActivity(intent);
-        });
-    }
-
-    */
-
     //Homepage üzerine çektiğimiz isim
     private void isimOkuma() {
         mAuth = FirebaseAuth.getInstance();
@@ -185,37 +165,4 @@ public class HomePage extends AppCompatActivity {
 }
 
 
-
-
-
-
-/*
-    //İsimi ekrana çekme (Firestore)
-    private void isimOkuma() {
-        FirebaseUser mUser = FirebaseAuth.getInstance().getCurrentUser();
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        assert mUser != null;
-        DocumentReference docRef = db.collection("Kullanıcılar").document(mUser.getUid());
-        docRef.get()
-                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                    private static final String TAG = "123";
-
-                    @Override
-                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                        if (task.isSuccessful()) {
-                            DocumentSnapshot document = task.getResult();
-                            if (document.exists()) {
-                                String isim = document.getString("Name");
-                                name.setText(isim);
-                            } else {
-                                Log.d(TAG, "Böyle bir döküman yok!");
-                            }
-                        } else {
-                            Log.d(TAG, "Hata:  ", task.getException());
-                        }
-                    }
-                });
-    }
-
- */
 

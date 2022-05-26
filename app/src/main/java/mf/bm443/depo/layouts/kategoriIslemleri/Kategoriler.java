@@ -63,10 +63,6 @@ public class Kategoriler extends AppCompatActivity {
         initComponents();
         KategorilerEventChangeListener();
 
-
-
-
-
     }
 
     private void KategorilerEventChangeListener() {
@@ -77,9 +73,11 @@ public class Kategoriler extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    if (dataSnapshot != null) {
                     UrunlerimModel model = dataSnapshot.getValue(UrunlerimModel.class);
+                        if (model != null && model.getUrunMiktar() != null)
                     kategorilerimList.add(model);
-                }
+                }}
                 kategoriAdapter.notifyDataSetChanged();
 
                 //snapshot.getRef().removeValue();

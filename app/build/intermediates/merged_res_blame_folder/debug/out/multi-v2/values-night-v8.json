@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\a06b9606aca23bf5b8151c7004c88702\\transformed\\jetified-core-splashscreen-1.0.0-rc01\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "85",
+                        "endOffsets": "136"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "726",
+                        "endColumns": "85",
+                        "endOffsets": "807"
+                    }
+                },
+                {
                     "source": "C:\\Depo\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
@@ -88,23 +105,6 @@
                         "startOffsets": "2158,2233,2344,2433,2534,2641,2748,2847,2950,3038,3162,3264,3366,3482,3584,3698,3826,3942,4064,4200,4320,4454,4574,4686,4901,5018,5142,5272,5394,5532,5666,5782",
                         "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "2228,2339,2428,2529,2636,2743,2842,2945,3033,3157,3259,3361,3477,3579,3693,3821,3937,4059,4195,4315,4449,4569,4681,4807,5013,5137,5267,5389,5527,5661,5777,5897"
-                    }
-                },
-                {
-                    "source": "D:\\Program Files\\Clock\\caches\\transforms-3\\0e82c2457305dedeb39697e09bcd4c8b\\transformed\\jetified-core-splashscreen-1.0.0-beta02\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "85",
-                        "endOffsets": "136"
-                    },
-                    "to": {
-                        "startLines": "15",
-                        "startColumns": "4",
-                        "startOffsets": "726",
-                        "endColumns": "85",
-                        "endOffsets": "807"
                     }
                 }
             ]
