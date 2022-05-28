@@ -1,18 +1,29 @@
 package mf.bm443.depo.models;
 
 public class DepolarimModel {
-    private String DepoAdi, DepoAdresi, DepoBuyuklugu;
+    private String DepoAdi, DepoAdresi, DepoBuyuklugu, EklenmeTarihi;
 
 
     public DepolarimModel() {
         //Boş Cons.
     }
 
-    public DepolarimModel(String depoAdi, String depoAdresi, String depoBuyuklugu) {
+
+
+    public DepolarimModel(String depoAdi, String depoAdresi, String depoBuyuklugu, String eklenmeTarihi) {
         DepoAdi = depoAdi;
         DepoAdresi = depoAdresi;
         DepoBuyuklugu = depoBuyuklugu;
+        EklenmeTarihi = eklenmeTarihi;
 
+    }
+
+    public String getEklenmeTarihi() {
+        return EklenmeTarihi;
+    }
+
+    public void setEklenmeTarihi(String eklenmeTarihi) {
+        EklenmeTarihi = eklenmeTarihi;
     }
 
     public String getDepoAdi() {

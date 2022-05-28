@@ -15,6 +15,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.DateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -68,37 +70,16 @@ public class DepoEkle extends AppCompatActivity {
             String depoadi = depoAd.getText().toString();
             String depoAdresi = depoAdres.getText().toString();
             String depoBuyukluk = depoBuyuklugu.getText().toString();
-            if (TextUtils.isEmpty(depoadi) || TextUtils.isEmpty(depoBuyukluk)) {
+            Calendar calendar = Calendar.getInstance();
+            String eklenmeTarihi = DateFormat.getDateInstance().format(calendar.getTime());
+            if (TextUtils.isEmpty(depoadi) || TextUtils.isEmpty(depoBuyukluk)|| TextUtils.isEmpty(depoAdresi)) {
                 Toast.makeText(DepoEkle.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
             } else {
-
-                DepolarimModel model = new DepolarimModel(depoadi, depoAdresi, depoBuyukluk);
+                DepolarimModel model = new DepolarimModel(depoadi, depoAdresi, depoBuyukluk, eklenmeTarihi);
                 mDatabase.push().setValue(model);
                 Intent sayfa = new Intent(DepoEkle.this, Depolarim.class);
                 startActivity(sayfa);
                 Toast.makeText(DepoEkle.this, "Deponuz başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
-
-/*
-                    mCData = new HashMap<>();
-                    //HashMap<String, String> mData = new HashMap<>();
-                    mCData.put("depoAd", depoadi);
-                    mCData.put("depoAdresi", depoAdresi);
-                    mCData.put("depoBuyuklugu", depoBuyukluk);
-                    mCData.put("depoKategorisi", depoUrunKategori);
-
-                    mFirestore.collection("Kullanıcılar")
-                            .document(mUser.getUid())
-                            .collection("Depolarım")
-                            .document()
-                            .set(mCData)
-                            .addOnSuccessListener(aVoid -> {
-                                Intent intent = new Intent(DepoEkle.this, Depolarim.class);
-                                startActivity(intent);
-                                Toast.makeText(DepoEkle.this, "Deponuz başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();
-                            })
-                            .addOnFailureListener(e -> Toast.makeText(DepoEkle.this, "Deponuz oluşturulamadı, yeniden deneyin.", Toast.LENGTH_SHORT).show());
-                }
-            });*/
             }
 
 

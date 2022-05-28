@@ -47,10 +47,11 @@
     <string name="item_depo_ad">Depo Adı</string>
     <string name="item_depoBuyuklugu">Depo büyüklüğü :</string>
     <string name="depo_itemLogo">📦</string>
-    <string name="kategori_itemLogo">📁</string>
-    <string name="item_kategori_ad">Kategori Adı</string>
+    <string name="kategori_itemLogo">🗒️</string>
+    <string name="item_kategori_ad">Eklenen Item Name</string>
     <string name="item_urun_adeti">Ürün adeti :</string>
     <string name="item_urunAdi">Ürün Adı</string>
     <string name="urunDeposu_item">Ürün deposu :</string>
     <string name="urunMiktari_item">Ürün miktarı :</string>
+    <string name="sonIslemlerSecimTexti">Depolarınız ve ürünleriniz için düzenli bir şekilde tutulan son işlemlerinize aşağıdaki butonlara tıklayarak ulaşabilirsiniz.</string>
 </resources>

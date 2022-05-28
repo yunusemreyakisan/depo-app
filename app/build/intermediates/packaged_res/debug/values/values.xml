@@ -53,11 +53,11 @@
     <string name="item_depoBuyuklugu">Depo büyüklüğü :</string>
     <string name="item_depo_ad">Depo Adı</string>
     <string name="item_depo_adresi">Depo adresi :</string>
-    <string name="item_kategori_ad">Kategori Adı</string>
+    <string name="item_kategori_ad">Eklenen Item Name</string>
     <string name="item_urunAdi">Ürün Adı</string>
     <string name="item_urun_adeti">Ürün adeti :</string>
     <string name="kategori_hint">Kategori</string>
-    <string name="kategori_itemLogo">📁</string>
+    <string name="kategori_itemLogo">🗒️</string>
     <string name="kayit_ol_hint">KAYIT OL</string>
     <string name="lbl_kayit_ol">Kayıt Ol</string>
     <string name="logo">Logo</string>
@@ -67,6 +67,7 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="sifre">Şifre</string>
     <string name="sifre_hint">Şifre</string>
+    <string name="sonIslemlerSecimTexti">Depolarınız ve ürünleriniz için düzenli bir şekilde tutulan son işlemlerinize aşağıdaki butonlara tıklayarak ulaşabilirsiniz.</string>
     <string name="title_activity_bottom_nav_bar">Bottom_NavBar_Activity</string>
     <string name="txtDepoIslemleri">Depo İşlemleri</string>
     <string name="txtHosgeldniz">Hoşgeldiniz</string>

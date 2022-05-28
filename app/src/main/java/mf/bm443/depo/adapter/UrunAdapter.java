@@ -43,8 +43,6 @@ public class UrunAdapter extends RecyclerView.Adapter<UrunAdapter.UrunHolder>{
     private FirebaseUser mUser;
     FirebaseAuth mAuth;
     DatabaseReference reference;
-    UrunAdapter urunAdapter;
-
 
 
 

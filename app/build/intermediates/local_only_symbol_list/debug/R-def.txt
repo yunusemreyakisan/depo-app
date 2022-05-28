@@ -40,6 +40,7 @@ drawable ic_baseline_warehouse
 drawable ic_launcher_foreground
 drawable ic_logo
 drawable ic_logout
+drawable ic_outline_urunler_24
 drawable ic_splash_screen_dark
 drawable logodark
 drawable logowhite
@@ -61,6 +62,8 @@ id btnKaydol
 id btnKayitOl
 id btnRemoveItem
 id btnSonIslemler
+id btnSonIslemlerDepo
+id btnSonIslemlerUrun
 id btnStokIslemleri
 id btnUpdateItem
 id btnUrunIslemleri
@@ -74,6 +77,8 @@ id depoBuyuklugu
 id depolarimRecyclerView
 id ePosta
 id ePostaWrapper
+id eklenenItemAdi
+id eklenmeTarihi
 id girisLogo
 id girisSifreWrapper
 id iconBoxDepoEkle
@@ -84,8 +89,13 @@ id kayitOlLogo
 id kullaniciAdiWrapper
 id linearLayout
 id recyclerView
+id rvSonIslemler
+id rvSonIslemlerDepo
 id sifre
 id sifreWrapper
+id textSon
+id textSonIslemlerBaslik
+id textVveya
 id txtDepoAdi
 id txtDepoAdresi
 id txtDepoBuyuklugu
@@ -96,6 +106,7 @@ id txtGrsEmail
 id txtGrsSifre
 id txtHosgeldin
 id txtKayitOl
+id txtSonBaslik
 id txtUrunAdi
 id txtUrunDeposu
 id txtUrunKategori
@@ -114,9 +125,13 @@ layout activity_home_page
 layout activity_kategoriler
 layout activity_kayit_ol
 layout activity_main
+layout activity_son_islemler_depolar
+layout activity_son_islemler_urunler
+layout activity_sonislemler_secimi
 layout activity_urun_ekle
 layout activity_urunlerim
 layout depo_item
+layout islemler_item
 layout kategori_item
 layout urun_item
 mipmap ic_launcher
@@ -163,6 +178,7 @@ string project_id
 string second_fragment_label
 string sifre
 string sifre_hint
+string sonIslemlerSecimTexti
 string textdepolarima_ekle
 string title_activity_bottom_nav_bar
 string txtDepoIslemleri

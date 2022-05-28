@@ -53,6 +53,15 @@
             android:name="mf.bm443.depo.layouts.HomePage"
             android:exported="true" />
         <activity
+            android:name="mf.bm443.depo.layouts.sonIslemler.SonIslemlerUrunler"
+            android:exported="true" />
+        <activity
+            android:name="mf.bm443.depo.layouts.sonIslemler.SonIslemlerDepolar"
+            android:exported="true" />
+        <activity
+            android:name="mf.bm443.depo.layouts.sonIslemler.SonIslemlerSecimi"
+            android:exported="true" />
+        <activity
             android:name="mf.bm443.depo.layouts.auth.MainActivity"
             android:exported="true"
             android:theme="@style/AppTheme.Launcher" >

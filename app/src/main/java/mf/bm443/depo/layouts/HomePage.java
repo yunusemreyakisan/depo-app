@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 import mf.bm443.depo.R;
 import mf.bm443.depo.layouts.auth.MainActivity;
 import mf.bm443.depo.layouts.depoIslemleri.Depolarim;
-import mf.bm443.depo.layouts.kategoriIslemleri.Kategoriler;
+import mf.bm443.depo.layouts.sonIslemler.SonIslemlerSecimi;
 import mf.bm443.depo.layouts.urunIslemleri.Urunlerim;
 
 public class HomePage extends AppCompatActivity {
@@ -31,7 +31,7 @@ public class HomePage extends AppCompatActivity {
     private DatabaseReference mDatabase;
     FirebaseAuth mAuth;
     private TextView name;
-    private Button btnDepoIslemleri, btnCikis, btnUrunIslemleri, btnStokIslemleri;
+    private Button btnDepoIslemleri, btnCikis, btnUrunIslemleri, btnStokIslemleri, btnSonIslemler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,7 @@ public class HomePage extends AppCompatActivity {
         initComponents();
         depoIslemleri();
         urunIslemleri();
+        sonIslemler();
       //  stokIslemleri();
         logoutWithAlertDialog();
 
@@ -77,7 +78,7 @@ public class HomePage extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                         HomePage.this.finish(); // Activity’nin sonlandırılması
 
-                        //GGiriş ekranı için Pref. Kontrolü
+                        //Giriş ekranı için Pref. Kontrolü
                         SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
                         SharedPreferences.Editor editor = preferences.edit();
                         editor.putString("Remember", "false");
@@ -155,11 +156,21 @@ public class HomePage extends AppCompatActivity {
         });
     }
      */
+
+
+  private void sonIslemler() {
+      btnSonIslemler.setOnClickListener(view -> {
+          Intent intent = new Intent(HomePage.this, SonIslemlerSecimi.class);
+          startActivity(intent);
+      });
+  }
+
     private void initComponents() {
         name = findViewById(R.id.txtFirebaseAd);
         btnDepoIslemleri = findViewById(R.id.btnDepoIslemleri);
         btnCikis = findViewById(R.id.btnCikis);
         btnUrunIslemleri = findViewById(R.id.btnUrunIslemleri);
+        btnSonIslemler = findViewById(R.id.btnSonIslemler);
        // btnStokIslemleri = findViewById(R.id.btnStokIslemleri);
     }
 }

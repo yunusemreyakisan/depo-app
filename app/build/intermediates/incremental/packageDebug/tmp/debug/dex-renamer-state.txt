@@ -1,4 +1,4 @@
-#Thu May 26 14:30:51 TRT 2022
+#Sat May 28 15:45:14 TRT 2022
 path.4=15/classes.dex
 path.3=14/classes.dex
 path.2=11/classes.dex
@@ -8,6 +8,7 @@ renamed.8=classes9.dex
 path.8=7/classes.dex
 path.7=6/classes.dex
 path.6=4/classes.dex
+renamed.12=classes13.dex
 path.5=2/classes.dex
 renamed.11=classes12.dex
 renamed.10=classes11.dex
@@ -18,6 +19,7 @@ base.2=C\:\\Depo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1
 base.1=C\:\\Depo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.0=C\:\\Depo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
+path.12=1/classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 path.10=classes3.dex
@@ -33,5 +35,6 @@ renamed.5=classes6.dex
 base.6=C\:\\Depo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 renamed.4=classes5.dex
 base.5=C\:\\Depo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.12=C\:\\Depo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 base.11=C\:\\Depo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
 base.10=C\:\\Depo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex

@@ -4,6 +4,10 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sonislemler_secimi.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_sonislemler_secimi.xml"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_24.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
     },
@@ -84,12 +88,12 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\logodark.png"
     },
     {
-        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -114,6 +118,10 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_son_islemler_depolar.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_son_islemler_depolar.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -172,8 +180,16 @@
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_baseline_delete_24.xml"
     },
     {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_outline_urunler_24.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\ic_outline_urunler_24.xml"
+    },
+    {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\drawable_spinner_bg.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\drawable\\spinner_bg.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_islemler_item.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\islemler_item.xml"
     },
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_kategoriler.xml.flat",
@@ -198,5 +214,9 @@
     {
         "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Depo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Depo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_son_islemler_urunler.xml.flat",
+        "source": "C:\\Depo\\app\\src\\main\\res\\layout\\activity_son_islemler_urunler.xml"
     }
 ]

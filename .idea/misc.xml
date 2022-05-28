@@ -45,6 +45,10 @@
         <entry key="..\:/Depo/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Depo/app/src/main/res/layout/activity_onboarding.xml" value="0.3625" />
         <entry key="..\:/Depo/app/src/main/res/layout/activity_sifremi_unuttum.xml" value="0.3625" />
+        <entry key="..\:/Depo/app/src/main/res/layout/activity_son_islemler.xml" value="0.24895833333333334" />
+        <entry key="..\:/Depo/app/src/main/res/layout/activity_son_islemler_depolar.xml" value="0.20521590423257802" />
+        <entry key="..\:/Depo/app/src/main/res/layout/activity_son_islemler_urunler.xml" value="0.25" />
+        <entry key="..\:/Depo/app/src/main/res/layout/activity_sonislemler_secimi.xml" value="0.1" />
         <entry key="..\:/Depo/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Depo/app/src/main/res/layout/activity_urun_ekle.xml" value="0.264" />
         <entry key="..\:/Depo/app/src/main/res/layout/activity_urun_islemleri.xml" value="0.2765625" />
@@ -60,10 +64,12 @@
         <entry key="..\:/Depo/app/src/main/res/layout/fragment_walkthroughthree.xml" value="0.3625" />
         <entry key="..\:/Depo/app/src/main/res/layout/fragment_walkthroughtwo.xml" value="0.3625" />
         <entry key="..\:/Depo/app/src/main/res/layout/hosgeldin.xml" value="0.3625" />
+        <entry key="..\:/Depo/app/src/main/res/layout/islemler_item.xml" value="0.2" />
         <entry key="..\:/Depo/app/src/main/res/layout/item.xml" value="0.25" />
         <entry key="..\:/Depo/app/src/main/res/layout/kategori_item.xml" value="0.24895833333333334" />
         <entry key="..\:/Depo/app/src/main/res/layout/layout_bg.xml" value="0.3625" />
         <entry key="..\:/Depo/app/src/main/res/layout/list_item_single.xml" value="0.33" />
+        <entry key="..\:/Depo/app/src/main/res/layout/sonIslemler_item.xml" value="0.24895833333333334" />
         <entry key="..\:/Depo/app/src/main/res/layout/urun_item.xml" value="0.264" />
         <entry key="..\:/Depo/app/src/main/res/menu/ana_menu.xml" value="0.2975630611372381" />
         <entry key="..\:/Depo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />

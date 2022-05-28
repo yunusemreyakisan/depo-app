@@ -4,8 +4,6 @@ package mf.bm443.depo.layouts.urunIslemleri;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,15 +20,14 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.local.LruGarbageCollector;
 
-import java.lang.reflect.Field;
+import java.sql.Time;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Objects;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 import mf.bm443.depo.R;
 import mf.bm443.depo.models.UrunlerimModel;
@@ -56,8 +53,8 @@ public class UrunEkle extends AppCompatActivity {
         setContentView(R.layout.activity_urun_ekle);
         mAuth = FirebaseAuth.getInstance();
         //mFirestore = FirebaseFirestore.getInstance();
-
-
+        //Günün o saati
+        Date currentTime = Calendar.getInstance().getTime();
         String user_id = mAuth.getCurrentUser().getUid();
         mUser = mAuth.getCurrentUser();
 
@@ -83,9 +80,9 @@ public class UrunEkle extends AppCompatActivity {
             String value = yeniKategori.getText().toString();
             String key = spinnerRef.push().getKey(); //UID ile kayıt etme
 
-            if(TextUtils.isEmpty(value)){
-            Toast.makeText(getApplicationContext(), "Boş kategori kaydedilemez.", Toast.LENGTH_SHORT).show();
-            }else{
+            if (TextUtils.isEmpty(value)) {
+                Toast.makeText(getApplicationContext(), "Boş kategori kaydedilemez.", Toast.LENGTH_SHORT).show();
+            } else {
 
                 assert key != null;
                 spinnerRef.child(key).setValue(value);
@@ -117,7 +114,7 @@ public class UrunEkle extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                throw error.toException(); // never ignore errors.
+                throw error.toException();
             }
         });
     }
@@ -129,7 +126,7 @@ public class UrunEkle extends AppCompatActivity {
         btnUrunekle.setOnClickListener(view -> {
 
             //Kategori Boşluk Kontrolü
-            if(spinnerList.isEmpty() && value.isEmpty()){
+            if (spinnerList.isEmpty() && value.isEmpty()) {
                 Toast.makeText(getApplicationContext(), "Lütfen kategori seçiniz", Toast.LENGTH_SHORT).show();
             }
 
@@ -143,12 +140,16 @@ public class UrunEkle extends AppCompatActivity {
             String urunadi = urunAdi.getText().toString();
             String urundeposu = urunDeposu.getText().toString();
             String urunMiktar = urunMiktari.getText().toString();
+            String key = mDatabase.getKey();
+            Calendar calendar = Calendar.getInstance();
+            String eklenmeTarihi = DateFormat.getDateInstance().format(calendar.getTime());
+
             if (TextUtils.isEmpty(urunadi) || TextUtils.isEmpty(urunMiktar) || TextUtils.isEmpty(urundeposu)) {
                 Toast.makeText(UrunEkle.this, "Boş bırakılamaz.", Toast.LENGTH_SHORT).show();
             } else {
 
-                UrunlerimModel urunlerimmodel = new UrunlerimModel(urunadi, urundeposu, urunMiktar);
-                mDatabase.push().setValue(urunlerimmodel); //without push()
+                UrunlerimModel urunlerimmodel = new UrunlerimModel(urunadi, urundeposu, urunMiktar, key, eklenmeTarihi);
+                mDatabase.push().setValue(urunlerimmodel);
                 Intent intent = new Intent(UrunEkle.this, Urunlerim.class);
                 startActivity(intent);
                 Toast.makeText(UrunEkle.this, "Ürün başarıyla oluşturuldu.", Toast.LENGTH_SHORT).show();

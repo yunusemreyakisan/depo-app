@@ -2628,6 +2628,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_outline_urunler_24
 drawable ic_splash_screen_dark
 drawable icon_background
 drawable logodark
@@ -2803,6 +2804,8 @@ id btnKaydol
 id btnKayitOl
 id btnRemoveItem
 id btnSonIslemler
+id btnSonIslemlerDepo
+id btnSonIslemlerUrun
 id btnStokIslemleri
 id btnUpdateItem
 id btnUrunIslemleri
@@ -2900,6 +2903,8 @@ id east
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
+id eklenenItemAdi
+id eklenmeTarihi
 id elastic
 id end
 id endToStart
@@ -3097,6 +3102,8 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id rvSonIslemler
+id rvSonIslemlerDepo
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3185,10 +3192,13 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textSon
+id textSonIslemlerBaslik
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textVveya
 id text_input_end_icon
 id text_input_error_icon
 id text_input_layout
@@ -3225,6 +3235,7 @@ id txtGrsEmail
 id txtGrsSifre
 id txtHosgeldin
 id txtKayitOl
+id txtSonBaslik
 id txtUrunAdi
 id txtUrunDeposu
 id txtUrunKategori
@@ -3370,6 +3381,9 @@ layout activity_home_page
 layout activity_kategoriler
 layout activity_kayit_ol
 layout activity_main
+layout activity_son_islemler_depolar
+layout activity_son_islemler_urunler
+layout activity_sonislemler_secimi
 layout activity_urun_ekle
 layout activity_urunlerim
 layout browser_actions_context_menu_page
@@ -3391,6 +3405,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout islemler_item
 layout kategori_item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3678,6 +3693,7 @@ string second_fragment_label
 string selected
 string sifre
 string sifre_hint
+string sonIslemlerSecimTexti
 string status_bar_notification_info_overflow
 string tab
 string template_percent

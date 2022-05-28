@@ -38,6 +38,16 @@
         <activity
             android:name=".layouts.HomePage"
             android:exported="true" />
+        <activity
+            android:name=".layouts.sonIslemler.SonIslemlerUrunler"
+            android:exported="true" />
+        <activity
+            android:name=".layouts.sonIslemler.SonIslemlerDepolar"
+            android:exported="true" />
+
+        <activity
+            android:name=".layouts.sonIslemler.SonIslemlerSecimi"
+            android:exported="true" />
 
         <activity
             android:name=".layouts.auth.MainActivity"
