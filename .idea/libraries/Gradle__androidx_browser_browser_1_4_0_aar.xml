@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.browser:browser:1.4.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/1272f7033730c3600e13ec92bda17c48/transformed/browser-1.4.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/Program Files/Clock/caches/transforms-3/1272f7033730c3600e13ec92bda17c48/transformed/browser-1.4.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/1272f7033730c3600e13ec92bda17c48/transformed/browser-1.4.0/res" />
+      <root url="file://D:/Program Files/Clock/caches/transforms-3/1272f7033730c3600e13ec92bda17c48/transformed/browser-1.4.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/Program Files/Clock/caches/modules-2/files-2.1/androidx.browser/browser/1.4.0/2a2741f63427dcdb3b6821dd17703bc16ced13a1/browser-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
