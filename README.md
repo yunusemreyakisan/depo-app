@@ -1,8 +1,6 @@
-# 📌Depo Mobil Uygulama
+# 📌Depo Mobile Showcase
 
-Stok ve Envanter Yönetimi Uygulaması
-
-<img src="/app/src/main/res/Screenshots/depolarim.png" align="center" height="400" width="210"> 
+<img src="/app/src/main/res/Screenshots/showcase.png" align="center"> 
 
 
 
