@@ -4,8 +4,8 @@
 
 Tech Stack: 
 ```java
-    public static String[] myStack(){
-        return new String[]{"Java", "Android", "Firebase", "MVVM", "CRUD Process"};
+    public static String[] projectStack(){
+        return new String[]{"Java", "Android", "Firebase", "CRUD Process"};
     }
 ```
 
